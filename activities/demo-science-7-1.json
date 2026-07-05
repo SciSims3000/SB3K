@@ -1,1 +1,49 @@
-
+{
+  "activityId": "demo-science-7-1",
+  "title": "7.1 Observing the Universe Quick Check",
+  "subject": "Science",
+  "yearLevel": "Year 7",
+  "topic": "Observing the Universe",
+  "version": "1.0",
+  "mode": "practice",
+  "settings": {
+    "shuffleQuestions": false,
+    "shuffleOptions": false,
+    "allowBack": true,
+    "showFinalScore": true,
+    "feedback": {
+      "afterEachQuestion": true,
+      "onResultsScreen": true,
+      "showCorrectAnswers": true,
+      "showExplanations": true
+    },
+    "passingPercentage": 50
+  },
+  "studentFields": {
+    "name": true,
+    "class": true,
+    "teacher": false
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.1",
+          "name": "Nature of science"
+        }
+      ],
+      "question": "Which statement best describes the purpose of science?",
+      "options": [
+        "To memorise facts",
+        "To explain the natural world using evidence",
+        "To prove that old ideas are always wrong",
+        "To make guesses without testing them"
+      ],
+      "answer": "To explain the natural world using evidence",
+      "marks": 1,
+      "feedback": "Science uses evidence from observations and investigations to explain the natural world."
+    }
+  ]
+}
