@@ -44,6 +44,186 @@
       "answer": "To explain the natural world using evidence",
       "marks": 1,
       "feedback": "Science uses evidence from observations and investigations to explain the natural world."
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.1",
+          "name": "Nature of science"
+        }
+      ],
+      "question": "Which of these is most important when scientists make a claim?",
+      "options": [
+        "Personal opinion",
+        "Evidence",
+        "Popularity",
+        "Luck"
+      ],
+      "answer": "Evidence",
+      "marks": 1,
+      "feedback": "Scientific claims should be supported by evidence."
+    },
+    {
+      "id": "q3",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "Why do scientists repeat investigations?",
+      "options": [
+        "To waste time",
+        "To check whether results are reliable",
+        "To avoid writing conclusions",
+        "To change the question"
+      ],
+      "answer": "To check whether results are reliable",
+      "marks": 1,
+      "feedback": "Repeating investigations helps scientists check the reliability of their results."
+    },
+    {
+      "id": "q4",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "What is a fair test?",
+      "options": [
+        "An investigation where only one variable is changed at a time",
+        "An investigation where everything is changed",
+        "An investigation with no measurements",
+        "An investigation based only on guesses"
+      ],
+      "answer": "An investigation where only one variable is changed at a time",
+      "marks": 1,
+      "feedback": "A fair test changes one variable and keeps other conditions controlled."
+    },
+    {
+      "id": "q5",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.3",
+          "name": "Space science"
+        }
+      ],
+      "question": "Which object is at the centre of our Solar System?",
+      "options": [
+        "Earth",
+        "The Moon",
+        "The Sun",
+        "Mars"
+      ],
+      "answer": "The Sun",
+      "marks": 1,
+      "feedback": "The Sun is the star at the centre of our Solar System."
+    },
+    {
+      "id": "q6",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.3",
+          "name": "Space science"
+        }
+      ],
+      "question": "What causes day and night on Earth?",
+      "options": [
+        "Earth rotating on its axis",
+        "Earth moving closer to the Sun",
+        "The Moon blocking sunlight",
+        "The Sun moving around Earth"
+      ],
+      "answer": "Earth rotating on its axis",
+      "marks": 1,
+      "feedback": "Day and night are caused by Earth rotating on its axis."
+    },
+    {
+      "id": "q7",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.4",
+          "name": "Aboriginal astronomy"
+        }
+      ],
+      "question": "Why are Aboriginal and Torres Strait Islander astronomical knowledges important in science learning?",
+      "options": [
+        "They show long-term observations of the sky and environment",
+        "They are unrelated to observation",
+        "They are only stories with no patterns",
+        "They replace all modern science"
+      ],
+      "answer": "They show long-term observations of the sky and environment",
+      "marks": 1,
+      "feedback": "Aboriginal and Torres Strait Islander astronomical knowledges include careful observations of sky patterns and environmental changes."
+    },
+    {
+      "id": "q8",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.4",
+          "name": "Aboriginal astronomy"
+        }
+      ],
+      "question": "Which is an example of using sky observations in everyday life?",
+      "options": [
+        "Using star patterns to support navigation or seasonal knowledge",
+        "Ignoring patterns in the night sky",
+        "Changing the length of a day",
+        "Stopping the Moon from moving"
+      ],
+      "answer": "Using star patterns to support navigation or seasonal knowledge",
+      "marks": 1,
+      "feedback": "Sky observations can support navigation, seasonal knowledge and understanding environmental patterns."
+    },
+    {
+      "id": "q9",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.5",
+          "name": "Observing the Universe in context"
+        }
+      ],
+      "question": "Why have models of the Universe changed over time?",
+      "options": [
+        "New evidence and better technology have improved our understanding",
+        "Scientists stopped observing the sky",
+        "Old ideas are always correct",
+        "The Universe stopped changing"
+      ],
+      "answer": "New evidence and better technology have improved our understanding",
+      "marks": 1,
+      "feedback": "Scientific models can change when new evidence or better technology improves our understanding."
+    },
+    {
+      "id": "q10",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.5",
+          "name": "Observing the Universe in context"
+        }
+      ],
+      "question": "Which tool has helped scientists observe distant objects in space?",
+      "options": [
+        "Telescope",
+        "Microscope",
+        "Thermometer",
+        "Stopwatch"
+      ],
+      "answer": "Telescope",
+      "marks": 1,
+      "feedback": "Telescopes help scientists observe distant objects in space."
     }
   ]
 }
