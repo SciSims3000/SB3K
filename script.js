@@ -106,6 +106,21 @@ function checkAnswer() {
     }
 
     const isCorrect = selectedAnswer === question.answer;
+  document.querySelectorAll(".answer-button").forEach(btn => {
+
+    btn.disabled = true;
+
+    if (btn.textContent === question.answer) {
+        btn.classList.add("correct-answer");
+    }
+
+    if (btn.textContent === selectedAnswer &&
+        selectedAnswer !== question.answer) {
+
+        btn.classList.add("incorrect-answer");
+    }
+
+});
 
     if (isCorrect) {
         feedbackBox.textContent = "Correct. " + question.feedback;
