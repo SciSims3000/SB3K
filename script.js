@@ -1,4 +1,6 @@
 let activity = null;
+let currentQuestionIndex = 0;
+let selectedAnswer = null;
 
 const student = {
     name: "",
@@ -44,10 +46,12 @@ function startActivity() {
     document.getElementById("studentEntry").classList.add("hidden");
     document.getElementById("questionArea").classList.remove("hidden");
 
-    showQuestion(0);
+    showQuestion(currentQuestionIndex);
 }
 
 function showQuestion(index) {
+    selectedAnswer = null;
+
     const question = activity.questions[index];
 
     document.getElementById("questionProgress").textContent =
@@ -61,6 +65,60 @@ function showQuestion(index) {
     question.options.forEach(option => {
         const button = document.createElement("button");
         button.textContent = option;
+        button.classList.add("answer-button");
+
+        button.addEventListener("click", () => {
+            selectedAnswer = option;
+
+            document.querySelectorAll(".answer-button").forEach(btn => {
+                btn.classList.remove("selected");
+            });
+
+            button.classList.add("selected");
+        });
+
         answerArea.appendChild(button);
     });
+
+    const checkButton = document.createElement("button");
+    checkButton.textContent = "Check Answer";
+    checkButton.id = "checkAnswerButton";
+    checkButton.addEventListener("click", checkAnswer);
+
+    answerArea.appendChild(checkButton);
+
+    const feedbackBox = document.createElement("div");
+    feedbackBox.id = "feedbackBox";
+    feedbackBox.classList.add("feedback-box", "hidden");
+
+    answerArea.appendChild(feedbackBox);
+}
+
+function checkAnswer() {
+    const question = activity.questions[currentQuestionIndex];
+    const feedbackBox = document.getElementById("feedbackBox");
+
+    if (!selectedAnswer) {
+        feedbackBox.textContent = "Please select an answer before checking.";
+        feedbackBox.className = "feedback-box warning";
+        feedbackBox.classList.remove("hidden");
+        return;
+    }
+
+    const isCorrect = selectedAnswer === question.answer;
+
+    if (isCorrect) {
+        feedbackBox.textContent = "Correct. " + question.feedback;
+        feedbackBox.className = "feedback-box correct";
+    } else {
+        feedbackBox.textContent =
+            "Not quite. The correct answer is: " +
+            question.answer +
+            ". " +
+            question.feedback;
+
+        feedbackBox.className = "feedback-box incorrect";
+    }
+
+    feedbackBox.classList.remove("hidden");
 }
