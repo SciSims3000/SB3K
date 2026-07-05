@@ -1,21 +1,78 @@
-body{
-
+body {
     font-family: Arial, Helvetica, sans-serif;
-    background:#f4f7fa;
-    margin:0;
-
+    background: #f4f7fa;
+    margin: 0;
 }
 
-.container{
-
-    max-width:900px;
-    margin:auto;
-    padding:40px;
-
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px;
 }
 
-h1{
+.hero {
+    text-align: center;
+    margin-bottom: 30px;
+}
 
-    color:#1565C0;
+.brand {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.8rem;
+    color: #607d8b;
+    margin-bottom: 8px;
+}
 
+h1 {
+    color: #1565c0;
+    margin-bottom: 10px;
+}
+
+.card {
+    background: white;
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    margin-bottom: 24px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 6px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #cfd8dc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 24px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    background: #1565c0;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0d47a1;
+}
+
+.hidden {
+    display: none;
+}
+
+.error-message {
+    color: #c62828;
+    font-weight: bold;
 }
