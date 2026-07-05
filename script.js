@@ -134,6 +134,27 @@ function checkAnswer() {
 
         feedbackBox.className = "feedback-box incorrect";
     }
+const checkButton =
+    document.getElementById("checkAnswerButton");
 
+checkButton.textContent = "Next Question";
+
+checkButton.removeEventListener("click", checkAnswer);
+
+checkButton.addEventListener("click", nextQuestion);
     feedbackBox.classList.remove("hidden");
+}
+function nextQuestion(){
+
+    currentQuestionIndex++;
+
+    if(currentQuestionIndex >= activity.questions.length){
+
+        showResults();
+        return;
+
+    }
+
+    showQuestion(currentQuestionIndex);
+
 }
