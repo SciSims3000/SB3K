@@ -1,14 +1,24 @@
+html,
+body {
+    height: 100%;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: #f4f7fa;
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
     max-width: 900px;
     margin: auto;
     padding: 40px;
+    flex: 1;
 }
+
+/* ===== HERO ===== */
 
 .hero-banner {
     background: linear-gradient(135deg, #1565c0, #00acc1);
@@ -53,6 +63,8 @@ h1 {
     opacity: 0.95;
 }
 
+/* ===== CARDS ===== */
+
 .card {
     background: white;
     border-radius: 16px;
@@ -60,6 +72,8 @@ h1 {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
     margin-bottom: 24px;
 }
+
+/* ===== FORMS ===== */
 
 label {
     display: block;
@@ -77,6 +91,8 @@ input {
     box-sizing: border-box;
 }
 
+/* ===== BUTTONS ===== */
+
 button {
     margin-top: 24px;
     padding: 12px 20px;
@@ -93,14 +109,6 @@ button:hover {
     background: #0d47a1;
 }
 
-.hidden {
-    display: none;
-}
-
-.error-message {
-    color: #c62828;
-    font-weight: bold;
-}
 .answer-button {
     display: block;
     width: 100%;
@@ -120,28 +128,24 @@ button:hover {
     background: #d9ecff;
 }
 
-.answer-button.correct-answer{
-
-    background:#dff5e3;
-    border-color:#2e7d32;
-    color:#1b5e20;
-
+.answer-button.correct-answer {
+    background: #dff5e3;
+    border-color: #2e7d32;
+    color: #1b5e20;
 }
 
-.answer-button.incorrect-answer{
-
-    background:#ffebee;
-    border-color:#c62828;
-    color:#b71c1c;
-
+.answer-button.incorrect-answer {
+    background: #ffebee;
+    border-color: #c62828;
+    color: #b71c1c;
 }
 
-.answer-button:disabled{
-
-    cursor:default;
-    opacity:1;
-
+.answer-button:disabled {
+    cursor: default;
+    opacity: 1;
 }
+
+/* ===== FEEDBACK ===== */
 
 .feedback-box {
     margin-top: 20px;
@@ -164,32 +168,24 @@ button:hover {
     background: #fff8e1;
     color: #795548;
 }
+
+/* ===== UTILITY ===== */
+
+.hidden {
+    display: none;
+}
+
+.error-message {
+    color: #c62828;
+    font-weight: bold;
+}
+
 /* ===== FOOTER ===== */
 
-html,
-body {
-    height: 100%;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-.container {
-    flex: 1;
-}
-
 .footer {
-
     text-align: center;
-
     color: #607d8b;
-
     font-size: 0.85rem;
-
     padding: 20px;
-
     margin-top: auto;
-
 }
