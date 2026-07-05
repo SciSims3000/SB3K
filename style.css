@@ -120,6 +120,29 @@ button:hover {
     background: #d9ecff;
 }
 
+.answer-button.correct-answer{
+
+    background:#dff5e3;
+    border-color:#2e7d32;
+    color:#1b5e20;
+
+}
+
+.answer-button.incorrect-answer{
+
+    background:#ffebee;
+    border-color:#c62828;
+    color:#b71c1c;
+
+}
+
+.answer-button:disabled{
+
+    cursor:default;
+    opacity:1;
+
+}
+
 .feedback-box {
     margin-top: 20px;
     padding: 16px;
