@@ -144,7 +144,7 @@ function submitAnswer() {
 
     studentResponses.push(responseRecord);
 
-    console.log("Student responses:", studentResponses);
+    console.table(studentResponses);
 
     document.querySelectorAll(".answer-button").forEach(btn => {
         btn.disabled = true;
