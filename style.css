@@ -10,22 +10,47 @@ body {
     padding: 40px;
 }
 
-.hero {
+.hero-banner {
+    background: linear-gradient(135deg, #1565c0, #00acc1);
+    color: white;
+    border-radius: 24px;
+    padding: 42px 32px;
     text-align: center;
     margin-bottom: 30px;
+    box-shadow: 0 12px 32px rgba(21, 101, 192, 0.25);
+}
+
+.hero-content {
+    max-width: 760px;
+    margin: auto;
 }
 
 .brand {
     text-transform: uppercase;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.12em;
     font-size: 0.8rem;
-    color: #607d8b;
-    margin-bottom: 8px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    opacity: 0.9;
 }
 
 h1 {
-    color: #1565c0;
-    margin-bottom: 10px;
+    color: white;
+    margin: 0;
+    font-size: 2.4rem;
+    line-height: 1.15;
+}
+
+.tagline {
+    font-size: 1rem;
+    margin: 12px 0;
+    opacity: 0.95;
+}
+
+#activityInfo {
+    margin: 0;
+    font-size: 0.95rem;
+    opacity: 0.95;
 }
 
 .card {
