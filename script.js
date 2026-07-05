@@ -60,8 +60,20 @@ function showQuestion(index) {
 
     const question = activity.questions[index];
 
-    document.getElementById("questionProgress").textContent =
-        "Question " + (index + 1) + " of " + activity.questions.length;
+const current = index + 1;
+
+const total = activity.questions.length;
+
+const percent = Math.round((current / total) * 100);
+
+document.getElementById("questionProgress").textContent =
+    "Question " + current + " of " + total;
+
+document.getElementById("progressPercent").textContent =
+    percent + "%";
+
+document.getElementById("progressFill").style.width =
+    percent + "%";
 
     document.getElementById("questionText").textContent = question.question;
 
