@@ -34,6 +34,11 @@ function startActivity() {
     const classInput = document.getElementById("studentClass").value.trim();
     const errorBox = document.getElementById("entryError");
 
+    if (!activity) {
+        errorBox.textContent = "Activity is still loading. Please wait a moment.";
+        return;
+    }
+
     if (!nameInput || !classInput) {
         errorBox.textContent = "Please enter your name and class before starting.";
         return;
