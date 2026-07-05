@@ -8,6 +8,8 @@ const student = {
     className: ""
 };
 
+const studentResponses = [];
+
 fetch("activities/demo-science-7-1.json")
     .then(response => response.json())
     .then(data => {
@@ -60,20 +62,18 @@ function showQuestion(index) {
 
     const question = activity.questions[index];
 
-const current = index + 1;
+    const current = index + 1;
+    const total = activity.questions.length;
+    const percent = Math.round((current / total) * 100);
 
-const total = activity.questions.length;
+    document.getElementById("questionProgress").textContent =
+        "Question " + current + " of " + total;
 
-const percent = Math.round((current / total) * 100);
+    document.getElementById("progressPercent").textContent =
+        percent + "%";
 
-document.getElementById("questionProgress").textContent =
-    "Question " + current + " of " + total;
-
-document.getElementById("progressPercent").textContent =
-    percent + "%";
-
-document.getElementById("progressFill").style.width =
-    percent + "%";
+    document.getElementById("progressFill").style.width =
+        percent + "%";
 
     document.getElementById("questionText").textContent = question.question;
 
@@ -125,10 +125,26 @@ function submitAnswer() {
     }
 
     const isCorrect = selectedAnswer === question.answer;
+    const marksAwarded = isCorrect ? question.marks : 0;
 
     if (isCorrect) {
-        score++;
+        score += question.marks;
     }
+
+    const responseRecord = {
+        questionId: question.id,
+        questionText: question.question,
+        selectedAnswer: selectedAnswer,
+        correctAnswer: question.answer,
+        isCorrect: isCorrect,
+        marksAwarded: marksAwarded,
+        marksAvailable: question.marks,
+        curriculum: question.curriculum || []
+    };
+
+    studentResponses.push(responseRecord);
+
+    console.log("Student responses:", studentResponses);
 
     document.querySelectorAll(".answer-button").forEach(btn => {
         btn.disabled = true;
@@ -185,11 +201,15 @@ function showResults() {
     document.getElementById("questionArea").classList.add("hidden");
     document.getElementById("resultsArea").classList.remove("hidden");
 
-    const percentage = Math.round((score / activity.questions.length) * 100);
+    const totalMarks = activity.questions.reduce((total, question) => {
+        return total + question.marks;
+    }, 0);
+
+    const percentage = Math.round((score / totalMarks) * 100);
 
     document.getElementById("resultsSummary").innerHTML =
         "<strong>" + student.name + "</strong><br>" +
         "Class: " + student.className + "<br><br>" +
-        "Score: <strong>" + score + " / " + activity.questions.length + "</strong><br>" +
+        "Score: <strong>" + score + " / " + totalMarks + "</strong><br>" +
         "Percentage: <strong>" + percentage + "%</strong>";
 }
