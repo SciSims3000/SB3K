@@ -1,7 +1,7 @@
-let score = 0;
 let activity = null;
 let currentQuestionIndex = 0;
 let selectedAnswer = null;
+let score = 0;
 
 const student = {
     name: "",
@@ -81,12 +81,12 @@ function showQuestion(index) {
         answerArea.appendChild(button);
     });
 
-    const checkButton = document.createElement("button");
-    checkButton.textContent = "Check Answer";
-    checkButton.id = "checkAnswerButton";
-    checkButton.addEventListener("click", checkAnswer);
+    const submitButton = document.createElement("button");
+    submitButton.textContent = "Submit Answer";
+    submitButton.id = "submitAnswerButton";
+    submitButton.addEventListener("click", submitAnswer);
 
-    answerArea.appendChild(checkButton);
+    answerArea.appendChild(submitButton);
 
     const feedbackBox = document.createElement("div");
     feedbackBox.id = "feedbackBox";
@@ -95,101 +95,84 @@ function showQuestion(index) {
     answerArea.appendChild(feedbackBox);
 }
 
-function checkAnswer() {
+function submitAnswer() {
     const question = activity.questions[currentQuestionIndex];
     const feedbackBox = document.getElementById("feedbackBox");
+    const submitButton = document.getElementById("submitAnswerButton");
 
     if (!selectedAnswer) {
-        feedbackBox.textContent = "Please select an answer before checking.";
+        feedbackBox.textContent = "Please select an answer before submitting.";
         feedbackBox.className = "feedback-box warning";
         feedbackBox.classList.remove("hidden");
         return;
     }
 
     const isCorrect = selectedAnswer === question.answer;
-  document.querySelectorAll(".answer-button").forEach(btn => {
-
-    btn.disabled = true;
-
-    if (btn.textContent === question.answer) {
-        btn.classList.add("correct-answer");
-    }
-
-    if (btn.textContent === selectedAnswer &&
-        selectedAnswer !== question.answer) {
-
-        btn.classList.add("incorrect-answer");
-    }
-
-});
 
     if (isCorrect) {
-        if(isCorrect){
+        score++;
+    }
 
-    score++;
+    document.querySelectorAll(".answer-button").forEach(btn => {
+        btn.disabled = true;
 
-}
-        feedbackBox.textContent = "Correct. " + question.feedback;
+        if (btn.textContent === question.answer) {
+            btn.classList.add("correct-answer");
+        }
+
+        if (btn.textContent === selectedAnswer && selectedAnswer !== question.answer) {
+            btn.classList.add("incorrect-answer");
+        }
+    });
+
+    if (isCorrect) {
+        feedbackBox.innerHTML =
+            "<strong>Correct!</strong><br>" +
+            question.feedback;
+
         feedbackBox.className = "feedback-box correct";
     } else {
-        feedbackBox.textContent =
-            "Not quite. The correct answer is: " +
+        feedbackBox.innerHTML =
+            "<strong>Not quite.</strong><br>" +
+            "The correct answer is: <strong>" +
             question.answer +
-            ". " +
+            "</strong><br>" +
             question.feedback;
 
         feedbackBox.className = "feedback-box incorrect";
     }
-const checkButton =
-    document.getElementById("checkAnswerButton");
 
-checkButton.textContent = "Next Question";
-
-checkButton.removeEventListener("click", checkAnswer);
-
-checkButton.addEventListener("click", nextQuestion);
     feedbackBox.classList.remove("hidden");
-}
-function nextQuestion(){
 
+    submitButton.textContent =
+        currentQuestionIndex === activity.questions.length - 1
+            ? "Show Results"
+            : "Next Question";
+
+    submitButton.removeEventListener("click", submitAnswer);
+    submitButton.addEventListener("click", nextQuestion);
+}
+
+function nextQuestion() {
     currentQuestionIndex++;
 
-    if(currentQuestionIndex >= activity.questions.length){
-
+    if (currentQuestionIndex >= activity.questions.length) {
         showResults();
         return;
-
     }
 
     showQuestion(currentQuestionIndex);
-
 }
-function showResults(){
 
-    document
-        .getElementById("questionArea")
-        .classList.add("hidden");
+function showResults() {
+    document.getElementById("questionArea").classList.add("hidden");
+    document.getElementById("resultsArea").classList.remove("hidden");
 
-    document
-        .getElementById("resultsArea")
-        .classList.remove("hidden");
+    const percentage = Math.round((score / activity.questions.length) * 100);
 
-    document
-        .getElementById("resultsSummary")
-        .innerHTML =
-
-        "<strong>" +
-        student.name +
-        "</strong><br><br>" +
-
-        "Score: <strong>" +
-
-        score +
-
-        " / " +
-
-        activity.questions.length +
-
-        "</strong>";
-
+    document.getElementById("resultsSummary").innerHTML =
+        "<strong>" + student.name + "</strong><br>" +
+        "Class: " + student.className + "<br><br>" +
+        "Score: <strong>" + score + " / " + activity.questions.length + "</strong><br>" +
+        "Percentage: <strong>" + percentage + "%</strong>";
 }
