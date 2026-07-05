@@ -179,7 +179,51 @@ button:hover {
     color: #c62828;
     font-weight: bold;
 }
+/* ===== PROGRESS BAR ===== */
 
+.progress-section {
+
+    margin-bottom: 28px;
+
+}
+
+.progress-header {
+
+    display:flex;
+
+    justify-content:space-between;
+
+    font-weight:bold;
+
+    margin-bottom:8px;
+
+}
+
+.progress-bar{
+
+    width:100%;
+
+    height:14px;
+
+    background:#dde7f2;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+#progressFill{
+
+    width:0%;
+
+    height:100%;
+
+    background:linear-gradient(90deg,#1565c0,#00acc1);
+
+    transition:width .35s ease;
+
+}
 /* ===== FOOTER ===== */
 
 .footer {
