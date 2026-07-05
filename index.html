@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StudyBuddy 3000 V0.1</title>
-
+    <title>StudyBuddy 3000</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,13 +11,35 @@
 
 <div class="container">
 
-    <h1 id="activityTitle">Loading...</h1>
+    <header class="hero">
+        <p class="brand">StudyBuddy 3000</p>
+        <h1 id="activityTitle">Loading...</h1>
+        <p id="activityInfo"></p>
+    </header>
 
-    <p id="activityInfo"></p>
+    <section id="studentEntry" class="card">
+        <h2>Start Activity</h2>
+
+        <label for="studentName">Student name</label>
+        <input id="studentName" type="text" placeholder="Enter your name">
+
+        <label for="studentClass">Class</label>
+        <input id="studentClass" type="text" placeholder="Enter your class">
+
+        <button id="startButton">Start Activity</button>
+
+        <p id="entryError" class="error-message"></p>
+    </section>
+
+    <section id="questionArea" class="card hidden">
+        <p id="questionProgress"></p>
+        <h2 id="questionText"></h2>
+        <div id="answerArea"></div>
+    </section>
 
 </div>
 
 <script src="script.js"></script>
- 
+
 </body>
 </html>
