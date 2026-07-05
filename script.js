@@ -1,3 +1,4 @@
+let score = 0;
 let activity = null;
 let currentQuestionIndex = 0;
 let selectedAnswer = null;
@@ -123,6 +124,11 @@ function checkAnswer() {
 });
 
     if (isCorrect) {
+        if(isCorrect){
+
+    score++;
+
+}
         feedbackBox.textContent = "Correct. " + question.feedback;
         feedbackBox.className = "feedback-box correct";
     } else {
@@ -156,5 +162,34 @@ function nextQuestion(){
     }
 
     showQuestion(currentQuestionIndex);
+
+}
+function showResults(){
+
+    document
+        .getElementById("questionArea")
+        .classList.add("hidden");
+
+    document
+        .getElementById("resultsArea")
+        .classList.remove("hidden");
+
+    document
+        .getElementById("resultsSummary")
+        .innerHTML =
+
+        "<strong>" +
+        student.name +
+        "</strong><br><br>" +
+
+        "Score: <strong>" +
+
+        score +
+
+        " / " +
+
+        activity.questions.length +
+
+        "</strong>";
 
 }
