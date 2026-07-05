@@ -164,14 +164,32 @@ button:hover {
     background: #fff8e1;
     color: #795548;
 }
-.footer{
+/* ===== FOOTER ===== */
 
-    text-align:center;
+html,
+body {
+    height: 100%;
+}
 
-    margin:40px 0;
+body {
+    display: flex;
+    flex-direction: column;
+}
 
-    color:#607d8b;
+.container {
+    flex: 1;
+}
 
-    font-size:0.85rem;
+.footer {
+
+    text-align: center;
+
+    color: #607d8b;
+
+    font-size: 0.85rem;
+
+    padding: 20px;
+
+    margin-top: auto;
 
 }
