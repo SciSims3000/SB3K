@@ -101,3 +101,43 @@ button:hover {
     color: #c62828;
     font-weight: bold;
 }
+.answer-button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: #eef4fb;
+    color: #102a43;
+    border: 2px solid transparent;
+    margin-top: 12px;
+}
+
+.answer-button:hover {
+    background: #d9ecff;
+}
+
+.answer-button.selected {
+    border-color: #1565c0;
+    background: #d9ecff;
+}
+
+.feedback-box {
+    margin-top: 20px;
+    padding: 16px;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.feedback-box.correct {
+    background: #e8f5e9;
+    color: #1b5e20;
+}
+
+.feedback-box.incorrect {
+    background: #ffebee;
+    color: #b71c1c;
+}
+
+.feedback-box.warning {
+    background: #fff8e1;
+    color: #795548;
+}
