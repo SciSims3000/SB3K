@@ -1,3 +1,8 @@
+const RESULTS_ENDPOINT =
+    "https://script.google.com/macros/s/AKfycbyxESB79OXK5yIKgEEHxYi6QEUI3YSZ4UTvhe9uIFTDeDUU0LLsh5HHGIA90NYCY4wiSg/exec";
+
+const PLATFORM_VERSION = "0.3.1";
+
 let activity = null;
 let activityQuestions = [];
 
@@ -9,6 +14,9 @@ let sessionId = "";
 let sessionStartedAt = "";
 let sessionCompletedAt = "";
 
+let finalResultPacket = null;
+let submissionInProgress = false;
+
 const student = {
     studentId: "",
     name: "",
@@ -17,7 +25,6 @@ const student = {
 };
 
 let studentResponses = [];
-let finalResultPacket = null;
 
 /* ===== ACTIVITY LOADING ===== */
 
@@ -171,8 +178,8 @@ function createNewSession() {
         new Date().toISOString();
 
     sessionCompletedAt = "";
-
     finalResultPacket = null;
+    submissionInProgress = false;
 
     console.log(
         "Session started:",
@@ -222,6 +229,8 @@ function resetQuizState() {
     document
         .getElementById("revisionSection")
         .classList.add("hidden");
+
+    resetSubmissionStatus();
 }
 
 function prepareActivityQuestions() {
@@ -801,6 +810,122 @@ function showResults() {
         "SB3K result packet:",
         finalResultPacket
     );
+
+    submitResultPacket(
+        finalResultPacket
+    );
+}
+
+/* ===== GOOGLE SHEETS SUBMISSION ===== */
+
+async function submitResultPacket(packet) {
+    if (
+        submissionInProgress ||
+        !packet
+    ) {
+        return;
+    }
+
+    submissionInProgress = true;
+
+    setSubmissionStatus(
+        "sending",
+        "Sending results…",
+        "Please keep this page open while your results are sent."
+    );
+
+    try {
+        await fetch(
+            RESULTS_ENDPOINT,
+            {
+                method: "POST",
+                mode: "no-cors",
+                headers: {
+                    "Content-Type":
+                        "text/plain;charset=utf-8"
+                },
+                body:
+                    JSON.stringify(packet)
+            }
+        );
+
+        setSubmissionStatus(
+            "success",
+            "Results sent",
+            "Your results have been sent to your teacher."
+        );
+
+        console.log(
+            "Result submission request sent:",
+            packet.session.id
+        );
+    } catch (error) {
+        console.error(
+            "Result submission error:",
+            error
+        );
+
+        setSubmissionStatus(
+            "error",
+            "Results could not be sent",
+            "Keep this page open and ask your teacher for assistance."
+        );
+    } finally {
+        submissionInProgress = false;
+    }
+}
+
+function setSubmissionStatus(
+    state,
+    title,
+    message
+) {
+    const statusBox =
+        document.getElementById(
+            "submissionStatus"
+        );
+
+    const titleElement =
+        document.getElementById(
+            "submissionStatusTitle"
+        );
+
+    const messageElement =
+        document.getElementById(
+            "submissionStatusMessage"
+        );
+
+    statusBox.className =
+        "submission-status " +
+        state;
+
+    titleElement.textContent =
+        title;
+
+    messageElement.textContent =
+        message;
+
+    statusBox.classList.remove(
+        "hidden"
+    );
+}
+
+function resetSubmissionStatus() {
+    const statusBox =
+        document.getElementById(
+            "submissionStatus"
+        );
+
+    statusBox.className =
+        "submission-status hidden";
+
+    document.getElementById(
+        "submissionStatusTitle"
+    ).textContent = "";
+
+    document.getElementById(
+        "submissionStatusMessage"
+    ).textContent = "";
 }
 
 /* ===== RESULT PACKET ===== */
@@ -816,7 +941,7 @@ function buildResultPacket({
             "1.0",
 
         platformVersion:
-            "0.3.0",
+            PLATFORM_VERSION,
 
         session: {
             id:
@@ -1216,10 +1341,9 @@ function renderRevisionSuggestions(
     areasToRevise.forEach(
         result => {
             const listItem =
-                document
-                    .createElement(
-                        "li"
-                    );
+                document.createElement(
+                    "li"
+                );
 
             listItem.innerHTML =
                 "<strong>" +
@@ -1231,10 +1355,9 @@ function renderRevisionSuggestions(
                 result.percentage +
                 "%";
 
-            revisionList
-                .appendChild(
-                    listItem
-                );
+            revisionList.appendChild(
+                listItem
+            );
         }
     );
 
@@ -1290,6 +1413,7 @@ function returnToStart() {
     sessionStartedAt = "";
     sessionCompletedAt = "";
     finalResultPacket = null;
+    submissionInProgress = false;
 
     student.studentId = "";
     student.name = "";
