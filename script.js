@@ -76,6 +76,7 @@ function startActivity() {
     }
 
     const hasStudentId = studentIdInput.length > 0;
+
     const hasNameAndClass =
         nameInput.length > 0 &&
         classInput.length > 0;
@@ -120,6 +121,13 @@ function resetQuizState() {
     selectedAnswer = null;
     score = 0;
     studentResponses = [];
+
+    document.getElementById("curriculumResults").innerHTML = "";
+    document.getElementById("revisionList").innerHTML = "";
+
+    document
+        .getElementById("revisionSection")
+        .classList.add("hidden");
 }
 
 function showQuestion(index) {
@@ -129,6 +137,7 @@ function showQuestion(index) {
 
     const current = index + 1;
     const total = activity.questions.length;
+
     const percent = Math.round(
         (current / total) * 100
     );
@@ -190,6 +199,7 @@ function showQuestion(index) {
         document.createElement("div");
 
     feedbackBox.id = "feedbackBox";
+
     feedbackBox.classList.add(
         "feedback-box",
         "hidden"
@@ -388,6 +398,223 @@ function showResults() {
         "resultPerformance"
     ).textContent =
         performanceMessage;
+
+    const curriculumResults =
+        calculateCurriculumResults();
+
+    renderCurriculumResults(
+        curriculumResults
+    );
+
+    renderRevisionSuggestions(
+        curriculumResults
+    );
+}
+
+function calculateCurriculumResults() {
+    const results = {};
+
+    studentResponses.forEach(response => {
+        response.curriculum.forEach(curriculumItem => {
+            const curriculumId =
+                curriculumItem.id;
+
+            if (!results[curriculumId]) {
+                results[curriculumId] = {
+                    id: curriculumId,
+                    name: curriculumItem.name,
+                    marksAwarded: 0,
+                    marksAvailable: 0,
+                    correctQuestions: 0,
+                    totalQuestions: 0
+                };
+            }
+
+            results[curriculumId].marksAwarded +=
+                response.marksAwarded;
+
+            results[curriculumId].marksAvailable +=
+                response.marksAvailable;
+
+            results[curriculumId].totalQuestions += 1;
+
+            if (response.isCorrect) {
+                results[curriculumId].correctQuestions += 1;
+            }
+        });
+    });
+
+    return Object.values(results).map(result => {
+        const percentage =
+            result.marksAvailable > 0
+                ? Math.round(
+                    (
+                        result.marksAwarded /
+                        result.marksAvailable
+                    ) * 100
+                )
+                : 0;
+
+        return {
+            ...result,
+            percentage: percentage
+        };
+    });
+}
+
+function renderCurriculumResults(results) {
+    const container =
+        document.getElementById("curriculumResults");
+
+    container.innerHTML = "";
+
+    results.forEach(result => {
+        const item =
+            document.createElement("article");
+
+        item.classList.add(
+            "curriculum-result-item"
+        );
+
+        const headingRow =
+            document.createElement("div");
+
+        headingRow.classList.add(
+            "curriculum-result-header"
+        );
+
+        const titleGroup =
+            document.createElement("div");
+
+        const name =
+            document.createElement("strong");
+
+        name.textContent =
+            result.name;
+
+        const code =
+            document.createElement("span");
+
+        code.classList.add(
+            "curriculum-code"
+        );
+
+        code.textContent =
+            result.id;
+
+        titleGroup.appendChild(name);
+        titleGroup.appendChild(code);
+
+        const percentage =
+            document.createElement("strong");
+
+        percentage.classList.add(
+            "curriculum-percentage"
+        );
+
+        percentage.textContent =
+            result.percentage + "%";
+
+        headingRow.appendChild(titleGroup);
+        headingRow.appendChild(percentage);
+
+        const detail =
+            document.createElement("p");
+
+        detail.classList.add(
+            "curriculum-detail"
+        );
+
+        detail.textContent =
+            result.correctQuestions +
+            " of " +
+            result.totalQuestions +
+            " questions correct";
+
+        const progressTrack =
+            document.createElement("div");
+
+        progressTrack.classList.add(
+            "curriculum-progress-track"
+        );
+
+        const progressFill =
+            document.createElement("div");
+
+        progressFill.classList.add(
+            "curriculum-progress-fill"
+        );
+
+        progressFill.style.width =
+            result.percentage + "%";
+
+        progressFill.classList.add(
+            getCurriculumPerformanceClass(
+                result.percentage
+            )
+        );
+
+        progressTrack.appendChild(progressFill);
+
+        item.appendChild(headingRow);
+        item.appendChild(detail);
+        item.appendChild(progressTrack);
+
+        container.appendChild(item);
+    });
+}
+
+function renderRevisionSuggestions(results) {
+    const revisionSection =
+        document.getElementById("revisionSection");
+
+    const revisionList =
+        document.getElementById("revisionList");
+
+    revisionList.innerHTML = "";
+
+    const areasToRevise =
+        results
+            .filter(result => result.percentage < 75)
+            .sort(
+                (first, second) =>
+                    first.percentage -
+                    second.percentage
+            );
+
+    if (areasToRevise.length === 0) {
+        revisionSection.classList.add("hidden");
+        return;
+    }
+
+    areasToRevise.forEach(result => {
+        const listItem =
+            document.createElement("li");
+
+        listItem.innerHTML =
+            "<strong>" +
+            escapeHtml(result.name) +
+            "</strong>" +
+            " — " +
+            result.percentage +
+            "%";
+
+        revisionList.appendChild(listItem);
+    });
+
+    revisionSection.classList.remove("hidden");
+}
+
+function getCurriculumPerformanceClass(percentage) {
+    if (percentage >= 75) {
+        return "curriculum-strong";
+    }
+
+    if (percentage >= 50) {
+        return "curriculum-developing";
+    }
+
+    return "curriculum-revise";
 }
 
 function getPerformanceMessage(percentage) {
