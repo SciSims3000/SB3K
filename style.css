@@ -454,10 +454,18 @@ button:focus-visible {
     margin-top: auto;
 }
 
-.footer-icon {
-    width: 34px;
-    height: 34px;
-    border-radius: 8px;
+.footer .footer-icon {
+    width: 30px !important;
+    height: 30px !important;
+    max-width: 30px !important;
+    max-height: 30px !important;
+    min-width: 30px;
+    min-height: 30px;
+
+    display: block;
+    flex: 0 0 30px;
+
+    border-radius: 7px;
     object-fit: cover;
 }
 
