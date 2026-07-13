@@ -12,7 +12,7 @@
   "allowBack": true,
   "showFinalScore": true,
   "feedback": {
-    "afterEachQuestion": true,
+    "afterEachQuestion": false,
     "onResultsScreen": true,
     "showCorrectAnswers": true,
     "showExplanations": true
