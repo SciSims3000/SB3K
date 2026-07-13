@@ -9,12 +9,13 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    color: #102a43;
 }
 
 .container {
-    max-width: 900px;
-    margin: auto;
-    padding: 40px;
+    width: min(900px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 40px 0;
     flex: 1;
 }
 
@@ -40,7 +41,7 @@ body {
     letter-spacing: 0.12em;
     font-size: 0.8rem;
     font-weight: bold;
-    margin: 0 0 10px 0;
+    margin: 0 0 10px;
     opacity: 0.9;
 }
 
@@ -75,11 +76,20 @@ h1 {
 
 /* ===== FORMS ===== */
 
+.identification-option {
+    margin-bottom: 10px;
+}
+
 label {
     display: block;
     font-weight: bold;
     margin-top: 16px;
     margin-bottom: 6px;
+}
+
+.optional-label {
+    font-weight: normal;
+    color: #607d8b;
 }
 
 input {
@@ -89,6 +99,33 @@ input {
     border: 1px solid #cfd8dc;
     border-radius: 10px;
     box-sizing: border-box;
+}
+
+input:focus {
+    outline: 3px solid rgba(21, 101, 192, 0.18);
+    border-color: #1565c0;
+}
+
+.or-divider {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 26px 0 8px;
+    color: #607d8b;
+    font-weight: bold;
+}
+
+.or-divider::before,
+.or-divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #d9e2ec;
+}
+
+.entry-help {
+    color: #607d8b;
+    margin: 20px 0 0;
 }
 
 /* ===== BUTTONS ===== */
@@ -103,11 +140,33 @@ button {
     background: #1565c0;
     color: white;
     cursor: pointer;
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
 }
 
-button:hover {
+button:hover:not(:disabled) {
     background: #0d47a1;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 14px rgba(13, 71, 161, 0.2);
 }
+
+button:focus-visible {
+    outline: 3px solid rgba(21, 101, 192, 0.3);
+    outline-offset: 3px;
+}
+
+.secondary-button {
+    background: #e6eef7;
+    color: #12324a;
+}
+
+.secondary-button:hover:not(:disabled) {
+    background: #d5e3f1;
+}
+
+/* ===== ANSWERS ===== */
 
 .answer-button {
     display: block;
@@ -119,7 +178,7 @@ button:hover {
     margin-top: 12px;
 }
 
-.answer-button:hover {
+.answer-button:hover:not(:disabled) {
     background: #d9ecff;
 }
 
@@ -143,6 +202,35 @@ button:hover {
 .answer-button:disabled {
     cursor: default;
     opacity: 1;
+}
+
+/* ===== PROGRESS ===== */
+
+.progress-section {
+    margin-bottom: 28px;
+}
+
+.progress-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 14px;
+    background: #dde7f2;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#progressFill {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, #1565c0, #00acc1);
+    transition: width 0.35s ease;
 }
 
 /* ===== FEEDBACK ===== */
@@ -169,61 +257,77 @@ button:hover {
     color: #795548;
 }
 
+/* ===== RESULTS ===== */
+
+.results-card {
+    text-align: center;
+}
+
+.results-icon {
+    font-size: 3rem;
+    margin: 0 0 8px;
+}
+
+.results-card h2 {
+    font-size: 2rem;
+    margin: 0 0 10px;
+}
+
+.results-greeting {
+    margin: 0 0 26px;
+    color: #486581;
+    font-size: 1.1rem;
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    text-align: left;
+}
+
+.result-item {
+    background: #f4f8fc;
+    border: 1px solid #d9e2ec;
+    border-radius: 12px;
+    padding: 18px;
+}
+
+.result-label {
+    display: block;
+    color: #607d8b;
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+}
+
+.result-item strong {
+    font-size: 1.2rem;
+}
+
+.results-actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.results-actions button {
+    min-width: 160px;
+}
+
+/* ===== MESSAGES ===== */
+
+.error-message {
+    color: #c62828;
+    font-weight: bold;
+}
+
 /* ===== UTILITY ===== */
 
 .hidden {
     display: none;
 }
 
-.error-message {
-    color: #c62828;
-    font-weight: bold;
-}
-/* ===== PROGRESS BAR ===== */
-
-.progress-section {
-
-    margin-bottom: 28px;
-
-}
-
-.progress-header {
-
-    display:flex;
-
-    justify-content:space-between;
-
-    font-weight:bold;
-
-    margin-bottom:8px;
-
-}
-
-.progress-bar{
-
-    width:100%;
-
-    height:14px;
-
-    background:#dde7f2;
-
-    border-radius:20px;
-
-    overflow:hidden;
-
-}
-
-#progressFill{
-
-    width:0%;
-
-    height:100%;
-
-    background:linear-gradient(90deg,#1565c0,#00acc1);
-
-    transition:width .35s ease;
-
-}
 /* ===== FOOTER ===== */
 
 .footer {
@@ -232,4 +336,38 @@ button:hover {
     font-size: 0.85rem;
     padding: 20px;
     margin-top: auto;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 650px) {
+    .container {
+        width: min(100% - 24px, 900px);
+        padding: 20px 0;
+    }
+
+    .hero-banner {
+        padding: 32px 20px;
+        border-radius: 18px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .card {
+        padding: 22px;
+    }
+
+    .results-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .results-actions {
+        flex-direction: column;
+    }
+
+    .results-actions button {
+        width: 100%;
+    }
 }
