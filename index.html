@@ -147,7 +147,15 @@
             id="resultsGreeting"
             class="results-greeting"
         ></p>
-
+        <section
+            id="submissionStatus"
+            class="submission-status hidden"
+            role="status"
+            aria-live="polite"
+        >
+            <strong id="submissionStatusTitle"></strong>
+            <p id="submissionStatusMessage"></p>
+        </section>
         <div class="results-grid">
 
             <div class="result-item">
@@ -211,15 +219,7 @@
             <ul id="revisionList"></ul>
         </section>
 
-        <section
-            id="submissionStatus"
-            class="submission-status hidden"
-            role="status"
-            aria-live="polite"
-        >
-            <strong id="submissionStatusTitle"></strong>
-            <p id="submissionStatusMessage"></p>
-        </section>
+
 
         <div class="results-actions">
             <button id="tryAgainButton">
