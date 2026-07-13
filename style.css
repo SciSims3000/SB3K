@@ -204,7 +204,7 @@ button:focus-visible {
     opacity: 1;
 }
 
-/* ===== PROGRESS ===== */
+/* ===== QUESTION PROGRESS ===== */
 
 .progress-section {
     margin-bottom: 28px;
@@ -336,12 +336,18 @@ button:focus-visible {
     margin: 0 0 24px;
 }
 
+#curriculumResults {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
 .curriculum-result-item {
     background: #f8fbfe;
     border: 1px solid #d9e2ec;
     border-radius: 12px;
     padding: 18px;
-    margin-bottom: 14px;
+    margin: 0;
 }
 
 .curriculum-result-header {
@@ -374,29 +380,24 @@ button:focus-visible {
 }
 
 .curriculum-progress-track {
+    display: flex;
     width: 100%;
-    height: 12px;
+    height: 14px;
     background: #dde7f2;
     border-radius: 20px;
     overflow: hidden;
 }
 
-.curriculum-progress-fill {
+.curriculum-progress-correct {
     height: 100%;
-    border-radius: 20px;
+    background: #32c553;
     transition: width 0.4s ease;
 }
 
-.curriculum-strong {
-    background: #2e7d32;
-}
-
-.curriculum-developing {
-    background: #f9a825;
-}
-
-.curriculum-revise {
-    background: #c62828;
+.curriculum-progress-incorrect {
+    height: 100%;
+    background: #e53935;
+    transition: width 0.4s ease;
 }
 
 /* ===== REVISION ===== */
@@ -469,6 +470,10 @@ button:focus-visible {
     }
 
     .results-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #curriculumResults {
         grid-template-columns: 1fr;
     }
 
