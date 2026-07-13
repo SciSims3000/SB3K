@@ -281,12 +281,22 @@ function submitAnswer() {
         feedbackBox.className =
             "feedback-box warning";
 
-        feedbackBox.classList.remove(
-            "hidden"
-        );
+        feedbackBox.classList.remove("hidden");
 
         return;
     }
+
+    const feedbackSettings =
+        activity.settings?.feedback || {};
+
+    const showImmediateFeedback =
+        feedbackSettings.afterEachQuestion !== false;
+
+    const showCorrectAnswers =
+        feedbackSettings.showCorrectAnswers !== false;
+
+    const showExplanations =
+        feedbackSettings.showExplanations !== false;
 
     const isCorrect =
         selectedAnswer === question.answer;
@@ -297,95 +307,93 @@ function submitAnswer() {
             : 0;
 
     if (isCorrect) {
-        score +=
-            question.marks;
+        score += question.marks;
     }
 
     studentResponses.push({
-        questionId:
-            question.id,
-
-        questionText:
-            question.question,
-
-        selectedAnswer:
-            selectedAnswer,
-
-        correctAnswer:
-            question.answer,
-
-        isCorrect:
-            isCorrect,
-
-        marksAwarded:
-            marksAwarded,
-
-        marksAvailable:
-            question.marks,
-
-        curriculum:
-            question.curriculum || []
+        questionId: question.id,
+        questionText: question.question,
+        selectedAnswer: selectedAnswer,
+        correctAnswer: question.answer,
+        isCorrect: isCorrect,
+        marksAwarded: marksAwarded,
+        marksAvailable: question.marks,
+        curriculum: question.curriculum || []
     });
 
-    console.table(
-        studentResponses
-    );
+    console.table(studentResponses);
 
     document
         .querySelectorAll(".answer-button")
         .forEach(button => {
-            button.disabled =
-                true;
+            button.disabled = true;
 
-            if (
-                button.textContent ===
-                question.answer
-            ) {
-                button.classList.add(
-                    "correct-answer"
-                );
+            if (!showImmediateFeedback) {
+                button.classList.remove("selected");
+                return;
             }
 
             if (
-                button.textContent ===
-                    selectedAnswer &&
-                selectedAnswer !==
-                    question.answer
+                showCorrectAnswers &&
+                button.textContent === question.answer
             ) {
-                button.classList.add(
-                    "incorrect-answer"
-                );
+                button.classList.add("correct-answer");
+            }
+
+            if (
+                button.textContent === selectedAnswer &&
+                selectedAnswer !== question.answer
+            ) {
+                button.classList.add("incorrect-answer");
             }
         });
 
-    if (isCorrect) {
-        feedbackBox.innerHTML =
-            "<strong>Correct!</strong><br>" +
-            escapeHtml(
-                question.feedback
-            );
+    if (showImmediateFeedback) {
+        if (isCorrect) {
+            feedbackBox.innerHTML =
+                "<strong>Correct!</strong>" +
+                (
+                    showExplanations && question.feedback
+                        ? "<br>" + escapeHtml(question.feedback)
+                        : ""
+                );
 
-        feedbackBox.className =
-            "feedback-box correct";
+            feedbackBox.className =
+                "feedback-box correct";
+        } else {
+            let feedbackHtml =
+                "<strong>Not quite.</strong>";
+
+            if (showCorrectAnswers) {
+                feedbackHtml +=
+                    "<br>The correct answer is: <strong>" +
+                    escapeHtml(question.answer) +
+                    "</strong>";
+            }
+
+            if (
+                showExplanations &&
+                question.feedback
+            ) {
+                feedbackHtml +=
+                    "<br>" +
+                    escapeHtml(question.feedback);
+            }
+
+            feedbackBox.innerHTML =
+                feedbackHtml;
+
+            feedbackBox.className =
+                "feedback-box incorrect";
+        }
+
+        feedbackBox.classList.remove("hidden");
     } else {
-        feedbackBox.innerHTML =
-            "<strong>Not quite.</strong><br>" +
-            "The correct answer is: <strong>" +
-            escapeHtml(
-                question.answer
-            ) +
-            "</strong><br>" +
-            escapeHtml(
-                question.feedback
-            );
-
         feedbackBox.className =
-            "feedback-box incorrect";
-    }
+            "feedback-box hidden";
 
-    feedbackBox.classList.remove(
-        "hidden"
-    );
+        feedbackBox.textContent = "";
+    }
 
     submitButton.textContent =
         currentQuestionIndex ===
