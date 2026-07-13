@@ -2,9 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
     <title>StudyBuddy 3000</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="icon3K.png"
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
 </head>
 
 <body>
@@ -14,34 +29,96 @@
     <header class="hero-banner">
         <div class="hero-content">
             <p class="brand">StudyBuddy 3000</p>
-            <h1 id="activityTitle">Loading...</h1>
-            <p class="tagline">Learning • Practice • Grow</p>
+
+            <h1 id="activityTitle">
+                Loading...
+            </h1>
+
+            <p class="tagline">
+                Learning • Practice • Grow
+            </p>
+
             <p id="activityInfo"></p>
         </div>
     </header>
 
-    <section id="studentEntry" class="card">
+    <section
+        id="studentEntry"
+        class="card"
+    >
         <h2>Start Activity</h2>
 
-        <label for="studentName">Student name</label>
-        <input id="studentName" type="text" placeholder="Enter your name">
+        <div class="identification-option">
+            <label for="studentId">
+                Student ID
+                <span class="optional-label">(optional)</span>
+            </label>
 
-        <label for="studentClass">Class</label>
-        <input id="studentClass" type="text" placeholder="Enter your class">
+            <input
+                id="studentId"
+                type="text"
+                placeholder="Enter your Student ID"
+                autocomplete="off"
+            >
+        </div>
 
-        <button id="startButton">Start Activity</button>
+        <div class="or-divider">
+            <span>OR</span>
+        </div>
 
-        <p id="entryError" class="error-message"></p>
+        <div class="identification-option">
+            <label for="studentName">
+                Student name
+            </label>
+
+            <input
+                id="studentName"
+                type="text"
+                placeholder="Enter your name"
+                autocomplete="name"
+            >
+
+            <label for="studentClass">
+                Class
+            </label>
+
+            <input
+                id="studentClass"
+                type="text"
+                placeholder="Enter your class"
+                autocomplete="off"
+            >
+        </div>
+
+        <p class="entry-help">
+            Enter your Student ID, or enter both your name and class.
+        </p>
+
+        <button id="startButton">
+            Start Activity
+        </button>
+
+        <p
+            id="entryError"
+            class="error-message"
+            role="alert"
+        ></p>
     </section>
 
-    <section id="questionArea" class="card hidden">
+    <section
+        id="questionArea"
+        class="card hidden"
+    >
         <div class="progress-section">
             <div class="progress-header">
                 <span id="questionProgress"></span>
                 <span id="progressPercent"></span>
             </div>
 
-            <div class="progress-bar">
+            <div
+                class="progress-bar"
+                aria-hidden="true"
+            >
                 <div id="progressFill"></div>
             </div>
         </div>
@@ -51,9 +128,67 @@
         <div id="answerArea"></div>
     </section>
 
-    <section id="resultsArea" class="card hidden">
+    <section
+        id="resultsArea"
+        class="card results-card hidden"
+    >
+        <p class="results-icon" aria-hidden="true">
+            🎉
+        </p>
+
         <h2>Activity Complete</h2>
-        <p id="resultsSummary"></p>
+
+        <p
+            id="resultsGreeting"
+            class="results-greeting"
+        ></p>
+
+        <div class="results-grid">
+            <div class="result-item">
+                <span class="result-label">
+                    Identification
+                </span>
+
+                <strong id="resultIdentity"></strong>
+            </div>
+
+            <div class="result-item">
+                <span class="result-label">
+                    Score
+                </span>
+
+                <strong id="resultScore"></strong>
+            </div>
+
+            <div class="result-item">
+                <span class="result-label">
+                    Percentage
+                </span>
+
+                <strong id="resultPercentage"></strong>
+            </div>
+
+            <div class="result-item">
+                <span class="result-label">
+                    Performance
+                </span>
+
+                <strong id="resultPerformance"></strong>
+            </div>
+        </div>
+
+        <div class="results-actions">
+            <button id="tryAgainButton">
+                Try Again
+            </button>
+
+            <button
+                id="returnStartButton"
+                class="secondary-button"
+            >
+                Return to Start
+            </button>
+        </div>
     </section>
 
 </div>
