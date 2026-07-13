@@ -441,11 +441,39 @@ button:focus-visible {
 /* ===== FOOTER ===== */
 
 .footer {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    text-align: left;
     color: #607d8b;
     font-size: 0.85rem;
+
     padding: 20px;
     margin-top: auto;
+}
+
+.footer-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.footer-text strong {
+    color: #486581;
+    font-size: 0.85rem;
+}
+
+.footer-text span {
+    font-size: 0.8rem;
 }
 
 /* ===== RESPONSIVE ===== */
