@@ -5,6 +5,10 @@ let currentQuestionIndex = 0;
 let selectedAnswer = null;
 let score = 0;
 
+let sessionId = "";
+let sessionStartedAt = "";
+let sessionCompletedAt = "";
+
 const student = {
     studentId: "",
     name: "",
@@ -13,6 +17,7 @@ const student = {
 };
 
 let studentResponses = [];
+let finalResultPacket = null;
 
 /* ===== ACTIVITY LOADING ===== */
 
@@ -41,7 +46,10 @@ fetch("activities/demo-science-7-1.json")
             activity.topic;
     })
     .catch(error => {
-        console.error("Activity loading error:", error);
+        console.error(
+            "Activity loading error:",
+            error
+        );
 
         document.getElementById("activityTitle").textContent =
             "Activity could not be loaded.";
@@ -54,27 +62,45 @@ fetch("activities/demo-science-7-1.json")
 
 document
     .getElementById("startButton")
-    .addEventListener("click", startActivity);
+    .addEventListener(
+        "click",
+        startActivity
+    );
 
 document
     .getElementById("tryAgainButton")
-    .addEventListener("click", tryAgain);
+    .addEventListener(
+        "click",
+        tryAgain
+    );
 
 document
     .getElementById("returnStartButton")
-    .addEventListener("click", returnToStart);
+    .addEventListener(
+        "click",
+        returnToStart
+    );
 
 /* ===== STUDENT ENTRY ===== */
 
 function startActivity() {
     const studentIdInput =
-        document.getElementById("studentId").value.trim();
+        document
+            .getElementById("studentId")
+            .value
+            .trim();
 
     const nameInput =
-        document.getElementById("studentName").value.trim();
+        document
+            .getElementById("studentName")
+            .value
+            .trim();
 
     const classInput =
-        document.getElementById("studentClass").value.trim();
+        document
+            .getElementById("studentClass")
+            .value
+            .trim();
 
     const errorBox =
         document.getElementById("entryError");
@@ -115,6 +141,7 @@ function startActivity() {
             : "nameAndClass";
 
     resetQuizState();
+    createNewSession();
     prepareActivityQuestions();
 
     errorBox.textContent = "";
@@ -132,6 +159,46 @@ function startActivity() {
         .classList.remove("hidden");
 
     showQuestion(currentQuestionIndex);
+}
+
+/* ===== SESSION MANAGEMENT ===== */
+
+function createNewSession() {
+    sessionId =
+        generateSessionId();
+
+    sessionStartedAt =
+        new Date().toISOString();
+
+    sessionCompletedAt = "";
+
+    finalResultPacket = null;
+
+    console.log(
+        "Session started:",
+        sessionId
+    );
+}
+
+function generateSessionId() {
+    const datePart =
+        new Date()
+            .toISOString()
+            .slice(0, 10)
+            .replaceAll("-", "");
+
+    const randomPart =
+        Math.random()
+            .toString(36)
+            .slice(2, 8)
+            .toUpperCase();
+
+    return (
+        "SB3K-" +
+        datePart +
+        "-" +
+        randomPart
+    );
 }
 
 /* ===== QUIZ SETUP ===== */
@@ -162,10 +229,12 @@ function prepareActivityQuestions() {
         cloneData(activity.questions);
 
     const shuffleQuestions =
-        activity.settings?.shuffleQuestions === true;
+        activity.settings
+            ?.shuffleQuestions === true;
 
     const shuffleOptions =
-        activity.settings?.shuffleOptions === true;
+        activity.settings
+            ?.shuffleOptions === true;
 
     if (shuffleQuestions) {
         shuffleArray(activityQuestions);
@@ -173,20 +242,31 @@ function prepareActivityQuestions() {
 
     if (shuffleOptions) {
         activityQuestions.forEach(question => {
-            if (Array.isArray(question.options)) {
-                shuffleArray(question.options);
+            if (
+                Array.isArray(
+                    question.options
+                )
+            ) {
+                shuffleArray(
+                    question.options
+                );
             }
         });
     }
 
     console.log(
         "Question order:",
-        activityQuestions.map(question => question.id)
+        activityQuestions.map(
+            question => question.id
+        )
     );
 }
 
 function cloneData(data) {
-    if (typeof structuredClone === "function") {
+    if (
+        typeof structuredClone ===
+        "function"
+    ) {
         return structuredClone(data);
     }
 
@@ -197,8 +277,11 @@ function cloneData(data) {
 
 function shuffleArray(array) {
     for (
-        let currentIndex = array.length - 1;
+        let currentIndex =
+            array.length - 1;
+
         currentIndex > 0;
+
         currentIndex--
     ) {
         const randomIndex =
@@ -262,13 +345,17 @@ function showQuestion(index) {
         question.question;
 
     const answerArea =
-        document.getElementById("answerArea");
+        document.getElementById(
+            "answerArea"
+        );
 
     answerArea.innerHTML = "";
 
     question.options.forEach(option => {
         const button =
-            document.createElement("button");
+            document.createElement(
+                "button"
+            );
 
         button.type =
             "button";
@@ -280,22 +367,31 @@ function showQuestion(index) {
             "answer-button"
         );
 
-        button.addEventListener("click", () => {
-            selectedAnswer =
-                option;
+        button.addEventListener(
+            "click",
+            () => {
+                selectedAnswer =
+                    option;
 
-            document
-                .querySelectorAll(".answer-button")
-                .forEach(answerButton => {
-                    answerButton.classList.remove(
-                        "selected"
+                document
+                    .querySelectorAll(
+                        ".answer-button"
+                    )
+                    .forEach(
+                        answerButton => {
+                            answerButton
+                                .classList
+                                .remove(
+                                    "selected"
+                                );
+                        }
                     );
-                });
 
-            button.classList.add(
-                "selected"
-            );
-        });
+                button.classList.add(
+                    "selected"
+                );
+            }
+        );
 
         answerArea.appendChild(
             button
@@ -303,7 +399,9 @@ function showQuestion(index) {
     });
 
     const submitButton =
-        document.createElement("button");
+        document.createElement(
+            "button"
+        );
 
     submitButton.type =
         "button";
@@ -324,7 +422,9 @@ function showQuestion(index) {
     );
 
     const feedbackBox =
-        document.createElement("div");
+        document.createElement(
+            "div"
+        );
 
     feedbackBox.id =
         "feedbackBox";
@@ -346,13 +446,19 @@ function showQuestion(index) {
 
 function submitAnswer() {
     const question =
-        activityQuestions[currentQuestionIndex];
+        activityQuestions[
+            currentQuestionIndex
+        ];
 
     const feedbackBox =
-        document.getElementById("feedbackBox");
+        document.getElementById(
+            "feedbackBox"
+        );
 
     const submitButton =
-        document.getElementById("submitAnswerButton");
+        document.getElementById(
+            "submitAnswerButton"
+        );
 
     if (!selectedAnswer) {
         feedbackBox.textContent =
@@ -369,19 +475,24 @@ function submitAnswer() {
     }
 
     const feedbackSettings =
-        activity.settings?.feedback || {};
+        activity.settings
+            ?.feedback || {};
 
     const showImmediateFeedback =
-        feedbackSettings.afterEachQuestion !== false;
+        feedbackSettings
+            .afterEachQuestion !== false;
 
     const showCorrectAnswers =
-        feedbackSettings.showCorrectAnswers !== false;
+        feedbackSettings
+            .showCorrectAnswers !== false;
 
     const showExplanations =
-        feedbackSettings.showExplanations !== false;
+        feedbackSettings
+            .showExplanations !== false;
 
     const isCorrect =
-        selectedAnswer === question.answer;
+        selectedAnswer ===
+        question.answer;
 
     const marksAwarded =
         isCorrect
@@ -389,28 +500,55 @@ function submitAnswer() {
             : 0;
 
     if (isCorrect) {
-        score += question.marks;
+        score +=
+            question.marks;
     }
 
     studentResponses.push({
-        questionId: question.id,
-        questionText: question.question,
-        selectedAnswer: selectedAnswer,
-        correctAnswer: question.answer,
-        isCorrect: isCorrect,
-        marksAwarded: marksAwarded,
-        marksAvailable: question.marks,
-        curriculum: question.curriculum || []
+        sessionId: sessionId,
+
+        questionNumber:
+            currentQuestionIndex + 1,
+
+        questionId:
+            question.id,
+
+        questionText:
+            question.question,
+
+        selectedAnswer:
+            selectedAnswer,
+
+        correctAnswer:
+            question.answer,
+
+        isCorrect:
+            isCorrect,
+
+        marksAwarded:
+            marksAwarded,
+
+        marksAvailable:
+            question.marks,
+
+        curriculum:
+            question.curriculum || []
     });
 
-    console.table(studentResponses);
+    console.table(
+        studentResponses
+    );
 
     document
-        .querySelectorAll(".answer-button")
+        .querySelectorAll(
+            ".answer-button"
+        )
         .forEach(button => {
             button.disabled = true;
 
-            if (!showImmediateFeedback) {
+            if (
+                !showImmediateFeedback
+            ) {
                 button.classList.remove(
                     "selected"
                 );
@@ -441,12 +579,14 @@ function submitAnswer() {
         });
 
     if (!showImmediateFeedback) {
-        feedbackBox.textContent = "";
+        feedbackBox.textContent =
+            "";
 
         feedbackBox.className =
             "feedback-box hidden";
 
-        submitButton.disabled = true;
+        submitButton.disabled =
+            true;
 
         submitButton.textContent =
             currentQuestionIndex ===
@@ -454,9 +594,12 @@ function submitAnswer() {
                 ? "Preparing Results..."
                 : "Loading Next Question...";
 
-        window.setTimeout(() => {
-            nextQuestion();
-        }, 250);
+        window.setTimeout(
+            () => {
+                nextQuestion();
+            },
+            250
+        );
 
         return;
     }
@@ -547,6 +690,9 @@ function nextQuestion() {
 /* ===== RESULTS ===== */
 
 function showResults() {
+    sessionCompletedAt =
+        new Date().toISOString();
+
     document
         .getElementById("questionArea")
         .classList.add("hidden");
@@ -558,15 +704,18 @@ function showResults() {
     const totalMarks =
         activityQuestions.reduce(
             (total, question) =>
-                total + question.marks,
+                total +
+                question.marks,
             0
         );
 
     const percentage =
         totalMarks > 0
             ? Math.round(
-                (score / totalMarks) *
-                100
+                (
+                    score /
+                    totalMarks
+                ) * 100
             )
             : 0;
 
@@ -601,6 +750,11 @@ function showResults() {
         identificationText;
 
     document.getElementById(
+        "resultSession"
+    ).textContent =
+        sessionId;
+
+    document.getElementById(
         "resultScore"
     ).textContent =
         score +
@@ -627,6 +781,143 @@ function showResults() {
     renderRevisionSuggestions(
         curriculumResults
     );
+
+    finalResultPacket =
+        buildResultPacket({
+            totalMarks:
+                totalMarks,
+
+            percentage:
+                percentage,
+
+            performance:
+                performanceMessage,
+
+            curriculumResults:
+                curriculumResults
+        });
+
+    console.log(
+        "SB3K result packet:",
+        finalResultPacket
+    );
+}
+
+/* ===== RESULT PACKET ===== */
+
+function buildResultPacket({
+    totalMarks,
+    percentage,
+    performance,
+    curriculumResults
+}) {
+    return {
+        schemaVersion:
+            "1.0",
+
+        platformVersion:
+            "0.3.0",
+
+        session: {
+            id:
+                sessionId,
+
+            startedAt:
+                sessionStartedAt,
+
+            completedAt:
+                sessionCompletedAt,
+
+            durationSeconds:
+                calculateSessionDuration()
+        },
+
+        activity: {
+            id:
+                activity.activityId,
+
+            title:
+                activity.title,
+
+            subject:
+                activity.subject,
+
+            yearLevel:
+                activity.yearLevel,
+
+            topic:
+                activity.topic,
+
+            activityVersion:
+                activity.version,
+
+            mode:
+                activity.mode
+        },
+
+        student: {
+            studentId:
+                student.studentId,
+
+            name:
+                student.name,
+
+            className:
+                student.className,
+
+            identificationMethod:
+                student.identificationMethod
+        },
+
+        result: {
+            score:
+                score,
+
+            totalMarks:
+                totalMarks,
+
+            percentage:
+                percentage,
+
+            performance:
+                performance
+        },
+
+        curriculumResults:
+            curriculumResults,
+
+        responses:
+            studentResponses
+    };
+}
+
+function calculateSessionDuration() {
+    if (
+        !sessionStartedAt ||
+        !sessionCompletedAt
+    ) {
+        return 0;
+    }
+
+    const startTime =
+        new Date(
+            sessionStartedAt
+        ).getTime();
+
+    const endTime =
+        new Date(
+            sessionCompletedAt
+        ).getTime();
+
+    return Math.max(
+        0,
+        Math.round(
+            (
+                endTime -
+                startTime
+            ) / 1000
+        )
+    );
 }
 
 /* ===== CURRICULUM ANALYTICS ===== */
@@ -634,77 +925,95 @@ function showResults() {
 function calculateCurriculumResults() {
     const results = {};
 
-    studentResponses.forEach(response => {
-        response.curriculum.forEach(
-            curriculumItem => {
-                const curriculumId =
-                    curriculumItem.id;
+    studentResponses.forEach(
+        response => {
+            response.curriculum.forEach(
+                curriculumItem => {
+                    const curriculumId =
+                        curriculumItem.id;
 
-                if (!results[curriculumId]) {
-                    results[curriculumId] = {
-                        id:
-                            curriculumId,
+                    if (
+                        !results[
+                            curriculumId
+                        ]
+                    ) {
+                        results[
+                            curriculumId
+                        ] = {
+                            id:
+                                curriculumId,
 
-                        name:
-                            curriculumItem.name,
+                            name:
+                                curriculumItem.name,
 
-                        marksAwarded:
-                            0,
+                            marksAwarded:
+                                0,
 
-                        marksAvailable:
-                            0,
+                            marksAvailable:
+                                0,
 
-                        correctQuestions:
-                            0,
+                            correctQuestions:
+                                0,
 
-                        totalQuestions:
-                            0
-                    };
-                }
+                            totalQuestions:
+                                0
+                        };
+                    }
 
-                results[curriculumId]
-                    .marksAwarded +=
-                    response.marksAwarded;
+                    results[
+                        curriculumId
+                    ].marksAwarded +=
+                        response
+                            .marksAwarded;
 
-                results[curriculumId]
-                    .marksAvailable +=
-                    response.marksAvailable;
+                    results[
+                        curriculumId
+                    ].marksAvailable +=
+                        response
+                            .marksAvailable;
 
-                results[curriculumId]
-                    .totalQuestions +=
-                    1;
-
-                if (response.isCorrect) {
-                    results[curriculumId]
-                        .correctQuestions +=
+                    results[
+                        curriculumId
+                    ].totalQuestions +=
                         1;
+
+                    if (
+                        response.isCorrect
+                    ) {
+                        results[
+                            curriculumId
+                        ].correctQuestions +=
+                            1;
+                    }
                 }
-            }
-        );
-    });
+            );
+        }
+    );
 
-    return Object.values(
-        results
-    ).map(result => {
-        const percentage =
-            result.marksAvailable > 0
-                ? Math.round(
-                    (
-                        result.marksAwarded /
-                        result.marksAvailable
-                    ) * 100
-                )
-                : 0;
+    return Object
+        .values(results)
+        .map(result => {
+            const percentage =
+                result.marksAvailable > 0
+                    ? Math.round(
+                        (
+                            result.marksAwarded /
+                            result.marksAvailable
+                        ) * 100
+                    )
+                    : 0;
 
-        return {
-            ...result,
-            percentage:
-                percentage
-        };
-    });
+            return {
+                ...result,
+                percentage:
+                    percentage
+            };
+        });
 }
 
-function renderCurriculumResults(results) {
+function renderCurriculumResults(
+    results
+) {
     const container =
         document.getElementById(
             "curriculumResults"
@@ -774,7 +1083,8 @@ function renderCurriculumResults(results) {
         );
 
         percentage.textContent =
-            result.percentage + "%";
+            result.percentage +
+            "%";
 
         headingRow.appendChild(
             titleGroup
@@ -818,7 +1128,8 @@ function renderCurriculumResults(results) {
         );
 
         correctSection.style.width =
-            result.percentage + "%";
+            result.percentage +
+            "%";
 
         const incorrectSection =
             document.createElement(
@@ -861,7 +1172,9 @@ function renderCurriculumResults(results) {
     });
 }
 
-function renderRevisionSuggestions(results) {
+function renderRevisionSuggestions(
+    results
+) {
     const revisionSection =
         document.getElementById(
             "revisionSection"
@@ -878,51 +1191,63 @@ function renderRevisionSuggestions(results) {
         results
             .filter(
                 result =>
-                    result.percentage < 75
+                    result.percentage <
+                    75
             )
             .sort(
-                (first, second) =>
+                (
+                    first,
+                    second
+                ) =>
                     first.percentage -
                     second.percentage
             );
 
-    if (areasToRevise.length === 0) {
-        revisionSection.classList.add(
-            "hidden"
-        );
+    if (
+        areasToRevise.length === 0
+    ) {
+        revisionSection
+            .classList
+            .add("hidden");
 
         return;
     }
 
-    areasToRevise.forEach(result => {
-        const listItem =
-            document.createElement(
-                "li"
-            );
+    areasToRevise.forEach(
+        result => {
+            const listItem =
+                document
+                    .createElement(
+                        "li"
+                    );
 
-        listItem.innerHTML =
-            "<strong>" +
-            escapeHtml(
-                result.name
-            ) +
-            "</strong>" +
-            " — " +
-            result.percentage +
-            "%";
+            listItem.innerHTML =
+                "<strong>" +
+                escapeHtml(
+                    result.name
+                ) +
+                "</strong>" +
+                " — " +
+                result.percentage +
+                "%";
 
-        revisionList.appendChild(
-            listItem
-        );
-    });
-
-    revisionSection.classList.remove(
-        "hidden"
+            revisionList
+                .appendChild(
+                    listItem
+                );
+        }
     );
+
+    revisionSection
+        .classList
+        .remove("hidden");
 }
 
 /* ===== PERFORMANCE ===== */
 
-function getPerformanceMessage(percentage) {
+function getPerformanceMessage(
+    percentage
+) {
     if (percentage >= 90) {
         return "Outstanding work";
     }
@@ -942,6 +1267,7 @@ function getPerformanceMessage(percentage) {
 
 function tryAgain() {
     resetQuizState();
+    createNewSession();
     prepareActivityQuestions();
 
     document
@@ -959,6 +1285,11 @@ function tryAgain() {
 
 function returnToStart() {
     resetQuizState();
+
+    sessionId = "";
+    sessionStartedAt = "";
+    sessionCompletedAt = "";
+    finalResultPacket = null;
 
     student.studentId = "";
     student.name = "";
@@ -998,7 +1329,9 @@ function returnToStart() {
 
 function escapeHtml(value) {
     const element =
-        document.createElement("div");
+        document.createElement(
+            "div"
+        );
 
     element.textContent =
         value === undefined ||
