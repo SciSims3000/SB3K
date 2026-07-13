@@ -1,8 +1,8 @@
 const RESULTS_ENDPOINT =
-    "https://script.google.com/macros/s/AKfycbyxESB79OXK5yIKgEEHxYi6QEUI3YSZ4UTvhe9uIFTDeDUU0LLsh5HHGIA90NYCY4wiSg/exec";
+    "https://script.google.com/macros/s/AKfycbyxn8eNICoQrmQei-WsbTm8HqE4WQFz-dX1eTmgkbp4eu5mhFZAWwL6NAMlvHbSUhqzOg/exec";
 
 const PLATFORM_VERSION =
-    "0.3.2";
+    "0.3.3";
 
 let activity = null;
 let activityQuestions = [];
