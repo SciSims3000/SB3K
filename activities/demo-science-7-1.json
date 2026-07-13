@@ -6,19 +6,21 @@
   "topic": "Observing the Universe",
   "version": "1.0",
   "mode": "practice",
- "settings": {
-  "shuffleQuestions": false,
-  "shuffleOptions": false,
+  
+"settings": {
+  "shuffleQuestions": true,
+  "shuffleOptions": true,
   "allowBack": true,
   "showFinalScore": true,
   "feedback": {
     "afterEachQuestion": false,
     "onResultsScreen": true,
-    "showCorrectAnswers": true,
-    "showExplanations": true
+    "showCorrectAnswers": false,
+    "showExplanations": false
   },
   "passingPercentage": 50
 },
+  
 "studentFields": {
   "studentId": {
     "enabled": true,
