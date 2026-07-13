@@ -18,12 +18,20 @@
       "showExplanations": true
     },
     "passingPercentage": 50
+"studentFields": {
+  "studentId": {
+    "enabled": true,
+    "required": false
   },
-  "studentFields": {
-    "name": true,
-    "class": true,
-    "teacher": false
+  "name": {
+    "enabled": true,
+    "requiredWithoutStudentId": true
   },
+  "class": {
+    "enabled": true,
+    "requiredWithoutStudentId": true
+  }
+},
   "questions": [
     {
       "id": "q1",
