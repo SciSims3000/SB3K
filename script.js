@@ -2,7 +2,7 @@ const RESULTS_ENDPOINT =
     "https://script.google.com/macros/s/AKfycbyxn8eNICoQrmQei-WsbTm8HqE4WQFz-dX1eTmgkbp4eu5mhFZAWwL6NAMlvHbSUhqzOg/exec";
 
 const PLATFORM_VERSION =
-    "0.3.4";
+    "0.3.5";
 
 let activity = null;
 let activityQuestions = [];
@@ -17,6 +17,8 @@ let sessionCompletedAt = "";
 
 let finalResultPacket = null;
 let submissionInProgress = false;
+let submissionConfirmed = false;
+const SESSION_STORAGE_KEY = "sb3k-session-v1";
 
 const student = {
     studentId: "",
@@ -80,8 +82,12 @@ fetch(
             activity.yearLevel +
             " • " +
             activity.topic;
+
+        restoreSession();
     })
     .catch(error => {
+        if (!activity && restoreSession()) return;
+
         console.error(
             "Activity loading error:",
             error
@@ -188,6 +194,7 @@ function startActivity() {
     resetQuizState();
     createNewSession();
     prepareActivityQuestions();
+    saveSession();
 
     errorBox.textContent = "";
 
@@ -220,6 +227,7 @@ function createNewSession() {
     sessionCompletedAt = "";
     finalResultPacket = null;
     submissionInProgress = false;
+    submissionConfirmed = false;
 
     console.log(
         "Session started:",
@@ -246,6 +254,68 @@ function generateSessionId() {
         "-" +
         randomPart
     );
+}
+
+function saveSession() {
+    try {
+        sessionStorage.setItem(SESSION_STORAGE_KEY, JSON.stringify({
+            activity,
+            activityQuestions,
+            currentQuestionIndex,
+            selectedAnswer,
+            score,
+            sessionId,
+            sessionStartedAt,
+            sessionCompletedAt,
+            student,
+            studentResponses,
+            finalResultPacket,
+            submissionConfirmed
+        }));
+        return true;
+    } catch {
+        return false;
+    }
+}
+
+function restoreSession() {
+    let saved;
+    try {
+        saved = JSON.parse(sessionStorage.getItem(SESSION_STORAGE_KEY));
+    } catch {
+        return;
+    }
+
+    if (!saved?.activity || !saved.sessionId ||
+        (activity && saved.activity.activityId !== activity.activityId)) {
+        return;
+    }
+
+    // Keep the original activity and shuffle order across content updates.
+    ({
+        activity, activityQuestions, currentQuestionIndex, selectedAnswer,
+        score, sessionId, sessionStartedAt, sessionCompletedAt,
+        studentResponses, finalResultPacket, submissionConfirmed
+    } = saved);
+    Object.assign(student, saved.student);
+
+    document.getElementById("studentEntry").classList.add("hidden");
+
+    if (currentQuestionIndex >= activityQuestions.length) {
+        showResults();
+        return true;
+    }
+
+    const savedAnswer = selectedAnswer;
+    document.getElementById("questionArea").classList.remove("hidden");
+    showQuestion(currentQuestionIndex);
+    document.querySelectorAll(".answer-button").forEach(button => {
+        if (button.textContent === savedAnswer) button.click();
+    });
+
+    const response = studentResponses[currentQuestionIndex];
+    if (response) renderAnswerFeedback(activityQuestions[currentQuestionIndex], response.isCorrect);
+    return true;
 }
 
 /* ===== QUIZ SETUP ===== */
@@ -450,6 +520,7 @@ function showQuestion(index) {
                     button.classList.add(
                         "selected"
                     );
+                    saveSession();
                 }
             );
 
@@ -516,10 +587,7 @@ function submitAnswer() {
             "feedbackBox"
         );
 
-    const submitButton =
-        document.getElementById(
-            "submitAnswerButton"
-        );
+    if (studentResponses[currentQuestionIndex]) return;
 
     if (!selectedAnswer) {
         feedbackBox.textContent =
@@ -534,22 +602,6 @@ function submitAnswer() {
 
         return;
     }
-
-    const feedbackSettings =
-        activity.settings
-            ?.feedback || {};
-
-    const showImmediateFeedback =
-        feedbackSettings
-            .afterEachQuestion !== false;
-
-    const showCorrectAnswers =
-        feedbackSettings
-            .showCorrectAnswers !== false;
-
-    const showExplanations =
-        feedbackSettings
-            .showExplanations !== false;
 
     const isCorrect =
         selectedAnswer ===
@@ -597,9 +649,29 @@ function submitAnswer() {
             question.curriculum || []
     });
 
-    console.table(
-        studentResponses
-    );
+    saveSession();
+    renderAnswerFeedback(question, isCorrect);
+}
+
+function renderAnswerFeedback(question, isCorrect) {
+    const feedbackBox = document.getElementById("feedbackBox");
+    const submitButton = document.getElementById("submitAnswerButton");
+
+    const feedbackSettings =
+        activity.settings
+            ?.feedback || {};
+
+    const showImmediateFeedback =
+        feedbackSettings
+            .afterEachQuestion !== false;
+
+    const showCorrectAnswers =
+        feedbackSettings
+            .showCorrectAnswers !== false;
+
+    const showExplanations =
+        feedbackSettings
+            .showExplanations !== false;
 
     document
         .querySelectorAll(
@@ -740,6 +812,8 @@ function nextQuestion() {
         return;
     }
 
+    selectedAnswer = null;
+    saveSession();
     showQuestion(
         currentQuestionIndex
     );
@@ -748,8 +822,7 @@ function nextQuestion() {
 /* ===== RESULTS ===== */
 
 function showResults() {
-    sessionCompletedAt =
-        new Date().toISOString();
+    sessionCompletedAt ||= new Date().toISOString();
 
     document
         .getElementById(
@@ -870,7 +943,7 @@ function showResults() {
         curriculumResults
     );
 
-    finalResultPacket =
+    finalResultPacket ||=
         buildResultPacket({
             totalMarks:
                 totalMarks,
@@ -897,29 +970,40 @@ function showResults() {
                 curriculumResults
         });
 
-    console.log(
-        "SB3K result packet:",
-        finalResultPacket
-    );
+    saveSession();
 
-    submitResultPacket(
-        finalResultPacket
-    );
+    if (submissionConfirmed) {
+        showSubmissionConfirmed();
+    } else {
+        submitResultPacket(finalResultPacket);
+    }
 }
 
 /* ===== GOOGLE SHEETS SUBMISSION ===== */
 
-async function submitResultPacket(
-    packet
-) {
-    if (
-        submissionInProgress ||
-        !packet
-    ) {
-        return;
-    }
+document.getElementById("retrySubmissionButton").addEventListener("click", () => {
+    submitResultPacket(finalResultPacket);
+});
+
+function showSubmissionConfirmed() {
+    document.getElementById("tryAgainButton").disabled = false;
+    document.getElementById("returnStartButton").disabled = false;
+    setSubmissionStatus(
+        "success",
+        "Results sent",
+        "Your results have been saved to Google Sheets."
+    );
+}
+
+async function submitResultPacket(packet) {
+    if (submissionInProgress || submissionConfirmed || !packet) return;
 
     submissionInProgress = true;
+    const retryButton = document.getElementById("retrySubmissionButton");
+    retryButton.classList.add("hidden");
+    document.getElementById("tryAgainButton").disabled = true;
+    document.getElementById("returnStartButton").disabled = true;
+    const saved = saveSession();
 
     setSubmissionStatus(
         "sending",
@@ -928,46 +1012,39 @@ async function submitResultPacket(
     );
 
     try {
-        await fetch(
-            RESULTS_ENDPOINT,
-            {
-                method:
-                    "POST",
+        const readiness = await fetch(RESULTS_ENDPOINT + "?sb3k=protocol", {
+            cache: "no-store",
+            signal: AbortSignal.timeout(10000)
+        });
+        if (!readiness.ok || (await readiness.json()).submissionProtocol !== 1) {
+            throw new Error("Acknowledged submissions are unavailable");
+        }
 
-                mode:
-                    "no-cors",
+        const response = await fetch(RESULTS_ENDPOINT, {
+            method: "POST",
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify(packet),
+            signal: AbortSignal.timeout(20000)
+        });
+        if (!response.ok) throw new Error("Submission response failed");
 
-                headers: {
-                    "Content-Type":
-                        "text/plain;charset=utf-8"
-                },
+        const receipt = await response.json();
+        if (receipt.saved !== true || receipt.sessionId !== packet.session.id) {
+            throw new Error("Submission was not acknowledged");
+        }
 
-                body:
-                    JSON.stringify(packet)
-            }
-        );
-
-        setSubmissionStatus(
-            "success",
-            "Results sent",
-            "Your results have been sent to your teacher."
-        );
-
-        console.log(
-            "Result submission request sent:",
-            packet.session.id
-        );
-    } catch (error) {
-        console.error(
-            "Result submission error:",
-            error
-        );
-
+        submissionConfirmed = true;
+        saveSession();
+        showSubmissionConfirmed();
+    } catch {
         setSubmissionStatus(
             "error",
-            "Results could not be sent",
-            "Keep this page open and ask your teacher for assistance."
+            "Results not yet confirmed",
+            saved
+                ? "Your results are saved in this tab. Try sending again before closing it."
+                : "Keep this page open and try sending again. Browser storage is unavailable."
         );
+        retryButton.classList.remove("hidden");
     } finally {
         submissionInProgress = false;
     }
@@ -1548,9 +1625,11 @@ function getPerformanceMessage(
 /* ===== RESTART CONTROLS ===== */
 
 function tryAgain() {
+    if (!submissionConfirmed) return;
     resetQuizState();
     createNewSession();
     prepareActivityQuestions();
+    saveSession();
 
     document
         .getElementById(
@@ -1570,6 +1649,13 @@ function tryAgain() {
 }
 
 function returnToStart() {
+    if (!submissionConfirmed) return;
+
+    try {
+        sessionStorage.removeItem(SESSION_STORAGE_KEY);
+    } catch {
+        // Storage can be disabled by the browser.
+    }
     resetQuizState();
 
     sessionId = "";
