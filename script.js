@@ -2,7 +2,7 @@ const RESULTS_ENDPOINT =
     "https://script.google.com/macros/s/AKfycbyxn8eNICoQrmQei-WsbTm8HqE4WQFz-dX1eTmgkbp4eu5mhFZAWwL6NAMlvHbSUhqzOg/exec";
 
 const PLATFORM_VERSION =
-    "0.4.2";
+    "0.4.3";
 
 let activity = null;
 let activityQuestions = [];
@@ -1074,6 +1074,18 @@ document.getElementById("retrySubmissionButton").addEventListener("click", () =>
     submitResultPacket(finalResultPacket);
 });
 
+let retryAfterReconnect = false;
+
+window.addEventListener("online", () => {
+    if (!finalResultPacket || submissionConfirmed) return;
+
+    if (submissionInProgress) {
+        retryAfterReconnect = true;
+    } else {
+        submitResultPacket(finalResultPacket);
+    }
+});
+
 function showSubmissionConfirmed() {
     document.getElementById("tryAgainButton").disabled = false;
     document.getElementById("returnStartButton").disabled = false;
@@ -1138,6 +1150,10 @@ async function submitResultPacket(packet) {
         retryButton.classList.remove("hidden");
     } finally {
         submissionInProgress = false;
+        if (retryAfterReconnect) {
+            retryAfterReconnect = false;
+            if (!submissionConfirmed) submitResultPacket(packet);
+        }
     }
 }
 
