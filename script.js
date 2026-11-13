@@ -108,7 +108,9 @@ function renderActivityPicker(entries, entry) {
     for (const item of entries) {
         const option = document.createElement("option");
         option.value = item.id;
-        option.textContent = item.title;
+        option.textContent = [item.title, item.subject, item.yearLevel]
+            .filter(Boolean)
+            .join(" • ");
         select.appendChild(option);
     }
 
