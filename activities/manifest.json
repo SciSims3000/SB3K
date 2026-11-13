@@ -1,0 +1,11 @@
+{
+  "activities": [
+    {
+      "id": "demo-science-7-1",
+      "title": "7.1 Observing the Universe Quick Check",
+      "subject": "Science",
+      "yearLevel": "Year 7",
+      "path": "activities/demo-science-7-1.json"
+    }
+  ]
+}

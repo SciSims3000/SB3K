@@ -2,7 +2,7 @@ const RESULTS_ENDPOINT =
     "https://script.google.com/macros/s/AKfycbyxn8eNICoQrmQei-WsbTm8HqE4WQFz-dX1eTmgkbp4eu5mhFZAWwL6NAMlvHbSUhqzOg/exec";
 
 const PLATFORM_VERSION =
-    "0.3.5";
+    "0.4.0";
 
 let activity = null;
 let activityQuestions = [];
@@ -18,7 +18,14 @@ let sessionCompletedAt = "";
 let finalResultPacket = null;
 let submissionInProgress = false;
 let submissionConfirmed = false;
-const SESSION_STORAGE_KEY = "sb3k-session-v1";
+const LEGACY_SESSION_KEY = "sb3k-session-v1";
+const DEFAULT_ACTIVITY_ID = "demo-science-7-1";
+let selectedActivityId = new URLSearchParams(location.search).get("activity");
+let sessionStorageKey;
+
+function getSessionStorageKey() {
+    return LEGACY_SESSION_KEY + ":" + selectedActivityId;
+}
 
 const student = {
     studentId: "",
@@ -53,56 +60,72 @@ function updateVisiblePlatformVersion() {
 
 /* ===== ACTIVITY LOADING ===== */
 
-fetch(
-    "activities/demo-science-7-1.json"
-)
-    .then(response => {
-        if (!response.ok) {
-            throw new Error(
-                "Activity request failed with status " +
-                response.status
-            );
+loadActivity();
+
+async function loadActivity() {
+    try {
+        const manifest = await fetchJson("activities/manifest.json");
+        const entries = manifest.activities;
+        const entry = selectedActivityId === null
+            ? entries[0]
+            : entries.find(item => item.id === selectedActivityId);
+
+        renderActivityPicker(entries, entry);
+        if (!entry) throw new Error("This activity is unavailable.");
+
+        selectedActivityId = entry.id;
+        sessionStorageKey = getSessionStorageKey();
+        if (restoreSession()) return;
+
+        const data = await fetchJson(entry.path);
+        if (data.activityId !== entry.id) {
+            throw new Error("Activity ID does not match the manifest.");
         }
-
-        return response.json();
-    })
-    .then(data => {
         activity = data;
-
-        document.getElementById(
-            "activityTitle"
-        ).textContent =
-            activity.title;
-
-        document.getElementById(
-            "activityInfo"
-        ).textContent =
-            activity.subject +
-            " • " +
-            activity.yearLevel +
-            " • " +
-            activity.topic;
-
-        restoreSession();
-    })
-    .catch(error => {
+        renderActivityHeading();
+    } catch (error) {
+        selectedActivityId ??= DEFAULT_ACTIVITY_ID;
+        sessionStorageKey ??= getSessionStorageKey();
         if (!activity && restoreSession()) return;
 
-        console.error(
-            "Activity loading error:",
-            error
-        );
+        document.getElementById("activityTitle").textContent = "Activity unavailable";
+        document.getElementById("activityInfo").textContent =
+            "Choose another activity or refresh to try again.";
+        console.error("Activity loading error:", error);
+    }
+}
 
-        document.getElementById(
-            "activityTitle"
-        ).textContent =
-            "Activity could not be loaded.";
+async function fetchJson(path) {
+    const response = await fetch(path);
+    if (!response.ok) throw new Error("Activity request failed: " + response.status);
+    return response.json();
+}
 
-        document.getElementById(
-            "activityInfo"
-        ).textContent =
-            "Please refresh the page or contact your teacher.";
+function renderActivityPicker(entries, entry) {
+    const picker = document.getElementById("activityPicker");
+    const select = document.getElementById("activitySelect");
+
+    for (const item of entries) {
+        const option = document.createElement("option");
+        option.value = item.id;
+        option.textContent = item.title;
+        select.appendChild(option);
+    }
+
+    select.value = entry?.id ?? "";
+    picker.classList.remove("hidden");
+    select.addEventListener("change", () => {
+        const url = new URL(location.href);
+        url.searchParams.set("activity", select.value);
+        location.assign(url);
     });
+}
+
+function renderActivityHeading() {
+    document.getElementById("activityTitle").textContent = activity.title;
+    document.getElementById("activityInfo").textContent =
+        activity.subject + " • " + activity.yearLevel + " • " + activity.topic;
+}
 
 /* ===== EVENT LISTENERS ===== */
 
@@ -258,7 +281,7 @@ function generateSessionId() {
 
 function saveSession() {
     try {
-        sessionStorage.setItem(SESSION_STORAGE_KEY, JSON.stringify({
+        sessionStorage.setItem(sessionStorageKey, JSON.stringify({
             activity,
             activityQuestions,
             currentQuestionIndex,
@@ -272,6 +295,9 @@ function saveSession() {
             finalResultPacket,
             submissionConfirmed
         }));
+        if (selectedActivityId === DEFAULT_ACTIVITY_ID) {
+            sessionStorage.removeItem(LEGACY_SESSION_KEY);
+        }
         return true;
     } catch {
         return false;
@@ -281,13 +307,16 @@ function saveSession() {
 function restoreSession() {
     let saved;
     try {
-        saved = JSON.parse(sessionStorage.getItem(SESSION_STORAGE_KEY));
+        const stored = sessionStorage.getItem(sessionStorageKey);
+        const legacy = selectedActivityId === DEFAULT_ACTIVITY_ID
+            ? sessionStorage.getItem(LEGACY_SESSION_KEY)
+            : null;
+        saved = JSON.parse(stored ?? legacy);
     } catch {
         return;
     }
 
-    if (!saved?.activity || !saved.sessionId ||
-        (activity && saved.activity.activityId !== activity.activityId)) {
+    if (saved?.activity?.activityId !== selectedActivityId || !saved.sessionId) {
         return;
     }
 
@@ -298,6 +327,8 @@ function restoreSession() {
         studentResponses, finalResultPacket, submissionConfirmed
     } = saved);
     Object.assign(student, saved.student);
+    renderActivityHeading();
+    saveSession();
 
     document.getElementById("studentEntry").classList.add("hidden");
 
@@ -1652,7 +1683,7 @@ function returnToStart() {
     if (!submissionConfirmed) return;
 
     try {
-        sessionStorage.removeItem(SESSION_STORAGE_KEY);
+        sessionStorage.removeItem(sessionStorageKey);
     } catch {
         // Storage can be disabled by the browser.
     }
