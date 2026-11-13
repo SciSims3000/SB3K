@@ -6,6 +6,13 @@
       "subject": "Science",
       "yearLevel": "Year 7",
       "path": "activities/demo-science-7-1.json"
+    },
+    {
+      "id": "year7-particle-model",
+      "title": "The Particle Model Quick Check",
+      "subject": "Science",
+      "yearLevel": "Year 7",
+      "path": "activities/year7-particle-model.json"
     }
   ]
 }

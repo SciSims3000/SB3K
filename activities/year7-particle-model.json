@@ -1,0 +1,158 @@
+{
+  "activityId": "year7-particle-model",
+  "title": "The Particle Model Quick Check",
+  "subject": "Science",
+  "yearLevel": "Year 7",
+  "topic": "The Particle Model",
+  "version": "1.0",
+  "mode": "practice",
+  "settings": {
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "allowBack": true,
+    "showFinalScore": true,
+    "feedback": {
+      "afterEachQuestion": false,
+      "onResultsScreen": true,
+      "showCorrectAnswers": false,
+      "showExplanations": false
+    },
+    "passingPercentage": 50
+  },
+  "studentFields": {
+    "studentId": {
+      "enabled": true,
+      "required": false
+    },
+    "name": {
+      "enabled": true,
+      "requiredWithoutStudentId": true
+    },
+    "class": {
+      "enabled": true,
+      "requiredWithoutStudentId": true
+    }
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-PARTICLE-STATES",
+          "name": "Particle model of solids, liquids and gases"
+        }
+      ],
+      "question": "Which description best matches particles in a solid?",
+      "options": [
+        "They vibrate around fixed positions",
+        "They move freely throughout the container",
+        "They do not move at all",
+        "They are widely spaced and move in all directions"
+      ],
+      "answer": "They vibrate around fixed positions",
+      "marks": 1,
+      "feedback": "Particles in a solid vibrate around fixed positions."
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-PARTICLE-STATES",
+          "name": "Particle model of solids, liquids and gases"
+        }
+      ],
+      "question": "Why does liquid water take the shape of its container?",
+      "options": [
+        "Its particles can move past one another",
+        "Its particles change shape",
+        "Its particles are fixed in place",
+        "Its particles spread out to fill all available space"
+      ],
+      "answer": "Its particles can move past one another",
+      "marks": 1,
+      "feedback": "Liquid particles stay close together and can move past one another."
+    },
+    {
+      "id": "q3",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-PARTICLE-STATES",
+          "name": "Particle model of solids, liquids and gases"
+        }
+      ],
+      "question": "Why is air easier to compress than liquid water?",
+      "options": [
+        "Air particles have much more space between them",
+        "Air particles shrink when squeezed",
+        "Air particles stop moving under pressure",
+        "Water particles are larger than air particles"
+      ],
+      "answer": "Air particles have much more space between them",
+      "marks": 1,
+      "feedback": "Compressing a gas reduces the spaces between its particles."
+    },
+    {
+      "id": "q4",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-PARTICLE-CHANGES",
+          "name": "Changes of state"
+        }
+      ],
+      "question": "What happens to the average speed of water particles as the liquid warms?",
+      "options": [
+        "It increases",
+        "It decreases",
+        "It stays the same",
+        "It drops to zero"
+      ],
+      "answer": "It increases",
+      "marks": 1,
+      "feedback": "As the temperature rises, the particles move faster on average."
+    },
+    {
+      "id": "q5",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-PARTICLE-CHANGES",
+          "name": "Changes of state"
+        }
+      ],
+      "question": "Water droplets form on the outside of a cold glass. Where did the water come from?",
+      "options": [
+        "Water vapour in the surrounding air condensed",
+        "Liquid water passed through the glass",
+        "The glass produced water as it cooled",
+        "Water in the air froze directly onto the glass"
+      ],
+      "answer": "Water vapour in the surrounding air condensed",
+      "marks": 1,
+      "feedback": "Water vapour cools near the glass and condenses into liquid droplets."
+    },
+    {
+      "id": "q6",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-PARTICLE-CHANGES",
+          "name": "Changes of state"
+        }
+      ],
+      "question": "Ice melts in a sealed container. What happens to the total mass of water inside?",
+      "options": [
+        "It stays the same",
+        "It increases as the ice melts",
+        "It decreases as the ice melts",
+        "It depends on the shape of the container"
+      ],
+      "answer": "It stays the same",
+      "marks": 1,
+      "feedback": "Melting changes the arrangement of the particles. The same water particles remain inside the sealed container."
+    }
+  ]
+}
