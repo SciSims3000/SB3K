@@ -2,7 +2,7 @@ const RESULTS_ENDPOINT =
     "https://script.google.com/macros/s/AKfycbyxn8eNICoQrmQei-WsbTm8HqE4WQFz-dX1eTmgkbp4eu5mhFZAWwL6NAMlvHbSUhqzOg/exec";
 
 const PLATFORM_VERSION =
-    "0.4.0";
+    "0.4.1";
 
 let activity = null;
 let activityQuestions = [];
@@ -22,6 +22,8 @@ const LEGACY_SESSION_KEY = "sb3k-session-v1";
 const DEFAULT_ACTIVITY_ID = "demo-science-7-1";
 let selectedActivityId = new URLSearchParams(location.search).get("activity");
 let sessionStorageKey;
+let homeworkKey;
+let identifyingStudent = false;
 
 function getSessionStorageKey() {
     return LEGACY_SESSION_KEY + ":" + selectedActivityId;
@@ -154,7 +156,8 @@ document
 
 /* ===== STUDENT ENTRY ===== */
 
-function startActivity() {
+async function startActivity() {
+    if (identifyingStudent) return;
     const studentIdInput =
         document
             .getElementById("studentId")
@@ -178,7 +181,7 @@ function startActivity() {
             "entryError"
         );
 
-    if (!activity) {
+    if (!selectedActivityId || !sessionStorageKey) {
         errorBox.textContent =
             "Activity is still loading. Please wait a moment.";
 
@@ -199,6 +202,27 @@ function startActivity() {
         errorBox.textContent =
             "Enter your Student ID, or enter both your name and class.";
 
+        return;
+    }
+
+    identifyingStudent = true;
+    try {
+        const identity = hasStudentId
+            ? ["id", studentIdInput.toLowerCase()]
+            : ["name", nameInput.toLowerCase(), classInput.toLowerCase()];
+        const digest = await crypto.subtle.digest("SHA-256",
+            new TextEncoder().encode(JSON.stringify([selectedActivityId, identity])));
+        homeworkKey = "sb3k-homework:" + Array.from(new Uint8Array(digest),
+            byte => byte.toString(16).padStart(2, "0")).join("");
+    } catch {
+        homeworkKey = null;
+    } finally {
+        identifyingStudent = false;
+    }
+
+    if (homeworkKey && restoreSession(homeworkKey)) return;
+    if (!activity) {
+        errorBox.textContent = "This activity needs a connection to start.";
         return;
     }
 
@@ -283,7 +307,7 @@ function generateSessionId() {
 
 function saveSession() {
     try {
-        sessionStorage.setItem(sessionStorageKey, JSON.stringify({
+        const snapshot = JSON.stringify({
             activity,
             activityQuestions,
             currentQuestionIndex,
@@ -295,25 +319,40 @@ function saveSession() {
             student,
             studentResponses,
             finalResultPacket,
-            submissionConfirmed
-        }));
+            submissionConfirmed,
+            homeworkKey
+        });
+        sessionStorage.setItem(sessionStorageKey, snapshot);
         if (selectedActivityId === DEFAULT_ACTIVITY_ID) {
             sessionStorage.removeItem(LEGACY_SESSION_KEY);
         }
-        return true;
+        if (homeworkKey) {
+            if (submissionConfirmed) {
+                localStorage.removeItem(homeworkKey);
+            } else {
+                localStorage.setItem(homeworkKey, snapshot);
+                return "browser";
+            }
+        }
+    } catch {
+        // Fall back to same-tab recovery if persistent storage is unavailable.
+    }
+
+    try {
+        return sessionStorage.getItem(sessionStorageKey) ? "tab" : false;
     } catch {
         return false;
     }
 }
 
-function restoreSession() {
+function restoreSession(persistentKey) {
     let saved;
     try {
         const stored = sessionStorage.getItem(sessionStorageKey);
         const legacy = selectedActivityId === DEFAULT_ACTIVITY_ID
             ? sessionStorage.getItem(LEGACY_SESSION_KEY)
             : null;
-        saved = JSON.parse(stored ?? legacy);
+        saved = JSON.parse(persistentKey ? localStorage.getItem(persistentKey) : stored ?? legacy);
     } catch {
         return;
     }
@@ -328,6 +367,7 @@ function restoreSession() {
         score, sessionId, sessionStartedAt, sessionCompletedAt,
         studentResponses, finalResultPacket, submissionConfirmed
     } = saved);
+    homeworkKey = saved.homeworkKey ?? persistentKey;
     Object.assign(student, saved.student);
     renderActivityHeading();
     saveSession();
@@ -1073,7 +1113,9 @@ async function submitResultPacket(packet) {
         setSubmissionStatus(
             "error",
             "Results not yet confirmed",
-            saved
+            saved === "browser"
+                ? "Results are saved in this browser. Retry now, or reopen this activity and enter the same student details."
+                : saved
                 ? "Your results are saved in this tab. Try sending again before closing it."
                 : "Keep this page open and try sending again. Browser storage is unavailable."
         );
@@ -1686,6 +1728,7 @@ function returnToStart() {
 
     try {
         sessionStorage.removeItem(sessionStorageKey);
+        homeworkKey = null;
     } catch {
         // Storage can be disabled by the browser.
     }
