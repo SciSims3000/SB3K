@@ -2,7 +2,7 @@ const RESULTS_ENDPOINT =
     "https://script.google.com/macros/s/AKfycbyxn8eNICoQrmQei-WsbTm8HqE4WQFz-dX1eTmgkbp4eu5mhFZAWwL6NAMlvHbSUhqzOg/exec";
 
 const PLATFORM_VERSION =
-    "0.4.1";
+    "0.4.2";
 
 let activity = null;
 let activityQuestions = [];
@@ -126,6 +126,17 @@ function renderActivityPicker(entries, entry) {
 }
 
 function renderActivityHeading() {
+    const homework = activity.mode === "homework";
+    const idInput = document.getElementById("studentId");
+    idInput.inputMode = homework ? "numeric" : "text";
+    idInput.required = homework;
+    document.getElementById("studentIdOptional").classList.toggle("hidden", homework);
+    document.getElementById("alternativeIdentification").classList.toggle("hidden", homework);
+    if (homework) {
+        document.getElementById("entryHelp").textContent =
+            "Enter your five-digit ZipGrade Student ID. Use the same ID to resume in this browser.";
+    }
+
     document.getElementById("activityTitle").textContent = activity.title;
     document.getElementById("activityInfo").textContent =
         activity.subject + " • " + activity.yearLevel + " • " + activity.topic;
@@ -185,6 +196,11 @@ async function startActivity() {
         errorBox.textContent =
             "Activity is still loading. Please wait a moment.";
 
+        return;
+    }
+
+    if (activity?.mode === "homework" && !/^[0-9]{5}$/.test(studentIdInput)) {
+        errorBox.textContent = "Enter your five-digit ZipGrade Student ID.";
         return;
     }
 
