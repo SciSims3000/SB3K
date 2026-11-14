@@ -2,7 +2,15 @@ const RESULTS_ENDPOINT =
     "https://script.google.com/macros/s/AKfycbyxn8eNICoQrmQei-WsbTm8HqE4WQFz-dX1eTmgkbp4eu5mhFZAWwL6NAMlvHbSUhqzOg/exec";
 
 const PLATFORM_VERSION =
-    "0.4.5";
+    "0.4.6";
+
+const REVISION_LEVELS = ["easy", "standard", "hard"];
+let revisionDifficulty = "standard";
+
+function supportsDifficulty() {
+    return REVISION_LEVELS.every(level =>
+        activity.questions.some(question => question.difficulty === level));
+}
 
 let activity = null;
 let activityQuestions = [];
@@ -149,6 +157,8 @@ function renderActivityPicker(entries, entry) {
 }
 
 function renderActivityHeading() {
+    document.getElementById("revisionOptions").classList.toggle("hidden", !supportsDifficulty());
+    document.getElementById("revisionDifficulty").value = revisionDifficulty;
     const homework = activity.mode === "homework";
     const idInput = document.getElementById("studentId");
     idInput.inputMode = homework ? "numeric" : "text";
@@ -280,6 +290,7 @@ async function startActivity() {
             ? "studentId"
             : "nameAndClass";
 
+    revisionDifficulty = document.getElementById("revisionDifficulty").value;
     resetQuizState();
     createNewSession();
     prepareActivityQuestions();
@@ -360,7 +371,8 @@ function saveSession() {
             studentResponses,
             finalResultPacket,
             submissionConfirmed,
-            homeworkKey
+            homeworkKey,
+            revisionDifficulty
         });
         sessionStorage.setItem(sessionStorageKey, snapshot);
         if (!assignedClass && selectedActivityId === DEFAULT_ACTIVITY_ID) {
@@ -408,6 +420,7 @@ function restoreSession(persistentKey) {
         studentResponses, finalResultPacket, submissionConfirmed
     } = saved);
     homeworkKey = saved.homeworkKey ?? persistentKey;
+    revisionDifficulty = saved.revisionDifficulty ?? "standard";
     Object.assign(student, saved.student);
     renderActivityHeading();
     saveSession();
@@ -464,6 +477,18 @@ function prepareActivityQuestions() {
             activity.questions
         );
 
+    const useDifficulty = supportsDifficulty();
+    if (useDifficulty) {
+        const levels = revisionDifficulty === "progressive"
+            ? REVISION_LEVELS : [revisionDifficulty];
+        const counts = revisionDifficulty === "progressive" ? [3, 4, 3] : [10];
+        activityQuestions = levels.flatMap((level, index) => {
+            const pool = activityQuestions.filter(question => question.difficulty === level);
+            shuffleArray(pool);
+            return pool.slice(0, counts[index]);
+        });
+    }
+
     const shuffleQuestions =
         activity.settings
             ?.shuffleQuestions === true;
@@ -472,7 +497,7 @@ function prepareActivityQuestions() {
         activity.settings
             ?.shuffleOptions === true;
 
-    if (shuffleQuestions) {
+    if (shuffleQuestions && !useDifficulty) {
         shuffleArray(
             activityQuestions
         );
