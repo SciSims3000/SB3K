@@ -2,7 +2,7 @@ const RESULTS_ENDPOINT =
     "https://script.google.com/macros/s/AKfycbyxn8eNICoQrmQei-WsbTm8HqE4WQFz-dX1eTmgkbp4eu5mhFZAWwL6NAMlvHbSUhqzOg/exec";
 
 const PLATFORM_VERSION =
-    "0.4.3";
+    "0.4.4";
 
 let activity = null;
 let activityQuestions = [];
@@ -20,13 +20,18 @@ let submissionInProgress = false;
 let submissionConfirmed = false;
 const LEGACY_SESSION_KEY = "sb3k-session-v1";
 const DEFAULT_ACTIVITY_ID = "demo-science-7-1";
-let selectedActivityId = new URLSearchParams(location.search).get("activity");
+const activityParams = new URLSearchParams(location.search);
+let selectedActivityId = activityParams.get("activity");
+const assignedClass = selectedActivityId && activityParams.get("mode") === "homework"
+    ? (activityParams.get("class") ?? "").trim().slice(0, 40)
+    : "";
 let sessionStorageKey;
 let homeworkKey;
 let identifyingStudent = false;
 
 function getSessionStorageKey() {
-    return LEGACY_SESSION_KEY + ":" + selectedActivityId;
+    return LEGACY_SESSION_KEY + ":" + selectedActivityId +
+        (assignedClass ? ":homework:" + encodeURIComponent(assignedClass) : "");
 }
 
 const student = {
@@ -83,7 +88,7 @@ async function loadActivity() {
         if (data.activityId !== entry.id) {
             throw new Error("Activity ID does not match the manifest.");
         }
-        activity = data;
+        activity = assignedClass ? { ...data, mode: "homework" } : data;
         renderActivityHeading();
     } catch (error) {
         selectedActivityId ??= DEFAULT_ACTIVITY_ID;
@@ -117,7 +122,25 @@ function renderActivityPicker(entries, entry) {
     }
 
     select.value = entry?.id ?? "";
-    picker.classList.remove("hidden");
+    picker.classList.toggle("hidden", Boolean(assignedClass));
+    const builder = document.getElementById("homeworkLinkBuilder");
+    builder.classList.toggle("hidden", Boolean(assignedClass) || !entry);
+    if (!assignedClass && entry) {
+        builder.addEventListener("submit", event => {
+            event.preventDefault();
+            const className = document.getElementById("homeworkClass").value.trim();
+            if (!className) return;
+
+            const url = new URL(location.href);
+            url.search = new URLSearchParams({ activity: entry.id, mode: "homework", class: className });
+            url.hash = "";
+            const output = document.getElementById("homeworkLink");
+            output.value = url.href;
+            output.classList.remove("hidden");
+            output.focus();
+            output.select();
+        });
+    }
     select.addEventListener("change", () => {
         const url = new URL(location.href);
         url.searchParams.set("activity", select.value);
@@ -139,7 +162,8 @@ function renderActivityHeading() {
 
     document.getElementById("activityTitle").textContent = activity.title;
     document.getElementById("activityInfo").textContent =
-        activity.subject + " • " + activity.yearLevel + " • " + activity.topic;
+        activity.subject + " • " + activity.yearLevel + " • " + activity.topic +
+        (assignedClass ? " • Homework • " + assignedClass : "");
 }
 
 /* ===== EVENT LISTENERS ===== */
@@ -181,7 +205,7 @@ async function startActivity() {
             .value
             .trim();
 
-    const classInput =
+    const classInput = assignedClass ||
         document
             .getElementById("studentClass")
             .value
@@ -199,7 +223,7 @@ async function startActivity() {
         return;
     }
 
-    if (activity?.mode === "homework" && !/^[0-9]{5}$/.test(studentIdInput)) {
+    if ((assignedClass || activity?.mode === "homework") && !/^[0-9]{5}$/.test(studentIdInput)) {
         errorBox.textContent = "Enter your five-digit ZipGrade Student ID.";
         return;
     }
@@ -227,7 +251,7 @@ async function startActivity() {
             ? ["id", studentIdInput.toLowerCase()]
             : ["name", nameInput.toLowerCase(), classInput.toLowerCase()];
         const digest = await crypto.subtle.digest("SHA-256",
-            new TextEncoder().encode(JSON.stringify([selectedActivityId, identity])));
+            new TextEncoder().encode(JSON.stringify(assignedClass ? [selectedActivityId, identity, assignedClass] : [selectedActivityId, identity])));
         homeworkKey = "sb3k-homework:" + Array.from(new Uint8Array(digest),
             byte => byte.toString(16).padStart(2, "0")).join("");
     } catch {
@@ -339,7 +363,7 @@ function saveSession() {
             homeworkKey
         });
         sessionStorage.setItem(sessionStorageKey, snapshot);
-        if (selectedActivityId === DEFAULT_ACTIVITY_ID) {
+        if (!assignedClass && selectedActivityId === DEFAULT_ACTIVITY_ID) {
             sessionStorage.removeItem(LEGACY_SESSION_KEY);
         }
         if (homeworkKey) {
@@ -365,7 +389,7 @@ function restoreSession(persistentKey) {
     let saved;
     try {
         const stored = sessionStorage.getItem(sessionStorageKey);
-        const legacy = selectedActivityId === DEFAULT_ACTIVITY_ID
+        const legacy = !assignedClass && selectedActivityId === DEFAULT_ACTIVITY_ID
             ? sessionStorage.getItem(LEGACY_SESSION_KEY)
             : null;
         saved = JSON.parse(persistentKey ? localStorage.getItem(persistentKey) : stored ?? legacy);

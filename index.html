@@ -55,6 +55,16 @@
             <select id="activitySelect"></select>
         </div>
 
+        <form id="homeworkLinkBuilder" class="hidden">
+            <details>
+                <summary>Create a homework link</summary>
+                <label for="homeworkClass">Class</label>
+                <input id="homeworkClass" type="text" maxlength="40" required placeholder="e.g. 7A">
+                <button type="submit">Generate link</button>
+                <input id="homeworkLink" class="hidden" type="url" readonly aria-label="Homework link to copy">
+            </details>
+        </form>
+
         <div class="identification-option">
             <label for="studentId">
                 Student ID
@@ -264,7 +274,7 @@
     </div>
 </footer>
 
-<script src="script.js?v=0.4.3"></script>
+<script src="script.js?v=0.4.4"></script>
 
 </body>
 </html>
