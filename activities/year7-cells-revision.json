@@ -1,0 +1,2558 @@
+{
+  "activityId": "year7-cells-revision",
+  "title": "7.3 Cells and Classification Revision",
+  "subject": "Science",
+  "yearLevel": "Year 7",
+  "topic": "Cells and classification",
+  "version": "1.0",
+  "mode": "practice",
+  "settings": {
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "allowBack": true,
+    "showFinalScore": true,
+    "feedback": {
+      "afterEachQuestion": true,
+      "onResultsScreen": true,
+      "showCorrectAnswers": true,
+      "showExplanations": true
+    },
+    "passingPercentage": 50
+  },
+  "studentFields": {
+    "studentId": {
+      "enabled": true,
+      "required": false
+    },
+    "name": {
+      "enabled": true,
+      "requiredWithoutStudentId": true
+    },
+    "class": {
+      "enabled": true,
+      "requiredWithoutStudentId": true
+    }
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-cell-structures",
+          "name": "Cell structures"
+        }
+      ],
+      "question": "Which cell structure stores most of a plant or animal cell’s genetic information?",
+      "options": [
+        "Nucleus",
+        "Cell membrane",
+        "Chloroplast",
+        "Large central vacuole"
+      ],
+      "answer": "Nucleus",
+      "marks": 1,
+      "feedback": "Nucleus is the best choice because it contains most of the cell’s DNA."
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-cell-structures",
+          "name": "Cell structures"
+        }
+      ],
+      "question": "Which cell structure controls what enters and leaves the cell?",
+      "options": [
+        "Cell membrane",
+        "Cell wall",
+        "Mitochondrion",
+        "Cytoplasm"
+      ],
+      "answer": "Cell membrane",
+      "marks": 1,
+      "feedback": "Cell membrane is the best choice because it forms a selectively permeable boundary."
+    },
+    {
+      "id": "q3",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-cell-structures",
+          "name": "Cell structures"
+        }
+      ],
+      "question": "Which cell structure provides rigid support outside a plant cell membrane?",
+      "options": [
+        "Cell wall",
+        "Chloroplast",
+        "Large central vacuole",
+        "Ribosome"
+      ],
+      "answer": "Cell wall",
+      "marks": 1,
+      "feedback": "Cell wall is the best choice because its rigid structure helps support the cell."
+    },
+    {
+      "id": "q4",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-cell-structures",
+          "name": "Cell structures"
+        }
+      ],
+      "question": "Which cell structure captures light energy for photosynthesis?",
+      "options": [
+        "Chloroplast",
+        "Mitochondrion",
+        "Cytoplasm",
+        "Nucleus"
+      ],
+      "answer": "Chloroplast",
+      "marks": 1,
+      "feedback": "Chloroplast is the best choice because it contains pigments that absorb light."
+    },
+    {
+      "id": "q5",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-cell-structures",
+          "name": "Cell structures"
+        }
+      ],
+      "question": "Which cell structure releases usable energy from food during aerobic respiration?",
+      "options": [
+        "Mitochondrion",
+        "Large central vacuole",
+        "Ribosome",
+        "Cell membrane"
+      ],
+      "answer": "Mitochondrion",
+      "marks": 1,
+      "feedback": "Mitochondrion is the best choice because it is a major site of aerobic respiration."
+    },
+    {
+      "id": "q6",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-cell-structures",
+          "name": "Cell structures"
+        }
+      ],
+      "question": "Which cell structure helps maintain pressure in a plant cell?",
+      "options": [
+        "Large central vacuole",
+        "Cytoplasm",
+        "Nucleus",
+        "Cell wall"
+      ],
+      "answer": "Large central vacuole",
+      "marks": 1,
+      "feedback": "Large central vacuole is the best choice because water inside it helps keep the cell firm."
+    },
+    {
+      "id": "q7",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-cell-structures",
+          "name": "Cell structures"
+        }
+      ],
+      "question": "Which cell structure provides a medium where many chemical reactions occur?",
+      "options": [
+        "Cytoplasm",
+        "Ribosome",
+        "Cell membrane",
+        "Chloroplast"
+      ],
+      "answer": "Cytoplasm",
+      "marks": 1,
+      "feedback": "Cytoplasm is the best choice because many reactions take place in this material inside the cell."
+    },
+    {
+      "id": "q8",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-cell-structures",
+          "name": "Cell structures"
+        }
+      ],
+      "question": "Which cell structure assembles proteins?",
+      "options": [
+        "Ribosome",
+        "Nucleus",
+        "Cell wall",
+        "Mitochondrion"
+      ],
+      "answer": "Ribosome",
+      "marks": 1,
+      "feedback": "Ribosome is the best choice because it links amino acids to make proteins."
+    },
+    {
+      "id": "q9",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-classification",
+          "name": "Classification"
+        }
+      ],
+      "question": "Which group includes a frog?",
+      "options": [
+        "Amphibian",
+        "Fish",
+        "Bird",
+        "Insect"
+      ],
+      "answer": "Amphibian",
+      "marks": 1,
+      "feedback": "The specimen belongs to amphibian: it is a vertebrate with moist skin and a typical aquatic larval stage."
+    },
+    {
+      "id": "q10",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-classification",
+          "name": "Classification"
+        }
+      ],
+      "question": "Which group includes a salmon?",
+      "options": [
+        "Fish",
+        "Mammal",
+        "Reptile",
+        "Arachnid"
+      ],
+      "answer": "Fish",
+      "marks": 1,
+      "feedback": "The specimen belongs to fish: it is a vertebrate with fins and gills throughout its life."
+    },
+    {
+      "id": "q11",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-classification",
+          "name": "Classification"
+        }
+      ],
+      "question": "Which group includes a dolphin?",
+      "options": [
+        "Mammal",
+        "Bird",
+        "Insect",
+        "Mollusc"
+      ],
+      "answer": "Mammal",
+      "marks": 1,
+      "feedback": "The specimen belongs to mammal: it is a vertebrate that breathes with lungs and feeds milk to its young."
+    },
+    {
+      "id": "q12",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-classification",
+          "name": "Classification"
+        }
+      ],
+      "question": "Which group includes a penguin?",
+      "options": [
+        "Bird",
+        "Reptile",
+        "Arachnid",
+        "Amphibian"
+      ],
+      "answer": "Bird",
+      "marks": 1,
+      "feedback": "The specimen belongs to bird: it is a vertebrate with feathers and a beak."
+    },
+    {
+      "id": "q13",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-classification",
+          "name": "Classification"
+        }
+      ],
+      "question": "Which group includes a snake?",
+      "options": [
+        "Reptile",
+        "Insect",
+        "Mollusc",
+        "Fish"
+      ],
+      "answer": "Reptile",
+      "marks": 1,
+      "feedback": "The specimen belongs to reptile: it is a vertebrate with dry scales that breathes with lungs and sheds its skin."
+    },
+    {
+      "id": "q14",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-classification",
+          "name": "Classification"
+        }
+      ],
+      "question": "Which group includes a butterfly?",
+      "options": [
+        "Insect",
+        "Arachnid",
+        "Amphibian",
+        "Mammal"
+      ],
+      "answer": "Insect",
+      "marks": 1,
+      "feedback": "The specimen belongs to insect: it is an invertebrate with six legs, three main body sections and antennae."
+    },
+    {
+      "id": "q15",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-classification",
+          "name": "Classification"
+        }
+      ],
+      "question": "Which group includes a spider?",
+      "options": [
+        "Arachnid",
+        "Mollusc",
+        "Fish",
+        "Bird"
+      ],
+      "answer": "Arachnid",
+      "marks": 1,
+      "feedback": "The specimen belongs to arachnid: it is an invertebrate with eight legs, two main body sections and no antennae."
+    },
+    {
+      "id": "q16",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-classification",
+          "name": "Classification"
+        }
+      ],
+      "question": "Which group includes a snail?",
+      "options": [
+        "Mollusc",
+        "Amphibian",
+        "Mammal",
+        "Reptile"
+      ],
+      "answer": "Mollusc",
+      "marks": 1,
+      "feedback": "The specimen belongs to mollusc: it is a soft-bodied invertebrate with a muscular foot and a shell."
+    },
+    {
+      "id": "q17",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-microscopy",
+          "name": "Microscopy"
+        }
+      ],
+      "question": "A microscope has a 10× eyepiece and a 2× objective. Which label is the objective magnification?",
+      "options": [
+        "2×",
+        "20×",
+        "12×",
+        "40×"
+      ],
+      "answer": "2×",
+      "marks": 1,
+      "feedback": "The objective magnification is the number printed on the objective lens."
+    },
+    {
+      "id": "q18",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-microscopy",
+          "name": "Microscopy"
+        }
+      ],
+      "question": "A microscope has a 10× eyepiece and a 4× objective. Which label is the objective magnification?",
+      "options": [
+        "4×",
+        "40×",
+        "14×",
+        "80×"
+      ],
+      "answer": "4×",
+      "marks": 1,
+      "feedback": "The objective magnification is the number printed on the objective lens."
+    },
+    {
+      "id": "q19",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-microscopy",
+          "name": "Microscopy"
+        }
+      ],
+      "question": "A microscope has a 10× eyepiece and a 6× objective. Which label is the objective magnification?",
+      "options": [
+        "6×",
+        "60×",
+        "16×",
+        "120×"
+      ],
+      "answer": "6×",
+      "marks": 1,
+      "feedback": "The objective magnification is the number printed on the objective lens."
+    },
+    {
+      "id": "q20",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-microscopy",
+          "name": "Microscopy"
+        }
+      ],
+      "question": "A microscope has a 10× eyepiece and a 8× objective. Which label is the objective magnification?",
+      "options": [
+        "8×",
+        "80×",
+        "18×",
+        "160×"
+      ],
+      "answer": "8×",
+      "marks": 1,
+      "feedback": "The objective magnification is the number printed on the objective lens."
+    },
+    {
+      "id": "q21",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-microscopy",
+          "name": "Microscopy"
+        }
+      ],
+      "question": "A microscope has a 10× eyepiece and a 10× objective. Which label is the objective magnification?",
+      "options": [
+        "10×",
+        "100×",
+        "20×",
+        "200×"
+      ],
+      "answer": "10×",
+      "marks": 1,
+      "feedback": "The objective magnification is the number printed on the objective lens."
+    },
+    {
+      "id": "q22",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-microscopy",
+          "name": "Microscopy"
+        }
+      ],
+      "question": "A microscope has a 10× eyepiece and a 12× objective. Which label is the objective magnification?",
+      "options": [
+        "12×",
+        "120×",
+        "22×",
+        "240×"
+      ],
+      "answer": "12×",
+      "marks": 1,
+      "feedback": "The objective magnification is the number printed on the objective lens."
+    },
+    {
+      "id": "q23",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-microscopy",
+          "name": "Microscopy"
+        }
+      ],
+      "question": "A microscope has a 10× eyepiece and a 14× objective. Which label is the objective magnification?",
+      "options": [
+        "14×",
+        "140×",
+        "24×",
+        "280×"
+      ],
+      "answer": "14×",
+      "marks": 1,
+      "feedback": "The objective magnification is the number printed on the objective lens."
+    },
+    {
+      "id": "q24",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-microscopy",
+          "name": "Microscopy"
+        }
+      ],
+      "question": "A microscope has a 10× eyepiece and a 16× objective. Which label is the objective magnification?",
+      "options": [
+        "16×",
+        "160×",
+        "26×",
+        "320×"
+      ],
+      "answer": "16×",
+      "marks": 1,
+      "feedback": "The objective magnification is the number printed on the objective lens."
+    },
+    {
+      "id": "q25",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "A student counts 3 cells in one microscope field. What did they record?",
+      "options": [
+        "A quantitative observation",
+        "A prediction about all cells",
+        "A conclusion about cell function",
+        "A classification key"
+      ],
+      "answer": "A quantitative observation",
+      "marks": 1,
+      "feedback": "A count is a numerical observation."
+    },
+    {
+      "id": "q26",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "A student counts 4 cells in one microscope field. What did they record?",
+      "options": [
+        "A quantitative observation",
+        "A prediction about all cells",
+        "A conclusion about cell function",
+        "A classification key"
+      ],
+      "answer": "A quantitative observation",
+      "marks": 1,
+      "feedback": "A count is a numerical observation."
+    },
+    {
+      "id": "q27",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "A student counts 5 cells in one microscope field. What did they record?",
+      "options": [
+        "A quantitative observation",
+        "A prediction about all cells",
+        "A conclusion about cell function",
+        "A classification key"
+      ],
+      "answer": "A quantitative observation",
+      "marks": 1,
+      "feedback": "A count is a numerical observation."
+    },
+    {
+      "id": "q28",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "A student counts 6 cells in one microscope field. What did they record?",
+      "options": [
+        "A quantitative observation",
+        "A prediction about all cells",
+        "A conclusion about cell function",
+        "A classification key"
+      ],
+      "answer": "A quantitative observation",
+      "marks": 1,
+      "feedback": "A count is a numerical observation."
+    },
+    {
+      "id": "q29",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "A student counts 7 cells in one microscope field. What did they record?",
+      "options": [
+        "A quantitative observation",
+        "A prediction about all cells",
+        "A conclusion about cell function",
+        "A classification key"
+      ],
+      "answer": "A quantitative observation",
+      "marks": 1,
+      "feedback": "A count is a numerical observation."
+    },
+    {
+      "id": "q30",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "A student counts 8 cells in one microscope field. What did they record?",
+      "options": [
+        "A quantitative observation",
+        "A prediction about all cells",
+        "A conclusion about cell function",
+        "A classification key"
+      ],
+      "answer": "A quantitative observation",
+      "marks": 1,
+      "feedback": "A count is a numerical observation."
+    },
+    {
+      "id": "q31",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "A student counts 9 cells in one microscope field. What did they record?",
+      "options": [
+        "A quantitative observation",
+        "A prediction about all cells",
+        "A conclusion about cell function",
+        "A classification key"
+      ],
+      "answer": "A quantitative observation",
+      "marks": 1,
+      "feedback": "A count is a numerical observation."
+    },
+    {
+      "id": "q32",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "A student counts 10 cells in one microscope field. What did they record?",
+      "options": [
+        "A quantitative observation",
+        "A prediction about all cells",
+        "A conclusion about cell function",
+        "A classification key"
+      ],
+      "answer": "A quantitative observation",
+      "marks": 1,
+      "feedback": "A count is a numerical observation."
+    },
+    {
+      "id": "q33",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "A student counts 11 cells in one microscope field. What did they record?",
+      "options": [
+        "A quantitative observation",
+        "A prediction about all cells",
+        "A conclusion about cell function",
+        "A classification key"
+      ],
+      "answer": "A quantitative observation",
+      "marks": 1,
+      "feedback": "A count is a numerical observation."
+    },
+    {
+      "id": "q34",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "A student counts 12 cells in one microscope field. What did they record?",
+      "options": [
+        "A quantitative observation",
+        "A prediction about all cells",
+        "A conclusion about cell function",
+        "A classification key"
+      ],
+      "answer": "A quantitative observation",
+      "marks": 1,
+      "feedback": "A count is a numerical observation."
+    },
+    {
+      "id": "q35",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "A student counts 13 cells in one microscope field. What did they record?",
+      "options": [
+        "A quantitative observation",
+        "A prediction about all cells",
+        "A conclusion about cell function",
+        "A classification key"
+      ],
+      "answer": "A quantitative observation",
+      "marks": 1,
+      "feedback": "A count is a numerical observation."
+    },
+    {
+      "id": "q36",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "A student counts 14 cells in one microscope field. What did they record?",
+      "options": [
+        "A quantitative observation",
+        "A prediction about all cells",
+        "A conclusion about cell function",
+        "A classification key"
+      ],
+      "answer": "A quantitative observation",
+      "marks": 1,
+      "feedback": "A count is a numerical observation."
+    },
+    {
+      "id": "q37",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "A student counts 15 cells in one microscope field. What did they record?",
+      "options": [
+        "A quantitative observation",
+        "A prediction about all cells",
+        "A conclusion about cell function",
+        "A classification key"
+      ],
+      "answer": "A quantitative observation",
+      "marks": 1,
+      "feedback": "A count is a numerical observation."
+    },
+    {
+      "id": "q38",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "A student counts 16 cells in one microscope field. What did they record?",
+      "options": [
+        "A quantitative observation",
+        "A prediction about all cells",
+        "A conclusion about cell function",
+        "A classification key"
+      ],
+      "answer": "A quantitative observation",
+      "marks": 1,
+      "feedback": "A count is a numerical observation."
+    },
+    {
+      "id": "q39",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "A student counts 17 cells in one microscope field. What did they record?",
+      "options": [
+        "A quantitative observation",
+        "A prediction about all cells",
+        "A conclusion about cell function",
+        "A classification key"
+      ],
+      "answer": "A quantitative observation",
+      "marks": 1,
+      "feedback": "A count is a numerical observation."
+    },
+    {
+      "id": "q40",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "A student counts 18 cells in one microscope field. What did they record?",
+      "options": [
+        "A quantitative observation",
+        "A prediction about all cells",
+        "A conclusion about cell function",
+        "A classification key"
+      ],
+      "answer": "A quantitative observation",
+      "marks": 1,
+      "feedback": "A count is a numerical observation."
+    },
+    {
+      "id": "q41",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-cell-structures",
+          "name": "Cell structures"
+        }
+      ],
+      "question": "A cell model must represent the structure that stores most of a plant or animal cell’s genetic information. Which label belongs on that part?",
+      "options": [
+        "Nucleus",
+        "Cell membrane",
+        "Chloroplast",
+        "Large central vacuole"
+      ],
+      "answer": "Nucleus",
+      "marks": 1,
+      "feedback": "Nucleus is the best choice because it contains most of the cell’s DNA."
+    },
+    {
+      "id": "q42",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-cell-structures",
+          "name": "Cell structures"
+        }
+      ],
+      "question": "A cell model must represent the structure that controls what enters and leaves the cell. Which label belongs on that part?",
+      "options": [
+        "Cell membrane",
+        "Cell wall",
+        "Mitochondrion",
+        "Cytoplasm"
+      ],
+      "answer": "Cell membrane",
+      "marks": 1,
+      "feedback": "Cell membrane is the best choice because it forms a selectively permeable boundary."
+    },
+    {
+      "id": "q43",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-cell-structures",
+          "name": "Cell structures"
+        }
+      ],
+      "question": "A cell model must represent the structure that provides rigid support outside a plant cell membrane. Which label belongs on that part?",
+      "options": [
+        "Cell wall",
+        "Chloroplast",
+        "Large central vacuole",
+        "Ribosome"
+      ],
+      "answer": "Cell wall",
+      "marks": 1,
+      "feedback": "Cell wall is the best choice because its rigid structure helps support the cell."
+    },
+    {
+      "id": "q44",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-cell-structures",
+          "name": "Cell structures"
+        }
+      ],
+      "question": "A cell model must represent the structure that captures light energy for photosynthesis. Which label belongs on that part?",
+      "options": [
+        "Chloroplast",
+        "Mitochondrion",
+        "Cytoplasm",
+        "Nucleus"
+      ],
+      "answer": "Chloroplast",
+      "marks": 1,
+      "feedback": "Chloroplast is the best choice because it contains pigments that absorb light."
+    },
+    {
+      "id": "q45",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-cell-structures",
+          "name": "Cell structures"
+        }
+      ],
+      "question": "A cell model must represent the structure that releases usable energy from food during aerobic respiration. Which label belongs on that part?",
+      "options": [
+        "Mitochondrion",
+        "Large central vacuole",
+        "Ribosome",
+        "Cell membrane"
+      ],
+      "answer": "Mitochondrion",
+      "marks": 1,
+      "feedback": "Mitochondrion is the best choice because it is a major site of aerobic respiration."
+    },
+    {
+      "id": "q46",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-cell-structures",
+          "name": "Cell structures"
+        }
+      ],
+      "question": "A cell model must represent the structure that helps maintain pressure in a plant cell. Which label belongs on that part?",
+      "options": [
+        "Large central vacuole",
+        "Cytoplasm",
+        "Nucleus",
+        "Cell wall"
+      ],
+      "answer": "Large central vacuole",
+      "marks": 1,
+      "feedback": "Large central vacuole is the best choice because water inside it helps keep the cell firm."
+    },
+    {
+      "id": "q47",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-cell-structures",
+          "name": "Cell structures"
+        }
+      ],
+      "question": "A cell model must represent the structure that provides a medium where many chemical reactions occur. Which label belongs on that part?",
+      "options": [
+        "Cytoplasm",
+        "Ribosome",
+        "Cell membrane",
+        "Chloroplast"
+      ],
+      "answer": "Cytoplasm",
+      "marks": 1,
+      "feedback": "Cytoplasm is the best choice because many reactions take place in this material inside the cell."
+    },
+    {
+      "id": "q48",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-cell-structures",
+          "name": "Cell structures"
+        }
+      ],
+      "question": "A cell model must represent the structure that assembles proteins. Which label belongs on that part?",
+      "options": [
+        "Ribosome",
+        "Nucleus",
+        "Cell wall",
+        "Mitochondrion"
+      ],
+      "answer": "Ribosome",
+      "marks": 1,
+      "feedback": "Ribosome is the best choice because it links amino acids to make proteins."
+    },
+    {
+      "id": "q49",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-classification",
+          "name": "Classification"
+        }
+      ],
+      "question": "A specimen is a vertebrate with moist skin and a typical aquatic larval stage. Which group fits it best?",
+      "options": [
+        "Amphibian",
+        "Fish",
+        "Bird",
+        "Insect"
+      ],
+      "answer": "Amphibian",
+      "marks": 1,
+      "feedback": "The specimen belongs to amphibian: it is a vertebrate with moist skin and a typical aquatic larval stage."
+    },
+    {
+      "id": "q50",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-classification",
+          "name": "Classification"
+        }
+      ],
+      "question": "A specimen is a vertebrate with fins and gills throughout its life. Which group fits it best?",
+      "options": [
+        "Fish",
+        "Mammal",
+        "Reptile",
+        "Arachnid"
+      ],
+      "answer": "Fish",
+      "marks": 1,
+      "feedback": "The specimen belongs to fish: it is a vertebrate with fins and gills throughout its life."
+    },
+    {
+      "id": "q51",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-classification",
+          "name": "Classification"
+        }
+      ],
+      "question": "A specimen is a vertebrate that breathes with lungs and feeds milk to its young. Which group fits it best?",
+      "options": [
+        "Mammal",
+        "Bird",
+        "Insect",
+        "Mollusc"
+      ],
+      "answer": "Mammal",
+      "marks": 1,
+      "feedback": "The specimen belongs to mammal: it is a vertebrate that breathes with lungs and feeds milk to its young."
+    },
+    {
+      "id": "q52",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-classification",
+          "name": "Classification"
+        }
+      ],
+      "question": "A specimen is a vertebrate with feathers and a beak. Which group fits it best?",
+      "options": [
+        "Bird",
+        "Reptile",
+        "Arachnid",
+        "Amphibian"
+      ],
+      "answer": "Bird",
+      "marks": 1,
+      "feedback": "The specimen belongs to bird: it is a vertebrate with feathers and a beak."
+    },
+    {
+      "id": "q53",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-classification",
+          "name": "Classification"
+        }
+      ],
+      "question": "A specimen is a vertebrate with dry scales that breathes with lungs and sheds its skin. Which group fits it best?",
+      "options": [
+        "Reptile",
+        "Insect",
+        "Mollusc",
+        "Fish"
+      ],
+      "answer": "Reptile",
+      "marks": 1,
+      "feedback": "The specimen belongs to reptile: it is a vertebrate with dry scales that breathes with lungs and sheds its skin."
+    },
+    {
+      "id": "q54",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-classification",
+          "name": "Classification"
+        }
+      ],
+      "question": "A specimen is an invertebrate with six legs, three main body sections and antennae. Which group fits it best?",
+      "options": [
+        "Insect",
+        "Arachnid",
+        "Amphibian",
+        "Mammal"
+      ],
+      "answer": "Insect",
+      "marks": 1,
+      "feedback": "The specimen belongs to insect: it is an invertebrate with six legs, three main body sections and antennae."
+    },
+    {
+      "id": "q55",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-classification",
+          "name": "Classification"
+        }
+      ],
+      "question": "A specimen is an invertebrate with eight legs, two main body sections and no antennae. Which group fits it best?",
+      "options": [
+        "Arachnid",
+        "Mollusc",
+        "Fish",
+        "Bird"
+      ],
+      "answer": "Arachnid",
+      "marks": 1,
+      "feedback": "The specimen belongs to arachnid: it is an invertebrate with eight legs, two main body sections and no antennae."
+    },
+    {
+      "id": "q56",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-classification",
+          "name": "Classification"
+        }
+      ],
+      "question": "A specimen is a soft-bodied invertebrate with a muscular foot and a shell. Which group fits it best?",
+      "options": [
+        "Mollusc",
+        "Amphibian",
+        "Mammal",
+        "Reptile"
+      ],
+      "answer": "Mollusc",
+      "marks": 1,
+      "feedback": "The specimen belongs to mollusc: it is a soft-bodied invertebrate with a muscular foot and a shell."
+    },
+    {
+      "id": "q57",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-microscopy",
+          "name": "Microscopy"
+        }
+      ],
+      "question": "What is the total magnification with a 10× eyepiece and a 2× objective?",
+      "options": [
+        "20×",
+        "12×",
+        "2×",
+        "40×"
+      ],
+      "answer": "20×",
+      "marks": 1,
+      "feedback": "Multiply eyepiece magnification by objective magnification."
+    },
+    {
+      "id": "q58",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-microscopy",
+          "name": "Microscopy"
+        }
+      ],
+      "question": "What is the total magnification with a 10× eyepiece and a 4× objective?",
+      "options": [
+        "40×",
+        "14×",
+        "4×",
+        "80×"
+      ],
+      "answer": "40×",
+      "marks": 1,
+      "feedback": "Multiply eyepiece magnification by objective magnification."
+    },
+    {
+      "id": "q59",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-microscopy",
+          "name": "Microscopy"
+        }
+      ],
+      "question": "What is the total magnification with a 10× eyepiece and a 6× objective?",
+      "options": [
+        "60×",
+        "16×",
+        "6×",
+        "120×"
+      ],
+      "answer": "60×",
+      "marks": 1,
+      "feedback": "Multiply eyepiece magnification by objective magnification."
+    },
+    {
+      "id": "q60",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-microscopy",
+          "name": "Microscopy"
+        }
+      ],
+      "question": "What is the total magnification with a 10× eyepiece and a 8× objective?",
+      "options": [
+        "80×",
+        "18×",
+        "8×",
+        "160×"
+      ],
+      "answer": "80×",
+      "marks": 1,
+      "feedback": "Multiply eyepiece magnification by objective magnification."
+    },
+    {
+      "id": "q61",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-microscopy",
+          "name": "Microscopy"
+        }
+      ],
+      "question": "What is the total magnification with a 10× eyepiece and a 10× objective?",
+      "options": [
+        "100×",
+        "20×",
+        "10×",
+        "200×"
+      ],
+      "answer": "100×",
+      "marks": 1,
+      "feedback": "Multiply eyepiece magnification by objective magnification."
+    },
+    {
+      "id": "q62",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-microscopy",
+          "name": "Microscopy"
+        }
+      ],
+      "question": "What is the total magnification with a 10× eyepiece and a 12× objective?",
+      "options": [
+        "120×",
+        "22×",
+        "12×",
+        "240×"
+      ],
+      "answer": "120×",
+      "marks": 1,
+      "feedback": "Multiply eyepiece magnification by objective magnification."
+    },
+    {
+      "id": "q63",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-microscopy",
+          "name": "Microscopy"
+        }
+      ],
+      "question": "What is the total magnification with a 10× eyepiece and a 14× objective?",
+      "options": [
+        "140×",
+        "24×",
+        "14×",
+        "280×"
+      ],
+      "answer": "140×",
+      "marks": 1,
+      "feedback": "Multiply eyepiece magnification by objective magnification."
+    },
+    {
+      "id": "q64",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-microscopy",
+          "name": "Microscopy"
+        }
+      ],
+      "question": "What is the total magnification with a 10× eyepiece and a 16× objective?",
+      "options": [
+        "160×",
+        "26×",
+        "16×",
+        "320×"
+      ],
+      "answer": "160×",
+      "marks": 1,
+      "feedback": "Multiply eyepiece magnification by objective magnification."
+    },
+    {
+      "id": "q65",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "Two equal-sized fields contain 3 and 7 cells. What is their mean cell count?",
+      "options": [
+        "5",
+        "3",
+        "7",
+        "10"
+      ],
+      "answer": "5",
+      "marks": 1,
+      "feedback": "Add the counts and divide by two."
+    },
+    {
+      "id": "q66",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "Two equal-sized fields contain 4 and 8 cells. What is their mean cell count?",
+      "options": [
+        "6",
+        "4",
+        "8",
+        "12"
+      ],
+      "answer": "6",
+      "marks": 1,
+      "feedback": "Add the counts and divide by two."
+    },
+    {
+      "id": "q67",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "Two equal-sized fields contain 5 and 9 cells. What is their mean cell count?",
+      "options": [
+        "7",
+        "5",
+        "9",
+        "14"
+      ],
+      "answer": "7",
+      "marks": 1,
+      "feedback": "Add the counts and divide by two."
+    },
+    {
+      "id": "q68",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "Two equal-sized fields contain 6 and 10 cells. What is their mean cell count?",
+      "options": [
+        "8",
+        "6",
+        "10",
+        "16"
+      ],
+      "answer": "8",
+      "marks": 1,
+      "feedback": "Add the counts and divide by two."
+    },
+    {
+      "id": "q69",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "Two equal-sized fields contain 7 and 11 cells. What is their mean cell count?",
+      "options": [
+        "9",
+        "7",
+        "11",
+        "18"
+      ],
+      "answer": "9",
+      "marks": 1,
+      "feedback": "Add the counts and divide by two."
+    },
+    {
+      "id": "q70",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "Two equal-sized fields contain 8 and 12 cells. What is their mean cell count?",
+      "options": [
+        "10",
+        "8",
+        "12",
+        "20"
+      ],
+      "answer": "10",
+      "marks": 1,
+      "feedback": "Add the counts and divide by two."
+    },
+    {
+      "id": "q71",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "Two equal-sized fields contain 9 and 13 cells. What is their mean cell count?",
+      "options": [
+        "11",
+        "9",
+        "13",
+        "22"
+      ],
+      "answer": "11",
+      "marks": 1,
+      "feedback": "Add the counts and divide by two."
+    },
+    {
+      "id": "q72",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "Two equal-sized fields contain 10 and 14 cells. What is their mean cell count?",
+      "options": [
+        "12",
+        "10",
+        "14",
+        "24"
+      ],
+      "answer": "12",
+      "marks": 1,
+      "feedback": "Add the counts and divide by two."
+    },
+    {
+      "id": "q73",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "Two equal-sized fields contain 11 and 15 cells. What is their mean cell count?",
+      "options": [
+        "13",
+        "11",
+        "15",
+        "26"
+      ],
+      "answer": "13",
+      "marks": 1,
+      "feedback": "Add the counts and divide by two."
+    },
+    {
+      "id": "q74",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "Two equal-sized fields contain 12 and 16 cells. What is their mean cell count?",
+      "options": [
+        "14",
+        "12",
+        "16",
+        "28"
+      ],
+      "answer": "14",
+      "marks": 1,
+      "feedback": "Add the counts and divide by two."
+    },
+    {
+      "id": "q75",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "Two equal-sized fields contain 13 and 17 cells. What is their mean cell count?",
+      "options": [
+        "15",
+        "13",
+        "17",
+        "30"
+      ],
+      "answer": "15",
+      "marks": 1,
+      "feedback": "Add the counts and divide by two."
+    },
+    {
+      "id": "q76",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "Two equal-sized fields contain 14 and 18 cells. What is their mean cell count?",
+      "options": [
+        "16",
+        "14",
+        "18",
+        "32"
+      ],
+      "answer": "16",
+      "marks": 1,
+      "feedback": "Add the counts and divide by two."
+    },
+    {
+      "id": "q77",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "Two equal-sized fields contain 15 and 19 cells. What is their mean cell count?",
+      "options": [
+        "17",
+        "15",
+        "19",
+        "34"
+      ],
+      "answer": "17",
+      "marks": 1,
+      "feedback": "Add the counts and divide by two."
+    },
+    {
+      "id": "q78",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "Two equal-sized fields contain 16 and 20 cells. What is their mean cell count?",
+      "options": [
+        "18",
+        "16",
+        "20",
+        "36"
+      ],
+      "answer": "18",
+      "marks": 1,
+      "feedback": "Add the counts and divide by two."
+    },
+    {
+      "id": "q79",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "Two equal-sized fields contain 17 and 21 cells. What is their mean cell count?",
+      "options": [
+        "19",
+        "17",
+        "21",
+        "38"
+      ],
+      "answer": "19",
+      "marks": 1,
+      "feedback": "Add the counts and divide by two."
+    },
+    {
+      "id": "q80",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "Two equal-sized fields contain 18 and 22 cells. What is their mean cell count?",
+      "options": [
+        "20",
+        "18",
+        "22",
+        "40"
+      ],
+      "answer": "20",
+      "marks": 1,
+      "feedback": "Add the counts and divide by two."
+    },
+    {
+      "id": "q81",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-cell-structures",
+          "name": "Cell structures"
+        }
+      ],
+      "question": "A cell can no longer carry out this function: stores most of a plant or animal cell’s genetic information. Which structure should be investigated first?",
+      "options": [
+        "Nucleus",
+        "Cell membrane",
+        "Chloroplast",
+        "Large central vacuole"
+      ],
+      "answer": "Nucleus",
+      "marks": 1,
+      "feedback": "Nucleus is the best choice because it contains most of the cell’s DNA."
+    },
+    {
+      "id": "q82",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-cell-structures",
+          "name": "Cell structures"
+        }
+      ],
+      "question": "A cell can no longer carry out this function: controls what enters and leaves the cell. Which structure should be investigated first?",
+      "options": [
+        "Cell membrane",
+        "Cell wall",
+        "Mitochondrion",
+        "Cytoplasm"
+      ],
+      "answer": "Cell membrane",
+      "marks": 1,
+      "feedback": "Cell membrane is the best choice because it forms a selectively permeable boundary."
+    },
+    {
+      "id": "q83",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-cell-structures",
+          "name": "Cell structures"
+        }
+      ],
+      "question": "A cell can no longer carry out this function: provides rigid support outside a plant cell membrane. Which structure should be investigated first?",
+      "options": [
+        "Cell wall",
+        "Chloroplast",
+        "Large central vacuole",
+        "Ribosome"
+      ],
+      "answer": "Cell wall",
+      "marks": 1,
+      "feedback": "Cell wall is the best choice because its rigid structure helps support the cell."
+    },
+    {
+      "id": "q84",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-cell-structures",
+          "name": "Cell structures"
+        }
+      ],
+      "question": "A cell can no longer carry out this function: captures light energy for photosynthesis. Which structure should be investigated first?",
+      "options": [
+        "Chloroplast",
+        "Mitochondrion",
+        "Cytoplasm",
+        "Nucleus"
+      ],
+      "answer": "Chloroplast",
+      "marks": 1,
+      "feedback": "Chloroplast is the best choice because it contains pigments that absorb light."
+    },
+    {
+      "id": "q85",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-cell-structures",
+          "name": "Cell structures"
+        }
+      ],
+      "question": "A cell can no longer carry out this function: releases usable energy from food during aerobic respiration. Which structure should be investigated first?",
+      "options": [
+        "Mitochondrion",
+        "Large central vacuole",
+        "Ribosome",
+        "Cell membrane"
+      ],
+      "answer": "Mitochondrion",
+      "marks": 1,
+      "feedback": "Mitochondrion is the best choice because it is a major site of aerobic respiration."
+    },
+    {
+      "id": "q86",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-cell-structures",
+          "name": "Cell structures"
+        }
+      ],
+      "question": "A cell can no longer carry out this function: helps maintain pressure in a plant cell. Which structure should be investigated first?",
+      "options": [
+        "Large central vacuole",
+        "Cytoplasm",
+        "Nucleus",
+        "Cell wall"
+      ],
+      "answer": "Large central vacuole",
+      "marks": 1,
+      "feedback": "Large central vacuole is the best choice because water inside it helps keep the cell firm."
+    },
+    {
+      "id": "q87",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-cell-structures",
+          "name": "Cell structures"
+        }
+      ],
+      "question": "A cell can no longer carry out this function: provides a medium where many chemical reactions occur. Which structure should be investigated first?",
+      "options": [
+        "Cytoplasm",
+        "Ribosome",
+        "Cell membrane",
+        "Chloroplast"
+      ],
+      "answer": "Cytoplasm",
+      "marks": 1,
+      "feedback": "Cytoplasm is the best choice because many reactions take place in this material inside the cell."
+    },
+    {
+      "id": "q88",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-cell-structures",
+          "name": "Cell structures"
+        }
+      ],
+      "question": "A cell can no longer carry out this function: assembles proteins. Which structure should be investigated first?",
+      "options": [
+        "Ribosome",
+        "Nucleus",
+        "Cell wall",
+        "Mitochondrion"
+      ],
+      "answer": "Ribosome",
+      "marks": 1,
+      "feedback": "Ribosome is the best choice because it links amino acids to make proteins."
+    },
+    {
+      "id": "q89",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-classification",
+          "name": "Classification"
+        }
+      ],
+      "question": "A field guide lists an unknown animal as a vertebrate with moist skin and a typical aquatic larval stage. Which group is best supported by those features?",
+      "options": [
+        "Amphibian",
+        "Fish",
+        "Bird",
+        "Insect"
+      ],
+      "answer": "Amphibian",
+      "marks": 1,
+      "feedback": "The specimen belongs to amphibian: it is a vertebrate with moist skin and a typical aquatic larval stage."
+    },
+    {
+      "id": "q90",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-classification",
+          "name": "Classification"
+        }
+      ],
+      "question": "A field guide lists an unknown animal as a vertebrate with fins and gills throughout its life. Which group is best supported by those features?",
+      "options": [
+        "Fish",
+        "Mammal",
+        "Reptile",
+        "Arachnid"
+      ],
+      "answer": "Fish",
+      "marks": 1,
+      "feedback": "The specimen belongs to fish: it is a vertebrate with fins and gills throughout its life."
+    },
+    {
+      "id": "q91",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-classification",
+          "name": "Classification"
+        }
+      ],
+      "question": "A field guide lists an unknown animal as a vertebrate that breathes with lungs and feeds milk to its young. Which group is best supported by those features?",
+      "options": [
+        "Mammal",
+        "Bird",
+        "Insect",
+        "Mollusc"
+      ],
+      "answer": "Mammal",
+      "marks": 1,
+      "feedback": "The specimen belongs to mammal: it is a vertebrate that breathes with lungs and feeds milk to its young."
+    },
+    {
+      "id": "q92",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-classification",
+          "name": "Classification"
+        }
+      ],
+      "question": "A field guide lists an unknown animal as a vertebrate with feathers and a beak. Which group is best supported by those features?",
+      "options": [
+        "Bird",
+        "Reptile",
+        "Arachnid",
+        "Amphibian"
+      ],
+      "answer": "Bird",
+      "marks": 1,
+      "feedback": "The specimen belongs to bird: it is a vertebrate with feathers and a beak."
+    },
+    {
+      "id": "q93",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-classification",
+          "name": "Classification"
+        }
+      ],
+      "question": "A field guide lists an unknown animal as a vertebrate with dry scales that breathes with lungs and sheds its skin. Which group is best supported by those features?",
+      "options": [
+        "Reptile",
+        "Insect",
+        "Mollusc",
+        "Fish"
+      ],
+      "answer": "Reptile",
+      "marks": 1,
+      "feedback": "The specimen belongs to reptile: it is a vertebrate with dry scales that breathes with lungs and sheds its skin."
+    },
+    {
+      "id": "q94",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-classification",
+          "name": "Classification"
+        }
+      ],
+      "question": "A field guide lists an unknown animal as an invertebrate with six legs, three main body sections and antennae. Which group is best supported by those features?",
+      "options": [
+        "Insect",
+        "Arachnid",
+        "Amphibian",
+        "Mammal"
+      ],
+      "answer": "Insect",
+      "marks": 1,
+      "feedback": "The specimen belongs to insect: it is an invertebrate with six legs, three main body sections and antennae."
+    },
+    {
+      "id": "q95",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-classification",
+          "name": "Classification"
+        }
+      ],
+      "question": "A field guide lists an unknown animal as an invertebrate with eight legs, two main body sections and no antennae. Which group is best supported by those features?",
+      "options": [
+        "Arachnid",
+        "Mollusc",
+        "Fish",
+        "Bird"
+      ],
+      "answer": "Arachnid",
+      "marks": 1,
+      "feedback": "The specimen belongs to arachnid: it is an invertebrate with eight legs, two main body sections and no antennae."
+    },
+    {
+      "id": "q96",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-classification",
+          "name": "Classification"
+        }
+      ],
+      "question": "A field guide lists an unknown animal as a soft-bodied invertebrate with a muscular foot and a shell. Which group is best supported by those features?",
+      "options": [
+        "Mollusc",
+        "Amphibian",
+        "Mammal",
+        "Reptile"
+      ],
+      "answer": "Mollusc",
+      "marks": 1,
+      "feedback": "The specimen belongs to mollusc: it is a soft-bodied invertebrate with a muscular foot and a shell."
+    },
+    {
+      "id": "q97",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-microscopy",
+          "name": "Microscopy"
+        }
+      ],
+      "question": "The field of view is 2 mm wide and 10 equally sized cells fit across it. What is the estimated width of one cell?",
+      "options": [
+        "0.2 mm",
+        "5 mm",
+        "2 mm",
+        "0.02 mm"
+      ],
+      "answer": "0.2 mm",
+      "marks": 1,
+      "feedback": "Divide the field width by the number of cells across it."
+    },
+    {
+      "id": "q98",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-microscopy",
+          "name": "Microscopy"
+        }
+      ],
+      "question": "The field of view is 4 mm wide and 20 equally sized cells fit across it. What is the estimated width of one cell?",
+      "options": [
+        "0.2 mm",
+        "5 mm",
+        "4 mm",
+        "0.02 mm"
+      ],
+      "answer": "0.2 mm",
+      "marks": 1,
+      "feedback": "Divide the field width by the number of cells across it."
+    },
+    {
+      "id": "q99",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-microscopy",
+          "name": "Microscopy"
+        }
+      ],
+      "question": "The field of view is 6 mm wide and 30 equally sized cells fit across it. What is the estimated width of one cell?",
+      "options": [
+        "0.2 mm",
+        "5 mm",
+        "6 mm",
+        "0.02 mm"
+      ],
+      "answer": "0.2 mm",
+      "marks": 1,
+      "feedback": "Divide the field width by the number of cells across it."
+    },
+    {
+      "id": "q100",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-microscopy",
+          "name": "Microscopy"
+        }
+      ],
+      "question": "The field of view is 8 mm wide and 40 equally sized cells fit across it. What is the estimated width of one cell?",
+      "options": [
+        "0.2 mm",
+        "5 mm",
+        "8 mm",
+        "0.02 mm"
+      ],
+      "answer": "0.2 mm",
+      "marks": 1,
+      "feedback": "Divide the field width by the number of cells across it."
+    },
+    {
+      "id": "q101",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-microscopy",
+          "name": "Microscopy"
+        }
+      ],
+      "question": "The field of view is 10 mm wide and 50 equally sized cells fit across it. What is the estimated width of one cell?",
+      "options": [
+        "0.2 mm",
+        "5 mm",
+        "10 mm",
+        "0.02 mm"
+      ],
+      "answer": "0.2 mm",
+      "marks": 1,
+      "feedback": "Divide the field width by the number of cells across it."
+    },
+    {
+      "id": "q102",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-microscopy",
+          "name": "Microscopy"
+        }
+      ],
+      "question": "The field of view is 12 mm wide and 60 equally sized cells fit across it. What is the estimated width of one cell?",
+      "options": [
+        "0.2 mm",
+        "5 mm",
+        "12 mm",
+        "0.02 mm"
+      ],
+      "answer": "0.2 mm",
+      "marks": 1,
+      "feedback": "Divide the field width by the number of cells across it."
+    },
+    {
+      "id": "q103",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-microscopy",
+          "name": "Microscopy"
+        }
+      ],
+      "question": "The field of view is 14 mm wide and 70 equally sized cells fit across it. What is the estimated width of one cell?",
+      "options": [
+        "0.2 mm",
+        "5 mm",
+        "14 mm",
+        "0.02 mm"
+      ],
+      "answer": "0.2 mm",
+      "marks": 1,
+      "feedback": "Divide the field width by the number of cells across it."
+    },
+    {
+      "id": "q104",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-microscopy",
+          "name": "Microscopy"
+        }
+      ],
+      "question": "The field of view is 16 mm wide and 80 equally sized cells fit across it. What is the estimated width of one cell?",
+      "options": [
+        "0.2 mm",
+        "5 mm",
+        "16 mm",
+        "0.02 mm"
+      ],
+      "answer": "0.2 mm",
+      "marks": 1,
+      "feedback": "Divide the field width by the number of cells across it."
+    },
+    {
+      "id": "q105",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "One group counts 3 cells in a single field. Another counts five randomly selected fields of the same size. Which method better estimates typical cells per field?",
+      "options": [
+        "The second group’s method",
+        "The first group’s method",
+        "Both are equally representative",
+        "Neither because cells cannot be counted"
+      ],
+      "answer": "The second group’s method",
+      "marks": 1,
+      "feedback": "Counting several randomly selected fields reduces sampling bias and shows variation."
+    },
+    {
+      "id": "q106",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "One group counts 4 cells in a single field. Another counts five randomly selected fields of the same size. Which method better estimates typical cells per field?",
+      "options": [
+        "The second group’s method",
+        "The first group’s method",
+        "Both are equally representative",
+        "Neither because cells cannot be counted"
+      ],
+      "answer": "The second group’s method",
+      "marks": 1,
+      "feedback": "Counting several randomly selected fields reduces sampling bias and shows variation."
+    },
+    {
+      "id": "q107",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "One group counts 5 cells in a single field. Another counts five randomly selected fields of the same size. Which method better estimates typical cells per field?",
+      "options": [
+        "The second group’s method",
+        "The first group’s method",
+        "Both are equally representative",
+        "Neither because cells cannot be counted"
+      ],
+      "answer": "The second group’s method",
+      "marks": 1,
+      "feedback": "Counting several randomly selected fields reduces sampling bias and shows variation."
+    },
+    {
+      "id": "q108",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "One group counts 6 cells in a single field. Another counts five randomly selected fields of the same size. Which method better estimates typical cells per field?",
+      "options": [
+        "The second group’s method",
+        "The first group’s method",
+        "Both are equally representative",
+        "Neither because cells cannot be counted"
+      ],
+      "answer": "The second group’s method",
+      "marks": 1,
+      "feedback": "Counting several randomly selected fields reduces sampling bias and shows variation."
+    },
+    {
+      "id": "q109",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "One group counts 7 cells in a single field. Another counts five randomly selected fields of the same size. Which method better estimates typical cells per field?",
+      "options": [
+        "The second group’s method",
+        "The first group’s method",
+        "Both are equally representative",
+        "Neither because cells cannot be counted"
+      ],
+      "answer": "The second group’s method",
+      "marks": 1,
+      "feedback": "Counting several randomly selected fields reduces sampling bias and shows variation."
+    },
+    {
+      "id": "q110",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "One group counts 8 cells in a single field. Another counts five randomly selected fields of the same size. Which method better estimates typical cells per field?",
+      "options": [
+        "The second group’s method",
+        "The first group’s method",
+        "Both are equally representative",
+        "Neither because cells cannot be counted"
+      ],
+      "answer": "The second group’s method",
+      "marks": 1,
+      "feedback": "Counting several randomly selected fields reduces sampling bias and shows variation."
+    },
+    {
+      "id": "q111",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "One group counts 9 cells in a single field. Another counts five randomly selected fields of the same size. Which method better estimates typical cells per field?",
+      "options": [
+        "The second group’s method",
+        "The first group’s method",
+        "Both are equally representative",
+        "Neither because cells cannot be counted"
+      ],
+      "answer": "The second group’s method",
+      "marks": 1,
+      "feedback": "Counting several randomly selected fields reduces sampling bias and shows variation."
+    },
+    {
+      "id": "q112",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "One group counts 10 cells in a single field. Another counts five randomly selected fields of the same size. Which method better estimates typical cells per field?",
+      "options": [
+        "The second group’s method",
+        "The first group’s method",
+        "Both are equally representative",
+        "Neither because cells cannot be counted"
+      ],
+      "answer": "The second group’s method",
+      "marks": 1,
+      "feedback": "Counting several randomly selected fields reduces sampling bias and shows variation."
+    },
+    {
+      "id": "q113",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "One group counts 11 cells in a single field. Another counts five randomly selected fields of the same size. Which method better estimates typical cells per field?",
+      "options": [
+        "The second group’s method",
+        "The first group’s method",
+        "Both are equally representative",
+        "Neither because cells cannot be counted"
+      ],
+      "answer": "The second group’s method",
+      "marks": 1,
+      "feedback": "Counting several randomly selected fields reduces sampling bias and shows variation."
+    },
+    {
+      "id": "q114",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "One group counts 12 cells in a single field. Another counts five randomly selected fields of the same size. Which method better estimates typical cells per field?",
+      "options": [
+        "The second group’s method",
+        "The first group’s method",
+        "Both are equally representative",
+        "Neither because cells cannot be counted"
+      ],
+      "answer": "The second group’s method",
+      "marks": 1,
+      "feedback": "Counting several randomly selected fields reduces sampling bias and shows variation."
+    },
+    {
+      "id": "q115",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "One group counts 13 cells in a single field. Another counts five randomly selected fields of the same size. Which method better estimates typical cells per field?",
+      "options": [
+        "The second group’s method",
+        "The first group’s method",
+        "Both are equally representative",
+        "Neither because cells cannot be counted"
+      ],
+      "answer": "The second group’s method",
+      "marks": 1,
+      "feedback": "Counting several randomly selected fields reduces sampling bias and shows variation."
+    },
+    {
+      "id": "q116",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "One group counts 14 cells in a single field. Another counts five randomly selected fields of the same size. Which method better estimates typical cells per field?",
+      "options": [
+        "The second group’s method",
+        "The first group’s method",
+        "Both are equally representative",
+        "Neither because cells cannot be counted"
+      ],
+      "answer": "The second group’s method",
+      "marks": 1,
+      "feedback": "Counting several randomly selected fields reduces sampling bias and shows variation."
+    },
+    {
+      "id": "q117",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "One group counts 15 cells in a single field. Another counts five randomly selected fields of the same size. Which method better estimates typical cells per field?",
+      "options": [
+        "The second group’s method",
+        "The first group’s method",
+        "Both are equally representative",
+        "Neither because cells cannot be counted"
+      ],
+      "answer": "The second group’s method",
+      "marks": 1,
+      "feedback": "Counting several randomly selected fields reduces sampling bias and shows variation."
+    },
+    {
+      "id": "q118",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "One group counts 16 cells in a single field. Another counts five randomly selected fields of the same size. Which method better estimates typical cells per field?",
+      "options": [
+        "The second group’s method",
+        "The first group’s method",
+        "Both are equally representative",
+        "Neither because cells cannot be counted"
+      ],
+      "answer": "The second group’s method",
+      "marks": 1,
+      "feedback": "Counting several randomly selected fields reduces sampling bias and shows variation."
+    },
+    {
+      "id": "q119",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "One group counts 17 cells in a single field. Another counts five randomly selected fields of the same size. Which method better estimates typical cells per field?",
+      "options": [
+        "The second group’s method",
+        "The first group’s method",
+        "Both are equally representative",
+        "Neither because cells cannot be counted"
+      ],
+      "answer": "The second group’s method",
+      "marks": 1,
+      "feedback": "Counting several randomly selected fields reduces sampling bias and shows variation."
+    },
+    {
+      "id": "q120",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-cells-revision-working-scientifically",
+          "name": "Working scientifically"
+        }
+      ],
+      "question": "One group counts 18 cells in a single field. Another counts five randomly selected fields of the same size. Which method better estimates typical cells per field?",
+      "options": [
+        "The second group’s method",
+        "The first group’s method",
+        "Both are equally representative",
+        "Neither because cells cannot be counted"
+      ],
+      "answer": "The second group’s method",
+      "marks": 1,
+      "feedback": "Counting several randomly selected fields reduces sampling bias and shows variation."
+    }
+  ]
+}

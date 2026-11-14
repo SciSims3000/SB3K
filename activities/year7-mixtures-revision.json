@@ -1,0 +1,2558 @@
+{
+  "activityId": "year7-mixtures-revision",
+  "title": "7.4 Solutions and Mixtures Revision",
+  "subject": "Science",
+  "yearLevel": "Year 7",
+  "topic": "Solutions and mixtures",
+  "version": "1.0",
+  "mode": "practice",
+  "settings": {
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "allowBack": true,
+    "showFinalScore": true,
+    "feedback": {
+      "afterEachQuestion": true,
+      "onResultsScreen": true,
+      "showCorrectAnswers": true,
+      "showExplanations": true
+    },
+    "passingPercentage": 50
+  },
+  "studentFields": {
+    "studentId": {
+      "enabled": true,
+      "required": false
+    },
+    "name": {
+      "enabled": true,
+      "requiredWithoutStudentId": true
+    },
+    "class": {
+      "enabled": true,
+      "requiredWithoutStudentId": true
+    }
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-separation-techniques",
+          "name": "Separation techniques"
+        }
+      ],
+      "question": "Which method can separate insoluble sand from water?",
+      "options": [
+        "Filtration",
+        "Evaporation",
+        "Sieving",
+        "Paper chromatography"
+      ],
+      "answer": "Filtration",
+      "marks": 1,
+      "feedback": "Use filtration because the filter retains solid particles larger than its pores."
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-separation-techniques",
+          "name": "Separation techniques"
+        }
+      ],
+      "question": "Which method can recover salt from a salt solution without collecting the water?",
+      "options": [
+        "Evaporation",
+        "Distillation",
+        "Magnetic separation",
+        "Decanting"
+      ],
+      "answer": "Evaporation",
+      "marks": 1,
+      "feedback": "Use evaporation because the water leaves as vapour and the salt remains."
+    },
+    {
+      "id": "q3",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-separation-techniques",
+          "name": "Separation techniques"
+        }
+      ],
+      "question": "Which method can collect water from salt water?",
+      "options": [
+        "Distillation",
+        "Sieving",
+        "Paper chromatography",
+        "Separating funnel"
+      ],
+      "answer": "Distillation",
+      "marks": 1,
+      "feedback": "Use distillation because water vapour is cooled and collected as a liquid."
+    },
+    {
+      "id": "q4",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-separation-techniques",
+          "name": "Separation techniques"
+        }
+      ],
+      "question": "Which method can separate gravel from fine sand?",
+      "options": [
+        "Sieving",
+        "Magnetic separation",
+        "Decanting",
+        "Filtration"
+      ],
+      "answer": "Sieving",
+      "marks": 1,
+      "feedback": "Use sieving because the smaller grains pass through the mesh."
+    },
+    {
+      "id": "q5",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-separation-techniques",
+          "name": "Separation techniques"
+        }
+      ],
+      "question": "Which method can remove iron filings from dry sand?",
+      "options": [
+        "Magnetic separation",
+        "Paper chromatography",
+        "Separating funnel",
+        "Evaporation"
+      ],
+      "answer": "Magnetic separation",
+      "marks": 1,
+      "feedback": "Use magnetic separation because a magnet attracts the iron filings."
+    },
+    {
+      "id": "q6",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-separation-techniques",
+          "name": "Separation techniques"
+        }
+      ],
+      "question": "Which method can separate soluble dyes in ink?",
+      "options": [
+        "Paper chromatography",
+        "Decanting",
+        "Filtration",
+        "Distillation"
+      ],
+      "answer": "Paper chromatography",
+      "marks": 1,
+      "feedback": "Use paper chromatography because the dyes travel different distances on the paper."
+    },
+    {
+      "id": "q7",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-separation-techniques",
+          "name": "Separation techniques"
+        }
+      ],
+      "question": "Which method can pour clear water away from settled mud?",
+      "options": [
+        "Decanting",
+        "Separating funnel",
+        "Evaporation",
+        "Sieving"
+      ],
+      "answer": "Decanting",
+      "marks": 1,
+      "feedback": "Use decanting because the settled solid can stay behind as the liquid is poured."
+    },
+    {
+      "id": "q8",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-separation-techniques",
+          "name": "Separation techniques"
+        }
+      ],
+      "question": "Which method can separate layers of oil and water?",
+      "options": [
+        "Separating funnel",
+        "Filtration",
+        "Distillation",
+        "Magnetic separation"
+      ],
+      "answer": "Separating funnel",
+      "marks": 1,
+      "feedback": "Use separating funnel because the two liquids form layers and the lower one can drain first."
+    },
+    {
+      "id": "q9",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-solutions",
+          "name": "Solutions"
+        }
+      ],
+      "question": "A student dissolves 5 g of salt in water. Which substance is the solute?",
+      "options": [
+        "salt",
+        "water",
+        "the container",
+        "the whole solution"
+      ],
+      "answer": "salt",
+      "marks": 1,
+      "feedback": "The solute is the substance that dissolves."
+    },
+    {
+      "id": "q10",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-solutions",
+          "name": "Solutions"
+        }
+      ],
+      "question": "A student dissolves 6 g of sugar in water. Which substance is the solute?",
+      "options": [
+        "sugar",
+        "water",
+        "the container",
+        "the whole solution"
+      ],
+      "answer": "sugar",
+      "marks": 1,
+      "feedback": "The solute is the substance that dissolves."
+    },
+    {
+      "id": "q11",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-solutions",
+          "name": "Solutions"
+        }
+      ],
+      "question": "A student dissolves 7 g of salt in water. Which substance is the solute?",
+      "options": [
+        "salt",
+        "water",
+        "the container",
+        "the whole solution"
+      ],
+      "answer": "salt",
+      "marks": 1,
+      "feedback": "The solute is the substance that dissolves."
+    },
+    {
+      "id": "q12",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-solutions",
+          "name": "Solutions"
+        }
+      ],
+      "question": "A student dissolves 8 g of sugar in water. Which substance is the solute?",
+      "options": [
+        "sugar",
+        "water",
+        "the container",
+        "the whole solution"
+      ],
+      "answer": "sugar",
+      "marks": 1,
+      "feedback": "The solute is the substance that dissolves."
+    },
+    {
+      "id": "q13",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-solutions",
+          "name": "Solutions"
+        }
+      ],
+      "question": "A student dissolves 9 g of salt in water. Which substance is the solute?",
+      "options": [
+        "salt",
+        "water",
+        "the container",
+        "the whole solution"
+      ],
+      "answer": "salt",
+      "marks": 1,
+      "feedback": "The solute is the substance that dissolves."
+    },
+    {
+      "id": "q14",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-solutions",
+          "name": "Solutions"
+        }
+      ],
+      "question": "A student dissolves 10 g of sugar in water. Which substance is the solute?",
+      "options": [
+        "sugar",
+        "water",
+        "the container",
+        "the whole solution"
+      ],
+      "answer": "sugar",
+      "marks": 1,
+      "feedback": "The solute is the substance that dissolves."
+    },
+    {
+      "id": "q15",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-solutions",
+          "name": "Solutions"
+        }
+      ],
+      "question": "A student dissolves 11 g of salt in water. Which substance is the solute?",
+      "options": [
+        "salt",
+        "water",
+        "the container",
+        "the whole solution"
+      ],
+      "answer": "salt",
+      "marks": 1,
+      "feedback": "The solute is the substance that dissolves."
+    },
+    {
+      "id": "q16",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-solutions",
+          "name": "Solutions"
+        }
+      ],
+      "question": "A student dissolves 12 g of sugar in water. Which substance is the solute?",
+      "options": [
+        "sugar",
+        "water",
+        "the container",
+        "the whole solution"
+      ],
+      "answer": "sugar",
+      "marks": 1,
+      "feedback": "The solute is the substance that dissolves."
+    },
+    {
+      "id": "q17",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-solutions",
+          "name": "Solutions"
+        }
+      ],
+      "question": "A student dissolves 13 g of salt in water. Which substance is the solute?",
+      "options": [
+        "salt",
+        "water",
+        "the container",
+        "the whole solution"
+      ],
+      "answer": "salt",
+      "marks": 1,
+      "feedback": "The solute is the substance that dissolves."
+    },
+    {
+      "id": "q18",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-solutions",
+          "name": "Solutions"
+        }
+      ],
+      "question": "A student dissolves 14 g of sugar in water. Which substance is the solute?",
+      "options": [
+        "sugar",
+        "water",
+        "the container",
+        "the whole solution"
+      ],
+      "answer": "sugar",
+      "marks": 1,
+      "feedback": "The solute is the substance that dissolves."
+    },
+    {
+      "id": "q19",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-solutions",
+          "name": "Solutions"
+        }
+      ],
+      "question": "A student dissolves 15 g of salt in water. Which substance is the solute?",
+      "options": [
+        "salt",
+        "water",
+        "the container",
+        "the whole solution"
+      ],
+      "answer": "salt",
+      "marks": 1,
+      "feedback": "The solute is the substance that dissolves."
+    },
+    {
+      "id": "q20",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-solutions",
+          "name": "Solutions"
+        }
+      ],
+      "question": "A student dissolves 16 g of sugar in water. Which substance is the solute?",
+      "options": [
+        "sugar",
+        "water",
+        "the container",
+        "the whole solution"
+      ],
+      "answer": "sugar",
+      "marks": 1,
+      "feedback": "The solute is the substance that dissolves."
+    },
+    {
+      "id": "q21",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-solutions",
+          "name": "Solutions"
+        }
+      ],
+      "question": "A student dissolves 17 g of salt in water. Which substance is the solute?",
+      "options": [
+        "salt",
+        "water",
+        "the container",
+        "the whole solution"
+      ],
+      "answer": "salt",
+      "marks": 1,
+      "feedback": "The solute is the substance that dissolves."
+    },
+    {
+      "id": "q22",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-solutions",
+          "name": "Solutions"
+        }
+      ],
+      "question": "A student dissolves 18 g of sugar in water. Which substance is the solute?",
+      "options": [
+        "sugar",
+        "water",
+        "the container",
+        "the whole solution"
+      ],
+      "answer": "sugar",
+      "marks": 1,
+      "feedback": "The solute is the substance that dissolves."
+    },
+    {
+      "id": "q23",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-solutions",
+          "name": "Solutions"
+        }
+      ],
+      "question": "A student dissolves 19 g of salt in water. Which substance is the solute?",
+      "options": [
+        "salt",
+        "water",
+        "the container",
+        "the whole solution"
+      ],
+      "answer": "salt",
+      "marks": 1,
+      "feedback": "The solute is the substance that dissolves."
+    },
+    {
+      "id": "q24",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-solutions",
+          "name": "Solutions"
+        }
+      ],
+      "question": "A student dissolves 20 g of sugar in water. Which substance is the solute?",
+      "options": [
+        "sugar",
+        "water",
+        "the container",
+        "the whole solution"
+      ],
+      "answer": "sugar",
+      "marks": 1,
+      "feedback": "The solute is the substance that dissolves."
+    },
+    {
+      "id": "q25",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-mixtures-and-properties",
+          "name": "Mixtures and properties"
+        }
+      ],
+      "question": "A beaker holds 3 g of sand mixed with water. What shows that the sand has not formed a solution?",
+      "options": [
+        "Solid grains remain visible",
+        "The container has a fixed shape",
+        "The mixture has mass",
+        "The water takes the shape of the beaker"
+      ],
+      "answer": "Solid grains remain visible",
+      "marks": 1,
+      "feedback": "Undissolved grains remain a separate solid phase."
+    },
+    {
+      "id": "q26",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-mixtures-and-properties",
+          "name": "Mixtures and properties"
+        }
+      ],
+      "question": "A beaker holds 4 g of sand mixed with water. What shows that the sand has not formed a solution?",
+      "options": [
+        "Solid grains remain visible",
+        "The container has a fixed shape",
+        "The mixture has mass",
+        "The water takes the shape of the beaker"
+      ],
+      "answer": "Solid grains remain visible",
+      "marks": 1,
+      "feedback": "Undissolved grains remain a separate solid phase."
+    },
+    {
+      "id": "q27",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-mixtures-and-properties",
+          "name": "Mixtures and properties"
+        }
+      ],
+      "question": "A beaker holds 5 g of sand mixed with water. What shows that the sand has not formed a solution?",
+      "options": [
+        "Solid grains remain visible",
+        "The container has a fixed shape",
+        "The mixture has mass",
+        "The water takes the shape of the beaker"
+      ],
+      "answer": "Solid grains remain visible",
+      "marks": 1,
+      "feedback": "Undissolved grains remain a separate solid phase."
+    },
+    {
+      "id": "q28",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-mixtures-and-properties",
+          "name": "Mixtures and properties"
+        }
+      ],
+      "question": "A beaker holds 6 g of sand mixed with water. What shows that the sand has not formed a solution?",
+      "options": [
+        "Solid grains remain visible",
+        "The container has a fixed shape",
+        "The mixture has mass",
+        "The water takes the shape of the beaker"
+      ],
+      "answer": "Solid grains remain visible",
+      "marks": 1,
+      "feedback": "Undissolved grains remain a separate solid phase."
+    },
+    {
+      "id": "q29",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-mixtures-and-properties",
+          "name": "Mixtures and properties"
+        }
+      ],
+      "question": "A beaker holds 7 g of sand mixed with water. What shows that the sand has not formed a solution?",
+      "options": [
+        "Solid grains remain visible",
+        "The container has a fixed shape",
+        "The mixture has mass",
+        "The water takes the shape of the beaker"
+      ],
+      "answer": "Solid grains remain visible",
+      "marks": 1,
+      "feedback": "Undissolved grains remain a separate solid phase."
+    },
+    {
+      "id": "q30",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-mixtures-and-properties",
+          "name": "Mixtures and properties"
+        }
+      ],
+      "question": "A beaker holds 8 g of sand mixed with water. What shows that the sand has not formed a solution?",
+      "options": [
+        "Solid grains remain visible",
+        "The container has a fixed shape",
+        "The mixture has mass",
+        "The water takes the shape of the beaker"
+      ],
+      "answer": "Solid grains remain visible",
+      "marks": 1,
+      "feedback": "Undissolved grains remain a separate solid phase."
+    },
+    {
+      "id": "q31",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-mixtures-and-properties",
+          "name": "Mixtures and properties"
+        }
+      ],
+      "question": "A beaker holds 9 g of sand mixed with water. What shows that the sand has not formed a solution?",
+      "options": [
+        "Solid grains remain visible",
+        "The container has a fixed shape",
+        "The mixture has mass",
+        "The water takes the shape of the beaker"
+      ],
+      "answer": "Solid grains remain visible",
+      "marks": 1,
+      "feedback": "Undissolved grains remain a separate solid phase."
+    },
+    {
+      "id": "q32",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-mixtures-and-properties",
+          "name": "Mixtures and properties"
+        }
+      ],
+      "question": "A beaker holds 10 g of sand mixed with water. What shows that the sand has not formed a solution?",
+      "options": [
+        "Solid grains remain visible",
+        "The container has a fixed shape",
+        "The mixture has mass",
+        "The water takes the shape of the beaker"
+      ],
+      "answer": "Solid grains remain visible",
+      "marks": 1,
+      "feedback": "Undissolved grains remain a separate solid phase."
+    },
+    {
+      "id": "q33",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-mixtures-and-properties",
+          "name": "Mixtures and properties"
+        }
+      ],
+      "question": "A beaker holds 11 g of sand mixed with water. What shows that the sand has not formed a solution?",
+      "options": [
+        "Solid grains remain visible",
+        "The container has a fixed shape",
+        "The mixture has mass",
+        "The water takes the shape of the beaker"
+      ],
+      "answer": "Solid grains remain visible",
+      "marks": 1,
+      "feedback": "Undissolved grains remain a separate solid phase."
+    },
+    {
+      "id": "q34",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-mixtures-and-properties",
+          "name": "Mixtures and properties"
+        }
+      ],
+      "question": "A beaker holds 12 g of sand mixed with water. What shows that the sand has not formed a solution?",
+      "options": [
+        "Solid grains remain visible",
+        "The container has a fixed shape",
+        "The mixture has mass",
+        "The water takes the shape of the beaker"
+      ],
+      "answer": "Solid grains remain visible",
+      "marks": 1,
+      "feedback": "Undissolved grains remain a separate solid phase."
+    },
+    {
+      "id": "q35",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-mixtures-and-properties",
+          "name": "Mixtures and properties"
+        }
+      ],
+      "question": "A beaker holds 13 g of sand mixed with water. What shows that the sand has not formed a solution?",
+      "options": [
+        "Solid grains remain visible",
+        "The container has a fixed shape",
+        "The mixture has mass",
+        "The water takes the shape of the beaker"
+      ],
+      "answer": "Solid grains remain visible",
+      "marks": 1,
+      "feedback": "Undissolved grains remain a separate solid phase."
+    },
+    {
+      "id": "q36",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-mixtures-and-properties",
+          "name": "Mixtures and properties"
+        }
+      ],
+      "question": "A beaker holds 14 g of sand mixed with water. What shows that the sand has not formed a solution?",
+      "options": [
+        "Solid grains remain visible",
+        "The container has a fixed shape",
+        "The mixture has mass",
+        "The water takes the shape of the beaker"
+      ],
+      "answer": "Solid grains remain visible",
+      "marks": 1,
+      "feedback": "Undissolved grains remain a separate solid phase."
+    },
+    {
+      "id": "q37",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-mixtures-and-properties",
+          "name": "Mixtures and properties"
+        }
+      ],
+      "question": "A beaker holds 15 g of sand mixed with water. What shows that the sand has not formed a solution?",
+      "options": [
+        "Solid grains remain visible",
+        "The container has a fixed shape",
+        "The mixture has mass",
+        "The water takes the shape of the beaker"
+      ],
+      "answer": "Solid grains remain visible",
+      "marks": 1,
+      "feedback": "Undissolved grains remain a separate solid phase."
+    },
+    {
+      "id": "q38",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-mixtures-and-properties",
+          "name": "Mixtures and properties"
+        }
+      ],
+      "question": "A beaker holds 16 g of sand mixed with water. What shows that the sand has not formed a solution?",
+      "options": [
+        "Solid grains remain visible",
+        "The container has a fixed shape",
+        "The mixture has mass",
+        "The water takes the shape of the beaker"
+      ],
+      "answer": "Solid grains remain visible",
+      "marks": 1,
+      "feedback": "Undissolved grains remain a separate solid phase."
+    },
+    {
+      "id": "q39",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-mixtures-and-properties",
+          "name": "Mixtures and properties"
+        }
+      ],
+      "question": "A beaker holds 17 g of sand mixed with water. What shows that the sand has not formed a solution?",
+      "options": [
+        "Solid grains remain visible",
+        "The container has a fixed shape",
+        "The mixture has mass",
+        "The water takes the shape of the beaker"
+      ],
+      "answer": "Solid grains remain visible",
+      "marks": 1,
+      "feedback": "Undissolved grains remain a separate solid phase."
+    },
+    {
+      "id": "q40",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-mixtures-and-properties",
+          "name": "Mixtures and properties"
+        }
+      ],
+      "question": "A beaker holds 18 g of sand mixed with water. What shows that the sand has not formed a solution?",
+      "options": [
+        "Solid grains remain visible",
+        "The container has a fixed shape",
+        "The mixture has mass",
+        "The water takes the shape of the beaker"
+      ],
+      "answer": "Solid grains remain visible",
+      "marks": 1,
+      "feedback": "Undissolved grains remain a separate solid phase."
+    },
+    {
+      "id": "q41",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-separation-techniques",
+          "name": "Separation techniques"
+        }
+      ],
+      "question": "A student wants to separate insoluble sand from water. Which method should they choose?",
+      "options": [
+        "Filtration",
+        "Evaporation",
+        "Sieving",
+        "Paper chromatography"
+      ],
+      "answer": "Filtration",
+      "marks": 1,
+      "feedback": "Use filtration because the filter retains solid particles larger than its pores."
+    },
+    {
+      "id": "q42",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-separation-techniques",
+          "name": "Separation techniques"
+        }
+      ],
+      "question": "A student wants to recover salt from a salt solution without collecting the water. Which method should they choose?",
+      "options": [
+        "Evaporation",
+        "Distillation",
+        "Magnetic separation",
+        "Decanting"
+      ],
+      "answer": "Evaporation",
+      "marks": 1,
+      "feedback": "Use evaporation because the water leaves as vapour and the salt remains."
+    },
+    {
+      "id": "q43",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-separation-techniques",
+          "name": "Separation techniques"
+        }
+      ],
+      "question": "A student wants to collect water from salt water. Which method should they choose?",
+      "options": [
+        "Distillation",
+        "Sieving",
+        "Paper chromatography",
+        "Separating funnel"
+      ],
+      "answer": "Distillation",
+      "marks": 1,
+      "feedback": "Use distillation because water vapour is cooled and collected as a liquid."
+    },
+    {
+      "id": "q44",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-separation-techniques",
+          "name": "Separation techniques"
+        }
+      ],
+      "question": "A student wants to separate gravel from fine sand. Which method should they choose?",
+      "options": [
+        "Sieving",
+        "Magnetic separation",
+        "Decanting",
+        "Filtration"
+      ],
+      "answer": "Sieving",
+      "marks": 1,
+      "feedback": "Use sieving because the smaller grains pass through the mesh."
+    },
+    {
+      "id": "q45",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-separation-techniques",
+          "name": "Separation techniques"
+        }
+      ],
+      "question": "A student wants to remove iron filings from dry sand. Which method should they choose?",
+      "options": [
+        "Magnetic separation",
+        "Paper chromatography",
+        "Separating funnel",
+        "Evaporation"
+      ],
+      "answer": "Magnetic separation",
+      "marks": 1,
+      "feedback": "Use magnetic separation because a magnet attracts the iron filings."
+    },
+    {
+      "id": "q46",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-separation-techniques",
+          "name": "Separation techniques"
+        }
+      ],
+      "question": "A student wants to separate soluble dyes in ink. Which method should they choose?",
+      "options": [
+        "Paper chromatography",
+        "Decanting",
+        "Filtration",
+        "Distillation"
+      ],
+      "answer": "Paper chromatography",
+      "marks": 1,
+      "feedback": "Use paper chromatography because the dyes travel different distances on the paper."
+    },
+    {
+      "id": "q47",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-separation-techniques",
+          "name": "Separation techniques"
+        }
+      ],
+      "question": "A student wants to pour clear water away from settled mud. Which method should they choose?",
+      "options": [
+        "Decanting",
+        "Separating funnel",
+        "Evaporation",
+        "Sieving"
+      ],
+      "answer": "Decanting",
+      "marks": 1,
+      "feedback": "Use decanting because the settled solid can stay behind as the liquid is poured."
+    },
+    {
+      "id": "q48",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-separation-techniques",
+          "name": "Separation techniques"
+        }
+      ],
+      "question": "A student wants to separate layers of oil and water. Which method should they choose?",
+      "options": [
+        "Separating funnel",
+        "Filtration",
+        "Distillation",
+        "Magnetic separation"
+      ],
+      "answer": "Separating funnel",
+      "marks": 1,
+      "feedback": "Use separating funnel because the two liquids form layers and the lower one can drain first."
+    },
+    {
+      "id": "q49",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-concentration-and-saturation",
+          "name": "Concentration and saturation"
+        }
+      ],
+      "question": "Cup A has 5 g of salt dissolved in 100 mL of water. Cup B has 5 g dissolved in 200 mL. Which is more concentrated?",
+      "options": [
+        "Cup A",
+        "Cup B",
+        "Both are equally concentrated",
+        "There is no solute in either cup"
+      ],
+      "answer": "Cup A",
+      "marks": 1,
+      "feedback": "The same mass of solute in less water makes the more concentrated solution."
+    },
+    {
+      "id": "q50",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-concentration-and-saturation",
+          "name": "Concentration and saturation"
+        }
+      ],
+      "question": "Cup A has 6 g of sugar dissolved in 100 mL of water. Cup B has 6 g dissolved in 200 mL. Which is more concentrated?",
+      "options": [
+        "Cup A",
+        "Cup B",
+        "Both are equally concentrated",
+        "There is no solute in either cup"
+      ],
+      "answer": "Cup A",
+      "marks": 1,
+      "feedback": "The same mass of solute in less water makes the more concentrated solution."
+    },
+    {
+      "id": "q51",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-concentration-and-saturation",
+          "name": "Concentration and saturation"
+        }
+      ],
+      "question": "Cup A has 7 g of salt dissolved in 100 mL of water. Cup B has 7 g dissolved in 200 mL. Which is more concentrated?",
+      "options": [
+        "Cup A",
+        "Cup B",
+        "Both are equally concentrated",
+        "There is no solute in either cup"
+      ],
+      "answer": "Cup A",
+      "marks": 1,
+      "feedback": "The same mass of solute in less water makes the more concentrated solution."
+    },
+    {
+      "id": "q52",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-concentration-and-saturation",
+          "name": "Concentration and saturation"
+        }
+      ],
+      "question": "Cup A has 8 g of sugar dissolved in 100 mL of water. Cup B has 8 g dissolved in 200 mL. Which is more concentrated?",
+      "options": [
+        "Cup A",
+        "Cup B",
+        "Both are equally concentrated",
+        "There is no solute in either cup"
+      ],
+      "answer": "Cup A",
+      "marks": 1,
+      "feedback": "The same mass of solute in less water makes the more concentrated solution."
+    },
+    {
+      "id": "q53",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-concentration-and-saturation",
+          "name": "Concentration and saturation"
+        }
+      ],
+      "question": "Cup A has 9 g of salt dissolved in 100 mL of water. Cup B has 9 g dissolved in 200 mL. Which is more concentrated?",
+      "options": [
+        "Cup A",
+        "Cup B",
+        "Both are equally concentrated",
+        "There is no solute in either cup"
+      ],
+      "answer": "Cup A",
+      "marks": 1,
+      "feedback": "The same mass of solute in less water makes the more concentrated solution."
+    },
+    {
+      "id": "q54",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-concentration-and-saturation",
+          "name": "Concentration and saturation"
+        }
+      ],
+      "question": "Cup A has 10 g of sugar dissolved in 100 mL of water. Cup B has 10 g dissolved in 200 mL. Which is more concentrated?",
+      "options": [
+        "Cup A",
+        "Cup B",
+        "Both are equally concentrated",
+        "There is no solute in either cup"
+      ],
+      "answer": "Cup A",
+      "marks": 1,
+      "feedback": "The same mass of solute in less water makes the more concentrated solution."
+    },
+    {
+      "id": "q55",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-concentration-and-saturation",
+          "name": "Concentration and saturation"
+        }
+      ],
+      "question": "Cup A has 11 g of salt dissolved in 100 mL of water. Cup B has 11 g dissolved in 200 mL. Which is more concentrated?",
+      "options": [
+        "Cup A",
+        "Cup B",
+        "Both are equally concentrated",
+        "There is no solute in either cup"
+      ],
+      "answer": "Cup A",
+      "marks": 1,
+      "feedback": "The same mass of solute in less water makes the more concentrated solution."
+    },
+    {
+      "id": "q56",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-concentration-and-saturation",
+          "name": "Concentration and saturation"
+        }
+      ],
+      "question": "Cup A has 12 g of sugar dissolved in 100 mL of water. Cup B has 12 g dissolved in 200 mL. Which is more concentrated?",
+      "options": [
+        "Cup A",
+        "Cup B",
+        "Both are equally concentrated",
+        "There is no solute in either cup"
+      ],
+      "answer": "Cup A",
+      "marks": 1,
+      "feedback": "The same mass of solute in less water makes the more concentrated solution."
+    },
+    {
+      "id": "q57",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-concentration-and-saturation",
+          "name": "Concentration and saturation"
+        }
+      ],
+      "question": "Cup A has 13 g of salt dissolved in 100 mL of water. Cup B has 13 g dissolved in 200 mL. Which is more concentrated?",
+      "options": [
+        "Cup A",
+        "Cup B",
+        "Both are equally concentrated",
+        "There is no solute in either cup"
+      ],
+      "answer": "Cup A",
+      "marks": 1,
+      "feedback": "The same mass of solute in less water makes the more concentrated solution."
+    },
+    {
+      "id": "q58",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-concentration-and-saturation",
+          "name": "Concentration and saturation"
+        }
+      ],
+      "question": "Cup A has 14 g of sugar dissolved in 100 mL of water. Cup B has 14 g dissolved in 200 mL. Which is more concentrated?",
+      "options": [
+        "Cup A",
+        "Cup B",
+        "Both are equally concentrated",
+        "There is no solute in either cup"
+      ],
+      "answer": "Cup A",
+      "marks": 1,
+      "feedback": "The same mass of solute in less water makes the more concentrated solution."
+    },
+    {
+      "id": "q59",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-concentration-and-saturation",
+          "name": "Concentration and saturation"
+        }
+      ],
+      "question": "Cup A has 15 g of salt dissolved in 100 mL of water. Cup B has 15 g dissolved in 200 mL. Which is more concentrated?",
+      "options": [
+        "Cup A",
+        "Cup B",
+        "Both are equally concentrated",
+        "There is no solute in either cup"
+      ],
+      "answer": "Cup A",
+      "marks": 1,
+      "feedback": "The same mass of solute in less water makes the more concentrated solution."
+    },
+    {
+      "id": "q60",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-concentration-and-saturation",
+          "name": "Concentration and saturation"
+        }
+      ],
+      "question": "Cup A has 16 g of sugar dissolved in 100 mL of water. Cup B has 16 g dissolved in 200 mL. Which is more concentrated?",
+      "options": [
+        "Cup A",
+        "Cup B",
+        "Both are equally concentrated",
+        "There is no solute in either cup"
+      ],
+      "answer": "Cup A",
+      "marks": 1,
+      "feedback": "The same mass of solute in less water makes the more concentrated solution."
+    },
+    {
+      "id": "q61",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-concentration-and-saturation",
+          "name": "Concentration and saturation"
+        }
+      ],
+      "question": "Cup A has 17 g of salt dissolved in 100 mL of water. Cup B has 17 g dissolved in 200 mL. Which is more concentrated?",
+      "options": [
+        "Cup A",
+        "Cup B",
+        "Both are equally concentrated",
+        "There is no solute in either cup"
+      ],
+      "answer": "Cup A",
+      "marks": 1,
+      "feedback": "The same mass of solute in less water makes the more concentrated solution."
+    },
+    {
+      "id": "q62",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-concentration-and-saturation",
+          "name": "Concentration and saturation"
+        }
+      ],
+      "question": "Cup A has 18 g of sugar dissolved in 100 mL of water. Cup B has 18 g dissolved in 200 mL. Which is more concentrated?",
+      "options": [
+        "Cup A",
+        "Cup B",
+        "Both are equally concentrated",
+        "There is no solute in either cup"
+      ],
+      "answer": "Cup A",
+      "marks": 1,
+      "feedback": "The same mass of solute in less water makes the more concentrated solution."
+    },
+    {
+      "id": "q63",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-concentration-and-saturation",
+          "name": "Concentration and saturation"
+        }
+      ],
+      "question": "Cup A has 19 g of salt dissolved in 100 mL of water. Cup B has 19 g dissolved in 200 mL. Which is more concentrated?",
+      "options": [
+        "Cup A",
+        "Cup B",
+        "Both are equally concentrated",
+        "There is no solute in either cup"
+      ],
+      "answer": "Cup A",
+      "marks": 1,
+      "feedback": "The same mass of solute in less water makes the more concentrated solution."
+    },
+    {
+      "id": "q64",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-concentration-and-saturation",
+          "name": "Concentration and saturation"
+        }
+      ],
+      "question": "Cup A has 20 g of sugar dissolved in 100 mL of water. Cup B has 20 g dissolved in 200 mL. Which is more concentrated?",
+      "options": [
+        "Cup A",
+        "Cup B",
+        "Both are equally concentrated",
+        "There is no solute in either cup"
+      ],
+      "answer": "Cup A",
+      "marks": 1,
+      "feedback": "The same mass of solute in less water makes the more concentrated solution."
+    },
+    {
+      "id": "q65",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-conservation-of-mass",
+          "name": "Conservation of mass"
+        }
+      ],
+      "question": "In a closed container, 3 g of salt dissolves in 100 g of water. What is the total mass of the resulting solution?",
+      "options": [
+        "103 g",
+        "108 g",
+        "113 g",
+        "123 g"
+      ],
+      "answer": "103 g",
+      "marks": 1,
+      "feedback": "The mass of the solute adds to the mass of the solvent."
+    },
+    {
+      "id": "q66",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-conservation-of-mass",
+          "name": "Conservation of mass"
+        }
+      ],
+      "question": "In a closed container, 4 g of salt dissolves in 100 g of water. What is the total mass of the resulting solution?",
+      "options": [
+        "104 g",
+        "109 g",
+        "114 g",
+        "124 g"
+      ],
+      "answer": "104 g",
+      "marks": 1,
+      "feedback": "The mass of the solute adds to the mass of the solvent."
+    },
+    {
+      "id": "q67",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-conservation-of-mass",
+          "name": "Conservation of mass"
+        }
+      ],
+      "question": "In a closed container, 5 g of salt dissolves in 100 g of water. What is the total mass of the resulting solution?",
+      "options": [
+        "105 g",
+        "110 g",
+        "115 g",
+        "125 g"
+      ],
+      "answer": "105 g",
+      "marks": 1,
+      "feedback": "The mass of the solute adds to the mass of the solvent."
+    },
+    {
+      "id": "q68",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-conservation-of-mass",
+          "name": "Conservation of mass"
+        }
+      ],
+      "question": "In a closed container, 6 g of salt dissolves in 100 g of water. What is the total mass of the resulting solution?",
+      "options": [
+        "106 g",
+        "111 g",
+        "116 g",
+        "126 g"
+      ],
+      "answer": "106 g",
+      "marks": 1,
+      "feedback": "The mass of the solute adds to the mass of the solvent."
+    },
+    {
+      "id": "q69",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-conservation-of-mass",
+          "name": "Conservation of mass"
+        }
+      ],
+      "question": "In a closed container, 7 g of salt dissolves in 100 g of water. What is the total mass of the resulting solution?",
+      "options": [
+        "107 g",
+        "112 g",
+        "117 g",
+        "127 g"
+      ],
+      "answer": "107 g",
+      "marks": 1,
+      "feedback": "The mass of the solute adds to the mass of the solvent."
+    },
+    {
+      "id": "q70",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-conservation-of-mass",
+          "name": "Conservation of mass"
+        }
+      ],
+      "question": "In a closed container, 8 g of salt dissolves in 100 g of water. What is the total mass of the resulting solution?",
+      "options": [
+        "108 g",
+        "113 g",
+        "118 g",
+        "128 g"
+      ],
+      "answer": "108 g",
+      "marks": 1,
+      "feedback": "The mass of the solute adds to the mass of the solvent."
+    },
+    {
+      "id": "q71",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-conservation-of-mass",
+          "name": "Conservation of mass"
+        }
+      ],
+      "question": "In a closed container, 9 g of salt dissolves in 100 g of water. What is the total mass of the resulting solution?",
+      "options": [
+        "109 g",
+        "114 g",
+        "119 g",
+        "129 g"
+      ],
+      "answer": "109 g",
+      "marks": 1,
+      "feedback": "The mass of the solute adds to the mass of the solvent."
+    },
+    {
+      "id": "q72",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-conservation-of-mass",
+          "name": "Conservation of mass"
+        }
+      ],
+      "question": "In a closed container, 10 g of salt dissolves in 100 g of water. What is the total mass of the resulting solution?",
+      "options": [
+        "110 g",
+        "115 g",
+        "120 g",
+        "130 g"
+      ],
+      "answer": "110 g",
+      "marks": 1,
+      "feedback": "The mass of the solute adds to the mass of the solvent."
+    },
+    {
+      "id": "q73",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-conservation-of-mass",
+          "name": "Conservation of mass"
+        }
+      ],
+      "question": "In a closed container, 11 g of salt dissolves in 100 g of water. What is the total mass of the resulting solution?",
+      "options": [
+        "111 g",
+        "116 g",
+        "121 g",
+        "131 g"
+      ],
+      "answer": "111 g",
+      "marks": 1,
+      "feedback": "The mass of the solute adds to the mass of the solvent."
+    },
+    {
+      "id": "q74",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-conservation-of-mass",
+          "name": "Conservation of mass"
+        }
+      ],
+      "question": "In a closed container, 12 g of salt dissolves in 100 g of water. What is the total mass of the resulting solution?",
+      "options": [
+        "112 g",
+        "117 g",
+        "122 g",
+        "132 g"
+      ],
+      "answer": "112 g",
+      "marks": 1,
+      "feedback": "The mass of the solute adds to the mass of the solvent."
+    },
+    {
+      "id": "q75",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-conservation-of-mass",
+          "name": "Conservation of mass"
+        }
+      ],
+      "question": "In a closed container, 13 g of salt dissolves in 100 g of water. What is the total mass of the resulting solution?",
+      "options": [
+        "113 g",
+        "118 g",
+        "123 g",
+        "133 g"
+      ],
+      "answer": "113 g",
+      "marks": 1,
+      "feedback": "The mass of the solute adds to the mass of the solvent."
+    },
+    {
+      "id": "q76",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-conservation-of-mass",
+          "name": "Conservation of mass"
+        }
+      ],
+      "question": "In a closed container, 14 g of salt dissolves in 100 g of water. What is the total mass of the resulting solution?",
+      "options": [
+        "114 g",
+        "119 g",
+        "124 g",
+        "134 g"
+      ],
+      "answer": "114 g",
+      "marks": 1,
+      "feedback": "The mass of the solute adds to the mass of the solvent."
+    },
+    {
+      "id": "q77",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-conservation-of-mass",
+          "name": "Conservation of mass"
+        }
+      ],
+      "question": "In a closed container, 15 g of salt dissolves in 100 g of water. What is the total mass of the resulting solution?",
+      "options": [
+        "115 g",
+        "120 g",
+        "125 g",
+        "135 g"
+      ],
+      "answer": "115 g",
+      "marks": 1,
+      "feedback": "The mass of the solute adds to the mass of the solvent."
+    },
+    {
+      "id": "q78",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-conservation-of-mass",
+          "name": "Conservation of mass"
+        }
+      ],
+      "question": "In a closed container, 16 g of salt dissolves in 100 g of water. What is the total mass of the resulting solution?",
+      "options": [
+        "116 g",
+        "121 g",
+        "126 g",
+        "136 g"
+      ],
+      "answer": "116 g",
+      "marks": 1,
+      "feedback": "The mass of the solute adds to the mass of the solvent."
+    },
+    {
+      "id": "q79",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-conservation-of-mass",
+          "name": "Conservation of mass"
+        }
+      ],
+      "question": "In a closed container, 17 g of salt dissolves in 100 g of water. What is the total mass of the resulting solution?",
+      "options": [
+        "117 g",
+        "122 g",
+        "127 g",
+        "137 g"
+      ],
+      "answer": "117 g",
+      "marks": 1,
+      "feedback": "The mass of the solute adds to the mass of the solvent."
+    },
+    {
+      "id": "q80",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-conservation-of-mass",
+          "name": "Conservation of mass"
+        }
+      ],
+      "question": "In a closed container, 18 g of salt dissolves in 100 g of water. What is the total mass of the resulting solution?",
+      "options": [
+        "118 g",
+        "123 g",
+        "128 g",
+        "138 g"
+      ],
+      "answer": "118 g",
+      "marks": 1,
+      "feedback": "The mass of the solute adds to the mass of the solvent."
+    },
+    {
+      "id": "q81",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-separation-techniques",
+          "name": "Separation techniques"
+        }
+      ],
+      "question": "A first separation step produced no useful fraction. The revised aim is to separate insoluble sand from water. Which method best fits that aim?",
+      "options": [
+        "Filtration",
+        "Evaporation",
+        "Sieving",
+        "Paper chromatography"
+      ],
+      "answer": "Filtration",
+      "marks": 1,
+      "feedback": "Use filtration because the filter retains solid particles larger than its pores."
+    },
+    {
+      "id": "q82",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-separation-techniques",
+          "name": "Separation techniques"
+        }
+      ],
+      "question": "A first separation step produced no useful fraction. The revised aim is to recover salt from a salt solution without collecting the water. Which method best fits that aim?",
+      "options": [
+        "Evaporation",
+        "Distillation",
+        "Magnetic separation",
+        "Decanting"
+      ],
+      "answer": "Evaporation",
+      "marks": 1,
+      "feedback": "Use evaporation because the water leaves as vapour and the salt remains."
+    },
+    {
+      "id": "q83",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-separation-techniques",
+          "name": "Separation techniques"
+        }
+      ],
+      "question": "A first separation step produced no useful fraction. The revised aim is to collect water from salt water. Which method best fits that aim?",
+      "options": [
+        "Distillation",
+        "Sieving",
+        "Paper chromatography",
+        "Separating funnel"
+      ],
+      "answer": "Distillation",
+      "marks": 1,
+      "feedback": "Use distillation because water vapour is cooled and collected as a liquid."
+    },
+    {
+      "id": "q84",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-separation-techniques",
+          "name": "Separation techniques"
+        }
+      ],
+      "question": "A first separation step produced no useful fraction. The revised aim is to separate gravel from fine sand. Which method best fits that aim?",
+      "options": [
+        "Sieving",
+        "Magnetic separation",
+        "Decanting",
+        "Filtration"
+      ],
+      "answer": "Sieving",
+      "marks": 1,
+      "feedback": "Use sieving because the smaller grains pass through the mesh."
+    },
+    {
+      "id": "q85",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-separation-techniques",
+          "name": "Separation techniques"
+        }
+      ],
+      "question": "A first separation step produced no useful fraction. The revised aim is to remove iron filings from dry sand. Which method best fits that aim?",
+      "options": [
+        "Magnetic separation",
+        "Paper chromatography",
+        "Separating funnel",
+        "Evaporation"
+      ],
+      "answer": "Magnetic separation",
+      "marks": 1,
+      "feedback": "Use magnetic separation because a magnet attracts the iron filings."
+    },
+    {
+      "id": "q86",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-separation-techniques",
+          "name": "Separation techniques"
+        }
+      ],
+      "question": "A first separation step produced no useful fraction. The revised aim is to separate soluble dyes in ink. Which method best fits that aim?",
+      "options": [
+        "Paper chromatography",
+        "Decanting",
+        "Filtration",
+        "Distillation"
+      ],
+      "answer": "Paper chromatography",
+      "marks": 1,
+      "feedback": "Use paper chromatography because the dyes travel different distances on the paper."
+    },
+    {
+      "id": "q87",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-separation-techniques",
+          "name": "Separation techniques"
+        }
+      ],
+      "question": "A first separation step produced no useful fraction. The revised aim is to pour clear water away from settled mud. Which method best fits that aim?",
+      "options": [
+        "Decanting",
+        "Separating funnel",
+        "Evaporation",
+        "Sieving"
+      ],
+      "answer": "Decanting",
+      "marks": 1,
+      "feedback": "Use decanting because the settled solid can stay behind as the liquid is poured."
+    },
+    {
+      "id": "q88",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-separation-techniques",
+          "name": "Separation techniques"
+        }
+      ],
+      "question": "A first separation step produced no useful fraction. The revised aim is to separate layers of oil and water. Which method best fits that aim?",
+      "options": [
+        "Separating funnel",
+        "Filtration",
+        "Distillation",
+        "Magnetic separation"
+      ],
+      "answer": "Separating funnel",
+      "marks": 1,
+      "feedback": "Use separating funnel because the two liquids form layers and the lower one can drain first."
+    },
+    {
+      "id": "q89",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-concentration-and-saturation",
+          "name": "Concentration and saturation"
+        }
+      ],
+      "question": "At a fixed temperature, no more than 5 g of salt dissolves in 100 mL of water. If 10 g is added and the mixture reaches equilibrium, how much remains undissolved?",
+      "options": [
+        "5 g",
+        "10 g",
+        "15 g",
+        "25 g"
+      ],
+      "answer": "5 g",
+      "marks": 1,
+      "feedback": "Subtract the amount that can dissolve from the amount added."
+    },
+    {
+      "id": "q90",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-concentration-and-saturation",
+          "name": "Concentration and saturation"
+        }
+      ],
+      "question": "At a fixed temperature, no more than 6 g of sugar dissolves in 100 mL of water. If 11 g is added and the mixture reaches equilibrium, how much remains undissolved?",
+      "options": [
+        "5 g",
+        "10 g",
+        "15 g",
+        "25 g"
+      ],
+      "answer": "5 g",
+      "marks": 1,
+      "feedback": "Subtract the amount that can dissolve from the amount added."
+    },
+    {
+      "id": "q91",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-concentration-and-saturation",
+          "name": "Concentration and saturation"
+        }
+      ],
+      "question": "At a fixed temperature, no more than 7 g of salt dissolves in 100 mL of water. If 12 g is added and the mixture reaches equilibrium, how much remains undissolved?",
+      "options": [
+        "5 g",
+        "10 g",
+        "15 g",
+        "25 g"
+      ],
+      "answer": "5 g",
+      "marks": 1,
+      "feedback": "Subtract the amount that can dissolve from the amount added."
+    },
+    {
+      "id": "q92",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-concentration-and-saturation",
+          "name": "Concentration and saturation"
+        }
+      ],
+      "question": "At a fixed temperature, no more than 8 g of sugar dissolves in 100 mL of water. If 13 g is added and the mixture reaches equilibrium, how much remains undissolved?",
+      "options": [
+        "5 g",
+        "10 g",
+        "15 g",
+        "25 g"
+      ],
+      "answer": "5 g",
+      "marks": 1,
+      "feedback": "Subtract the amount that can dissolve from the amount added."
+    },
+    {
+      "id": "q93",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-concentration-and-saturation",
+          "name": "Concentration and saturation"
+        }
+      ],
+      "question": "At a fixed temperature, no more than 9 g of salt dissolves in 100 mL of water. If 14 g is added and the mixture reaches equilibrium, how much remains undissolved?",
+      "options": [
+        "5 g",
+        "10 g",
+        "15 g",
+        "25 g"
+      ],
+      "answer": "5 g",
+      "marks": 1,
+      "feedback": "Subtract the amount that can dissolve from the amount added."
+    },
+    {
+      "id": "q94",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-concentration-and-saturation",
+          "name": "Concentration and saturation"
+        }
+      ],
+      "question": "At a fixed temperature, no more than 10 g of sugar dissolves in 100 mL of water. If 15 g is added and the mixture reaches equilibrium, how much remains undissolved?",
+      "options": [
+        "5 g",
+        "10 g",
+        "15 g",
+        "25 g"
+      ],
+      "answer": "5 g",
+      "marks": 1,
+      "feedback": "Subtract the amount that can dissolve from the amount added."
+    },
+    {
+      "id": "q95",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-concentration-and-saturation",
+          "name": "Concentration and saturation"
+        }
+      ],
+      "question": "At a fixed temperature, no more than 11 g of salt dissolves in 100 mL of water. If 16 g is added and the mixture reaches equilibrium, how much remains undissolved?",
+      "options": [
+        "5 g",
+        "10 g",
+        "15 g",
+        "25 g"
+      ],
+      "answer": "5 g",
+      "marks": 1,
+      "feedback": "Subtract the amount that can dissolve from the amount added."
+    },
+    {
+      "id": "q96",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-concentration-and-saturation",
+          "name": "Concentration and saturation"
+        }
+      ],
+      "question": "At a fixed temperature, no more than 12 g of sugar dissolves in 100 mL of water. If 17 g is added and the mixture reaches equilibrium, how much remains undissolved?",
+      "options": [
+        "5 g",
+        "10 g",
+        "15 g",
+        "25 g"
+      ],
+      "answer": "5 g",
+      "marks": 1,
+      "feedback": "Subtract the amount that can dissolve from the amount added."
+    },
+    {
+      "id": "q97",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-concentration-and-saturation",
+          "name": "Concentration and saturation"
+        }
+      ],
+      "question": "At a fixed temperature, no more than 13 g of salt dissolves in 100 mL of water. If 18 g is added and the mixture reaches equilibrium, how much remains undissolved?",
+      "options": [
+        "5 g",
+        "10 g",
+        "15 g",
+        "25 g"
+      ],
+      "answer": "5 g",
+      "marks": 1,
+      "feedback": "Subtract the amount that can dissolve from the amount added."
+    },
+    {
+      "id": "q98",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-concentration-and-saturation",
+          "name": "Concentration and saturation"
+        }
+      ],
+      "question": "At a fixed temperature, no more than 14 g of sugar dissolves in 100 mL of water. If 19 g is added and the mixture reaches equilibrium, how much remains undissolved?",
+      "options": [
+        "5 g",
+        "10 g",
+        "15 g",
+        "25 g"
+      ],
+      "answer": "5 g",
+      "marks": 1,
+      "feedback": "Subtract the amount that can dissolve from the amount added."
+    },
+    {
+      "id": "q99",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-concentration-and-saturation",
+          "name": "Concentration and saturation"
+        }
+      ],
+      "question": "At a fixed temperature, no more than 15 g of salt dissolves in 100 mL of water. If 20 g is added and the mixture reaches equilibrium, how much remains undissolved?",
+      "options": [
+        "5 g",
+        "10 g",
+        "15 g",
+        "25 g"
+      ],
+      "answer": "5 g",
+      "marks": 1,
+      "feedback": "Subtract the amount that can dissolve from the amount added."
+    },
+    {
+      "id": "q100",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-concentration-and-saturation",
+          "name": "Concentration and saturation"
+        }
+      ],
+      "question": "At a fixed temperature, no more than 16 g of sugar dissolves in 100 mL of water. If 21 g is added and the mixture reaches equilibrium, how much remains undissolved?",
+      "options": [
+        "5 g",
+        "10 g",
+        "15 g",
+        "25 g"
+      ],
+      "answer": "5 g",
+      "marks": 1,
+      "feedback": "Subtract the amount that can dissolve from the amount added."
+    },
+    {
+      "id": "q101",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-concentration-and-saturation",
+          "name": "Concentration and saturation"
+        }
+      ],
+      "question": "At a fixed temperature, no more than 17 g of salt dissolves in 100 mL of water. If 22 g is added and the mixture reaches equilibrium, how much remains undissolved?",
+      "options": [
+        "5 g",
+        "10 g",
+        "15 g",
+        "25 g"
+      ],
+      "answer": "5 g",
+      "marks": 1,
+      "feedback": "Subtract the amount that can dissolve from the amount added."
+    },
+    {
+      "id": "q102",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-concentration-and-saturation",
+          "name": "Concentration and saturation"
+        }
+      ],
+      "question": "At a fixed temperature, no more than 18 g of sugar dissolves in 100 mL of water. If 23 g is added and the mixture reaches equilibrium, how much remains undissolved?",
+      "options": [
+        "5 g",
+        "10 g",
+        "15 g",
+        "25 g"
+      ],
+      "answer": "5 g",
+      "marks": 1,
+      "feedback": "Subtract the amount that can dissolve from the amount added."
+    },
+    {
+      "id": "q103",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-concentration-and-saturation",
+          "name": "Concentration and saturation"
+        }
+      ],
+      "question": "At a fixed temperature, no more than 19 g of salt dissolves in 100 mL of water. If 24 g is added and the mixture reaches equilibrium, how much remains undissolved?",
+      "options": [
+        "5 g",
+        "10 g",
+        "15 g",
+        "25 g"
+      ],
+      "answer": "5 g",
+      "marks": 1,
+      "feedback": "Subtract the amount that can dissolve from the amount added."
+    },
+    {
+      "id": "q104",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-concentration-and-saturation",
+          "name": "Concentration and saturation"
+        }
+      ],
+      "question": "At a fixed temperature, no more than 20 g of sugar dissolves in 100 mL of water. If 25 g is added and the mixture reaches equilibrium, how much remains undissolved?",
+      "options": [
+        "5 g",
+        "10 g",
+        "15 g",
+        "25 g"
+      ],
+      "answer": "5 g",
+      "marks": 1,
+      "feedback": "Subtract the amount that can dissolve from the amount added."
+    },
+    {
+      "id": "q105",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-conservation-of-mass",
+          "name": "Conservation of mass"
+        }
+      ],
+      "question": "A solution made from 3 g of salt and 80 g of water loses 20 g when heated. No salt is lost. What is the remaining mass?",
+      "options": [
+        "63 g",
+        "68 g",
+        "73 g",
+        "83 g"
+      ],
+      "answer": "63 g",
+      "marks": 1,
+      "feedback": "Subtract the evaporated water from the initial total mass."
+    },
+    {
+      "id": "q106",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-conservation-of-mass",
+          "name": "Conservation of mass"
+        }
+      ],
+      "question": "A solution made from 4 g of salt and 80 g of water loses 20 g when heated. No salt is lost. What is the remaining mass?",
+      "options": [
+        "64 g",
+        "69 g",
+        "74 g",
+        "84 g"
+      ],
+      "answer": "64 g",
+      "marks": 1,
+      "feedback": "Subtract the evaporated water from the initial total mass."
+    },
+    {
+      "id": "q107",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-conservation-of-mass",
+          "name": "Conservation of mass"
+        }
+      ],
+      "question": "A solution made from 5 g of salt and 80 g of water loses 20 g when heated. No salt is lost. What is the remaining mass?",
+      "options": [
+        "65 g",
+        "70 g",
+        "75 g",
+        "85 g"
+      ],
+      "answer": "65 g",
+      "marks": 1,
+      "feedback": "Subtract the evaporated water from the initial total mass."
+    },
+    {
+      "id": "q108",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-conservation-of-mass",
+          "name": "Conservation of mass"
+        }
+      ],
+      "question": "A solution made from 6 g of salt and 80 g of water loses 20 g when heated. No salt is lost. What is the remaining mass?",
+      "options": [
+        "66 g",
+        "71 g",
+        "76 g",
+        "86 g"
+      ],
+      "answer": "66 g",
+      "marks": 1,
+      "feedback": "Subtract the evaporated water from the initial total mass."
+    },
+    {
+      "id": "q109",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-conservation-of-mass",
+          "name": "Conservation of mass"
+        }
+      ],
+      "question": "A solution made from 7 g of salt and 80 g of water loses 20 g when heated. No salt is lost. What is the remaining mass?",
+      "options": [
+        "67 g",
+        "72 g",
+        "77 g",
+        "87 g"
+      ],
+      "answer": "67 g",
+      "marks": 1,
+      "feedback": "Subtract the evaporated water from the initial total mass."
+    },
+    {
+      "id": "q110",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-conservation-of-mass",
+          "name": "Conservation of mass"
+        }
+      ],
+      "question": "A solution made from 8 g of salt and 80 g of water loses 20 g when heated. No salt is lost. What is the remaining mass?",
+      "options": [
+        "68 g",
+        "73 g",
+        "78 g",
+        "88 g"
+      ],
+      "answer": "68 g",
+      "marks": 1,
+      "feedback": "Subtract the evaporated water from the initial total mass."
+    },
+    {
+      "id": "q111",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-conservation-of-mass",
+          "name": "Conservation of mass"
+        }
+      ],
+      "question": "A solution made from 9 g of salt and 80 g of water loses 20 g when heated. No salt is lost. What is the remaining mass?",
+      "options": [
+        "69 g",
+        "74 g",
+        "79 g",
+        "89 g"
+      ],
+      "answer": "69 g",
+      "marks": 1,
+      "feedback": "Subtract the evaporated water from the initial total mass."
+    },
+    {
+      "id": "q112",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-conservation-of-mass",
+          "name": "Conservation of mass"
+        }
+      ],
+      "question": "A solution made from 10 g of salt and 80 g of water loses 20 g when heated. No salt is lost. What is the remaining mass?",
+      "options": [
+        "70 g",
+        "75 g",
+        "80 g",
+        "90 g"
+      ],
+      "answer": "70 g",
+      "marks": 1,
+      "feedback": "Subtract the evaporated water from the initial total mass."
+    },
+    {
+      "id": "q113",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-conservation-of-mass",
+          "name": "Conservation of mass"
+        }
+      ],
+      "question": "A solution made from 11 g of salt and 80 g of water loses 20 g when heated. No salt is lost. What is the remaining mass?",
+      "options": [
+        "71 g",
+        "76 g",
+        "81 g",
+        "91 g"
+      ],
+      "answer": "71 g",
+      "marks": 1,
+      "feedback": "Subtract the evaporated water from the initial total mass."
+    },
+    {
+      "id": "q114",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-conservation-of-mass",
+          "name": "Conservation of mass"
+        }
+      ],
+      "question": "A solution made from 12 g of salt and 80 g of water loses 20 g when heated. No salt is lost. What is the remaining mass?",
+      "options": [
+        "72 g",
+        "77 g",
+        "82 g",
+        "92 g"
+      ],
+      "answer": "72 g",
+      "marks": 1,
+      "feedback": "Subtract the evaporated water from the initial total mass."
+    },
+    {
+      "id": "q115",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-conservation-of-mass",
+          "name": "Conservation of mass"
+        }
+      ],
+      "question": "A solution made from 13 g of salt and 80 g of water loses 20 g when heated. No salt is lost. What is the remaining mass?",
+      "options": [
+        "73 g",
+        "78 g",
+        "83 g",
+        "93 g"
+      ],
+      "answer": "73 g",
+      "marks": 1,
+      "feedback": "Subtract the evaporated water from the initial total mass."
+    },
+    {
+      "id": "q116",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-conservation-of-mass",
+          "name": "Conservation of mass"
+        }
+      ],
+      "question": "A solution made from 14 g of salt and 80 g of water loses 20 g when heated. No salt is lost. What is the remaining mass?",
+      "options": [
+        "74 g",
+        "79 g",
+        "84 g",
+        "94 g"
+      ],
+      "answer": "74 g",
+      "marks": 1,
+      "feedback": "Subtract the evaporated water from the initial total mass."
+    },
+    {
+      "id": "q117",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-conservation-of-mass",
+          "name": "Conservation of mass"
+        }
+      ],
+      "question": "A solution made from 15 g of salt and 80 g of water loses 20 g when heated. No salt is lost. What is the remaining mass?",
+      "options": [
+        "75 g",
+        "80 g",
+        "85 g",
+        "95 g"
+      ],
+      "answer": "75 g",
+      "marks": 1,
+      "feedback": "Subtract the evaporated water from the initial total mass."
+    },
+    {
+      "id": "q118",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-conservation-of-mass",
+          "name": "Conservation of mass"
+        }
+      ],
+      "question": "A solution made from 16 g of salt and 80 g of water loses 20 g when heated. No salt is lost. What is the remaining mass?",
+      "options": [
+        "76 g",
+        "81 g",
+        "86 g",
+        "96 g"
+      ],
+      "answer": "76 g",
+      "marks": 1,
+      "feedback": "Subtract the evaporated water from the initial total mass."
+    },
+    {
+      "id": "q119",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-conservation-of-mass",
+          "name": "Conservation of mass"
+        }
+      ],
+      "question": "A solution made from 17 g of salt and 80 g of water loses 20 g when heated. No salt is lost. What is the remaining mass?",
+      "options": [
+        "77 g",
+        "82 g",
+        "87 g",
+        "97 g"
+      ],
+      "answer": "77 g",
+      "marks": 1,
+      "feedback": "Subtract the evaporated water from the initial total mass."
+    },
+    {
+      "id": "q120",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "year7-mixtures-revision-conservation-of-mass",
+          "name": "Conservation of mass"
+        }
+      ],
+      "question": "A solution made from 18 g of salt and 80 g of water loses 20 g when heated. No salt is lost. What is the remaining mass?",
+      "options": [
+        "78 g",
+        "83 g",
+        "88 g",
+        "98 g"
+      ],
+      "answer": "78 g",
+      "marks": 1,
+      "feedback": "Subtract the evaporated water from the initial total mass."
+    }
+  ]
+}

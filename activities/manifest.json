@@ -34,6 +34,20 @@
       "subject": "Science",
       "yearLevel": "Year 7",
       "path": "activities/year7-forces-revision.json"
+    },
+    {
+      "id": "year7-cells-revision",
+      "title": "7.3 Cells and Classification Revision",
+      "subject": "Science",
+      "yearLevel": "Year 7",
+      "path": "activities/year7-cells-revision.json"
+    },
+    {
+      "id": "year7-mixtures-revision",
+      "title": "7.4 Solutions and Mixtures Revision",
+      "subject": "Science",
+      "yearLevel": "Year 7",
+      "path": "activities/year7-mixtures-revision.json"
     }
   ]
 }
