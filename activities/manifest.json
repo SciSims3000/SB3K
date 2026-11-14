@@ -20,6 +20,20 @@
       "subject": "Science",
       "yearLevel": "Year 7",
       "path": "activities/year7-forces.json"
+    },
+    {
+      "id": "year7-universe-revision",
+      "title": "7.1 Observing the Universe Revision",
+      "subject": "Science",
+      "yearLevel": "Year 7",
+      "path": "activities/year7-universe-revision.json"
+    },
+    {
+      "id": "year7-forces-revision",
+      "title": "7.2 Forces Revision",
+      "subject": "Science",
+      "yearLevel": "Year 7",
+      "path": "activities/year7-forces-revision.json"
     }
   ]
 }

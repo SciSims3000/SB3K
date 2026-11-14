@@ -1,0 +1,1108 @@
+{
+  "activityId": "year7-forces-revision",
+  "title": "7.2 Forces Revision",
+  "subject": "Science",
+  "yearLevel": "Year 7",
+  "topic": "Forces",
+  "version": "1.0",
+  "mode": "practice",
+  "settings": {
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "allowBack": true,
+    "showFinalScore": true,
+    "feedback": {
+      "afterEachQuestion": false,
+      "onResultsScreen": true,
+      "showCorrectAnswers": false,
+      "showExplanations": false
+    },
+    "passingPercentage": 50
+  },
+  "studentFields": {
+    "studentId": {
+      "enabled": true,
+      "required": false
+    },
+    "name": {
+      "enabled": true,
+      "requiredWithoutStudentId": true
+    },
+    "class": {
+      "enabled": true,
+      "requiredWithoutStudentId": true
+    }
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "What is the net horizontal force on the box?",
+      "options": [
+        "0 N",
+        "10 N left",
+        "10 N right",
+        "20 N right"
+      ],
+      "answer": "0 N",
+      "marks": 1,
+      "feedback": "Equal and opposite forces cancel.",
+      "image": {
+        "src": "activities/images/forces-balanced.png",
+        "alt": "A box has a 10 N arrow pointing left and a 10 N arrow pointing right."
+      },
+      "difficulty": "easy"
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "What is the net horizontal force on the box?",
+      "options": [
+        "4 N right",
+        "4 N left",
+        "16 N right",
+        "0 N"
+      ],
+      "answer": "4 N right",
+      "marks": 1,
+      "feedback": "Subtract opposing forces and keep the direction of the larger force.",
+      "image": {
+        "src": "activities/images/forces-net-force.png",
+        "alt": "A box has a 6 N arrow pointing left and a 10 N arrow pointing right."
+      },
+      "difficulty": "standard"
+    },
+    {
+      "id": "q3",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-GRAVITY",
+          "name": "Gravity and weight"
+        }
+      ],
+      "question": "Which way does gravity act on this ball after it leaves the thrower’s hand?",
+      "options": [
+        "Towards Earth",
+        "Upwards",
+        "Along the ball’s direction of travel",
+        "Gravity stops acting"
+      ],
+      "answer": "Towards Earth",
+      "marks": 1,
+      "feedback": "Gravity acts towards Earth throughout the flight.",
+      "image": {
+        "src": "activities/images/forces-gravity.png",
+        "alt": "A ball is in the air after being released."
+      },
+      "difficulty": "standard"
+    },
+    {
+      "id": "q4",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-CONTACT",
+          "name": "Contact forces"
+        }
+      ],
+      "question": "The box is sliding to the right along a stationary bench. Which way does friction from the bench act on the box?",
+      "options": [
+        "To the left",
+        "To the right",
+        "Straight up",
+        "Straight down"
+      ],
+      "answer": "To the left",
+      "marks": 1,
+      "feedback": "Friction opposes the sliding between the box and bench.",
+      "image": {
+        "src": "activities/images/forces-friction.png",
+        "alt": "A right-pointing arrow shows the box moving to the right."
+      },
+      "difficulty": "standard"
+    },
+    {
+      "id": "q5",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-CONTACT",
+          "name": "Contact forces"
+        }
+      ],
+      "question": "What upward force does the table exert on the resting book?",
+      "options": [
+        "A support force",
+        "The weight of the book",
+        "A magnetic force",
+        "Air resistance"
+      ],
+      "answer": "A support force",
+      "marks": 1,
+      "feedback": "The table pushes upwards on the book with a support force.",
+      "image": {
+        "src": "activities/images/forces-normal.png",
+        "alt": "A book rests on the flat top of a table."
+      },
+      "difficulty": "standard"
+    },
+    {
+      "id": "q6",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-CONTACT",
+          "name": "Contact forces"
+        }
+      ],
+      "question": "Which example involves a contact force?",
+      "options": [
+        "A foot kicking a ball",
+        "Earth pulling on the Moon",
+        "A magnet attracting a paperclip without touching it",
+        "A charged balloon attracting hair across a gap"
+      ],
+      "answer": "A foot kicking a ball",
+      "marks": 1,
+      "feedback": "The foot must touch the ball to kick it.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "q7",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-GRAVITY",
+          "name": "Gravity and weight"
+        }
+      ],
+      "question": "Which quantity is measured in newtons?",
+      "options": [
+        "Weight",
+        "Mass",
+        "Speed",
+        "Distance"
+      ],
+      "answer": "Weight",
+      "marks": 1,
+      "feedback": "Weight is a force. Mass is measured in kilograms.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "q8",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A cyclist travels in a straight line at a constant speed. What is the net force on the cyclist and bike?",
+      "options": [
+        "Zero",
+        "Forward",
+        "Backward",
+        "Increasing"
+      ],
+      "answer": "Zero",
+      "marks": 1,
+      "feedback": "Constant speed in a straight line means the forces balance.",
+      "difficulty": "standard"
+    },
+    {
+      "id": "q9",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-CONTACT",
+          "name": "Contact forces"
+        }
+      ],
+      "question": "Why does a parachute slow a falling skydiver when it opens?",
+      "options": [
+        "It increases air resistance",
+        "It switches off gravity",
+        "It reduces the mass of the skydiver",
+        "It pulls the skydiver down faster"
+      ],
+      "answer": "It increases air resistance",
+      "marks": 1,
+      "feedback": "The open parachute increases the upward force from air resistance.",
+      "difficulty": "standard"
+    },
+    {
+      "id": "q10",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "Two students push a trolley in the same direction with forces of 12 N and 8 N. What is the combined force of their pushes?",
+      "options": [
+        "20 N",
+        "4 N",
+        "12 N",
+        "0 N"
+      ],
+      "answer": "20 N",
+      "marks": 1,
+      "feedback": "Forces in the same direction add together.",
+      "difficulty": "standard"
+    },
+    {
+      "id": "q11",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-CONTACT",
+          "name": "Contact forces"
+        }
+      ],
+      "question": "What is a force?",
+      "options": [
+        "A push or a pull",
+        "The amount of matter in an object",
+        "The distance travelled",
+        "The temperature of an object"
+      ],
+      "answer": "A push or a pull",
+      "marks": 1,
+      "feedback": "Forces are pushes or pulls."
+    },
+    {
+      "id": "q12",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-CONTACT",
+          "name": "Contact forces"
+        }
+      ],
+      "question": "Which tool measures the size of a force?",
+      "options": [
+        "Spring balance",
+        "Measuring cylinder",
+        "Stopwatch",
+        "Thermometer"
+      ],
+      "answer": "Spring balance",
+      "marks": 1,
+      "feedback": "A spring balance can measure force in newtons."
+    },
+    {
+      "id": "q13",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-GRAVITY",
+          "name": "Gravity and weight"
+        }
+      ],
+      "question": "What force pulls a dropped pencil towards the floor?",
+      "options": [
+        "Gravity",
+        "Magnetism",
+        "Friction with the floor",
+        "Support from the floor"
+      ],
+      "answer": "Gravity",
+      "marks": 1,
+      "feedback": "Earth’s gravity pulls the pencil downward."
+    },
+    {
+      "id": "q14",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-GRAVITY",
+          "name": "Gravity and weight"
+        }
+      ],
+      "question": "What is mass a measure of?",
+      "options": [
+        "The amount of matter in an object",
+        "The pull of gravity",
+        "How fast an object moves",
+        "How far an object falls"
+      ],
+      "answer": "The amount of matter in an object",
+      "marks": 1,
+      "feedback": "Mass measures the amount of matter."
+    },
+    {
+      "id": "q15",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-CONTACT",
+          "name": "Contact forces"
+        }
+      ],
+      "question": "Which surface usually provides the most grip for a shoe?",
+      "options": [
+        "Dry rough concrete",
+        "Smooth wet ice",
+        "A layer of oil",
+        "A smooth wet tile"
+      ],
+      "answer": "Dry rough concrete",
+      "marks": 1,
+      "feedback": "A dry rough surface usually provides more friction."
+    },
+    {
+      "id": "q16",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-CONTACT",
+          "name": "Contact forces"
+        }
+      ],
+      "question": "Which force opposes movement through air?",
+      "options": [
+        "Air resistance",
+        "Weight",
+        "Magnetism",
+        "Support force"
+      ],
+      "answer": "Air resistance",
+      "marks": 1,
+      "feedback": "Air resistance acts against motion relative to the air."
+    },
+    {
+      "id": "q17",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-CONTACT",
+          "name": "Contact forces"
+        }
+      ],
+      "question": "Which object pulls on an iron paperclip across a gap?",
+      "options": [
+        "A magnet",
+        "A ruler made of plain wood",
+        "A rubber stopper",
+        "A glass beaker"
+      ],
+      "answer": "A magnet",
+      "marks": 1,
+      "feedback": "A magnet can attract iron without touching it."
+    },
+    {
+      "id": "q18",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "What does the arrowhead in a force diagram show?",
+      "options": [
+        "The force’s direction",
+        "The object’s mass",
+        "The time the force acts",
+        "The object’s material"
+      ],
+      "answer": "The force’s direction",
+      "marks": 1,
+      "feedback": "Force arrows point in the direction the force acts."
+    },
+    {
+      "id": "q19",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "On a force diagram using one scale, what does a longer arrow show?",
+      "options": [
+        "A larger force",
+        "A heavier object in every case",
+        "A longer time",
+        "A slower speed"
+      ],
+      "answer": "A larger force",
+      "marks": 1,
+      "feedback": "Arrow length represents force magnitude."
+    },
+    {
+      "id": "q20",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-CONTACT",
+          "name": "Contact forces"
+        }
+      ],
+      "question": "Which force helps a bicycle brake slow the wheel?",
+      "options": [
+        "Friction",
+        "Gravity alone",
+        "Magnetism alone",
+        "The wheel’s weight"
+      ],
+      "answer": "Friction",
+      "marks": 1,
+      "feedback": "Friction at the brake opposes rotation."
+    },
+    {
+      "id": "q21",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "What can an unbalanced force change?",
+      "options": [
+        "An object’s speed or direction",
+        "Its mass automatically",
+        "Its chemical identity",
+        "The unit used to measure it"
+      ],
+      "answer": "An object’s speed or direction",
+      "marks": 1,
+      "feedback": "A net force changes motion."
+    },
+    {
+      "id": "q22",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-GRAVITY",
+          "name": "Gravity and weight"
+        }
+      ],
+      "question": "Which is a non-contact force?",
+      "options": [
+        "Gravity between Earth and the Moon",
+        "A hand pushing a door",
+        "Friction on a ramp",
+        "A table supporting a cup"
+      ],
+      "answer": "Gravity between Earth and the Moon",
+      "marks": 1,
+      "feedback": "Gravity acts across a distance."
+    },
+    {
+      "id": "q23",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A rope is pulled left with 18 N and right with 11 N. What is the net force?",
+      "options": [
+        "7 N left",
+        "7 N right",
+        "29 N left",
+        "18 N left"
+      ],
+      "answer": "7 N left",
+      "marks": 1,
+      "feedback": "The leftward force exceeds the rightward force by 7 N."
+    },
+    {
+      "id": "q24",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A puck is moving left. A net force acts to the right. What happens at first?",
+      "options": [
+        "It slows down.",
+        "It speeds up to the left.",
+        "Its velocity is unchanged.",
+        "It instantly stops."
+      ],
+      "answer": "It slows down.",
+      "marks": 1,
+      "feedback": "A force opposite the motion initially reduces speed."
+    },
+    {
+      "id": "q25",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A toy car starts moving from rest. What does that tell you about its forces?",
+      "options": [
+        "They were unbalanced while it started moving.",
+        "They were always balanced.",
+        "No forces acted.",
+        "Its weight disappeared."
+      ],
+      "answer": "They were unbalanced while it started moving.",
+      "marks": 1,
+      "feedback": "Starting from rest involves a change in velocity."
+    },
+    {
+      "id": "q26",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-GRAVITY",
+          "name": "Gravity and weight"
+        }
+      ],
+      "question": "An astronaut travels from Earth to the Moon. What happens?",
+      "options": [
+        "Mass stays the same and weight decreases.",
+        "Mass and weight both stay the same.",
+        "Mass decreases and weight stays the same.",
+        "Mass and weight both increase."
+      ],
+      "answer": "Mass stays the same and weight decreases.",
+      "marks": 1,
+      "feedback": "The Moon’s weaker gravity reduces weight without changing mass."
+    },
+    {
+      "id": "q27",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-CONTACT",
+          "name": "Contact forces"
+        }
+      ],
+      "question": "Why do people put oil on a bicycle chain?",
+      "options": [
+        "To reduce friction between moving parts",
+        "To increase the chain’s weight",
+        "To stop the wheels from turning",
+        "To increase air resistance"
+      ],
+      "answer": "To reduce friction between moving parts",
+      "marks": 1,
+      "feedback": "Lubrication reduces friction and wear."
+    },
+    {
+      "id": "q28",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-CONTACT",
+          "name": "Contact forces"
+        }
+      ],
+      "question": "What force moves a swimmer forward when they push water backwards?",
+      "options": [
+        "The forward push of the water on the swimmer",
+        "The backward push of the swimmer on the water",
+        "The swimmer’s weight",
+        "Air resistance"
+      ],
+      "answer": "The forward push of the water on the swimmer",
+      "marks": 1,
+      "feedback": "The water pushes back on the swimmer."
+    },
+    {
+      "id": "q29",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A lift moves upward at constant velocity. How do its upward and downward forces compare?",
+      "options": [
+        "They are equal in size.",
+        "The upward force is larger.",
+        "The downward force is larger.",
+        "Both forces must be zero."
+      ],
+      "answer": "They are equal in size.",
+      "marks": 1,
+      "feedback": "Constant velocity requires zero net force."
+    },
+    {
+      "id": "q30",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-CONTACT",
+          "name": "Contact forces"
+        }
+      ],
+      "question": "A floating leaf drifts steadily downstream. Which force keeps it from sinking?",
+      "options": [
+        "An upward push from the water",
+        "An upward pull of gravity",
+        "Magnetism from the riverbed",
+        "Friction with the air alone"
+      ],
+      "answer": "An upward push from the water",
+      "marks": 1,
+      "feedback": "Buoyancy is the upward force exerted by the water."
+    },
+    {
+      "id": "q31",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-CONTACT",
+          "name": "Contact forces"
+        }
+      ],
+      "question": "A stretched elastic band is pulling on two hooks. What happens if one hook is released?",
+      "options": [
+        "The band tends to return towards its unstretched length.",
+        "The band keeps pulling on the released hook at a distance.",
+        "The band becomes weightless.",
+        "The band’s elastic force reverses gravity."
+      ],
+      "answer": "The band tends to return towards its unstretched length.",
+      "marks": 1,
+      "feedback": "Elastic forces tend to restore the original shape."
+    },
+    {
+      "id": "q32",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A tray is at rest. Gravity pulls down with 15 N. If the table is the only other force, what does it exert?",
+      "options": [
+        "15 N upward",
+        "15 N downward",
+        "0 N",
+        "30 N upward"
+      ],
+      "answer": "15 N upward",
+      "marks": 1,
+      "feedback": "The support force balances the weight."
+    },
+    {
+      "id": "q33",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-CONTACT",
+          "name": "Contact forces"
+        }
+      ],
+      "question": "Why do wide tyres with deep tread help on a muddy track?",
+      "options": [
+        "They can improve grip with the ground.",
+        "They remove all air resistance.",
+        "They make the vehicle’s weight zero.",
+        "They turn friction into gravity."
+      ],
+      "answer": "They can improve grip with the ground.",
+      "marks": 1,
+      "feedback": "Tread can help the tyres push against soft ground."
+    },
+    {
+      "id": "q34",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-CONTACT",
+          "name": "Contact forces"
+        }
+      ],
+      "question": "What should stay the same when comparing how surface type affects a block’s sliding friction?",
+      "options": [
+        "The block and how it is pulled",
+        "The surface type",
+        "The force reading for each trial",
+        "The final result"
+      ],
+      "answer": "The block and how it is pulled",
+      "marks": 1,
+      "feedback": "Keeping other variables constant isolates the effect of surface type."
+    },
+    {
+      "id": "q35",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-GRAVITY",
+          "name": "Gravity and weight"
+        }
+      ],
+      "question": "Ignoring air resistance, why would different-mass balls dropped together reach the floor together?",
+      "options": [
+        "Gravity gives both the same acceleration at that location.",
+        "Both have exactly the same weight.",
+        "The larger ball experiences no gravity.",
+        "The smaller ball falls only after the larger one lands."
+      ],
+      "answer": "Gravity gives both the same acceleration at that location.",
+      "marks": 1,
+      "feedback": "The larger gravitational force on a heavier mass produces the same acceleration."
+    },
+    {
+      "id": "q36",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-CONTACT",
+          "name": "Contact forces"
+        }
+      ],
+      "question": "Which pair shows equal and opposite forces acting on different objects?",
+      "options": [
+        "A bat pushes a ball and the ball pushes the bat.",
+        "Gravity pulls a book down and a table pushes it up.",
+        "Two students push the same trolley in opposite directions.",
+        "Weight and air resistance act on the same falling leaf."
+      ],
+      "answer": "A bat pushes a ball and the ball pushes the bat.",
+      "marks": 1,
+      "feedback": "Interaction pairs act on different objects."
+    },
+    {
+      "id": "q37",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A car turns a corner at constant speed. Why is its net force not zero?",
+      "options": [
+        "Its direction of travel changes.",
+        "Its mass changes.",
+        "Its speed is constant.",
+        "Its wheels always point straight ahead."
+      ],
+      "answer": "Its direction of travel changes.",
+      "marks": 1,
+      "feedback": "A direction change is a change in velocity."
+    },
+    {
+      "id": "q38",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-CONTACT",
+          "name": "Contact forces"
+        }
+      ],
+      "question": "A balloon moves towards a wall after being rubbed. If it moves before contact, what force is responsible?",
+      "options": [
+        "Electrostatic force",
+        "Support force",
+        "Friction from the wall",
+        "Air resistance alone"
+      ],
+      "answer": "Electrostatic force",
+      "marks": 1,
+      "feedback": "Electric charges can attract across a gap."
+    },
+    {
+      "id": "q39",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A cart has 20 N forward thrust and 7 N friction. How much extra backward force would balance it?",
+      "options": [
+        "13 N",
+        "27 N",
+        "7 N",
+        "20 N"
+      ],
+      "answer": "13 N",
+      "marks": 1,
+      "feedback": "The current net force is 13 N forward."
+    },
+    {
+      "id": "q40",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A box has 12 N left, 5 N right and another 3 N right. What is the net force?",
+      "options": [
+        "4 N left",
+        "4 N right",
+        "20 N left",
+        "10 N right"
+      ],
+      "answer": "4 N left",
+      "marks": 1,
+      "feedback": "Rightward forces total 8 N, leaving 4 N left."
+    },
+    {
+      "id": "q41",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A moving skateboard has zero net force. What happens on a straight level track?",
+      "options": [
+        "It continues with the same speed and direction.",
+        "It must stop.",
+        "It must move faster.",
+        "It changes direction continuously."
+      ],
+      "answer": "It continues with the same speed and direction.",
+      "marks": 1,
+      "feedback": "Zero net force means no change in velocity."
+    },
+    {
+      "id": "q42",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-CONTACT",
+          "name": "Contact forces"
+        }
+      ],
+      "question": "A spring scale reads 9 N to start a block sliding and 6 N to keep it moving steadily. What does this suggest?",
+      "options": [
+        "Starting motion required a larger pull than maintaining steady sliding.",
+        "Friction was larger after the block started sliding.",
+        "The block lost 3 N of weight.",
+        "The scale measured the block’s speed."
+      ],
+      "answer": "Starting motion required a larger pull than maintaining steady sliding.",
+      "marks": 1,
+      "feedback": "The readings compare the pull needed before and during sliding."
+    },
+    {
+      "id": "q43",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-CONTACT",
+          "name": "Contact forces"
+        }
+      ],
+      "question": "A dropped object reaches terminal speed. What does this tell us about the forces?",
+      "options": [
+        "Air resistance equals its weight.",
+        "Air resistance becomes zero.",
+        "Gravity becomes zero.",
+        "Its weight must be less than air resistance."
+      ],
+      "answer": "Air resistance equals its weight.",
+      "marks": 1,
+      "feedback": "At constant falling speed the upward and downward forces balance."
+    },
+    {
+      "id": "q44",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-GRAVITY",
+          "name": "Gravity and weight"
+        }
+      ],
+      "question": "A rover weighs 120 N on Earth. On a planet with half Earth’s gravitational field strength, what would it weigh?",
+      "options": [
+        "60 N",
+        "120 N",
+        "240 N",
+        "0 N"
+      ],
+      "answer": "60 N",
+      "marks": 1,
+      "feedback": "With unchanged mass, weight halves when field strength halves."
+    },
+    {
+      "id": "q45",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "One cart has double the mass of another. Both experience the same net force. Which speeds up faster?",
+      "options": [
+        "The lighter cart",
+        "The heavier cart",
+        "Both speed up at the same rate.",
+        "Both stay at rest."
+      ],
+      "answer": "The lighter cart",
+      "marks": 1,
+      "feedback": "The same net force produces greater acceleration on a smaller mass."
+    },
+    {
+      "id": "q46",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-CONTACT",
+          "name": "Contact forces"
+        }
+      ],
+      "question": "A student pulls a block faster on carpet than on tile. Why is this a weak comparison of the surfaces?",
+      "options": [
+        "Pulling speed and surface both changed.",
+        "The blocks were the same size.",
+        "They used the same measuring tool.",
+        "They recorded readings in newtons."
+      ],
+      "answer": "Pulling speed and surface both changed.",
+      "marks": 1,
+      "feedback": "Changing two variables makes it harder to attribute any difference to the surface."
+    },
+    {
+      "id": "q47",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-CONTACT",
+          "name": "Contact forces"
+        }
+      ],
+      "question": "A ball rolls right up a ramp and slows. What can you infer about its net force along the ramp?",
+      "options": [
+        "It has a component down the ramp.",
+        "It has a component up the ramp.",
+        "It is zero while the ball is moving.",
+        "It points right and gets larger."
+      ],
+      "answer": "It has a component down the ramp.",
+      "marks": 1,
+      "feedback": "The velocity changes down the ramp as the ball slows."
+    },
+    {
+      "id": "q48",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-CONTACT",
+          "name": "Contact forces"
+        }
+      ],
+      "question": "Two magnets repel with a gap between them. How do their forces on each other compare?",
+      "options": [
+        "Equal in size and opposite in direction",
+        "The larger magnet always exerts more force.",
+        "Only the moving magnet experiences force.",
+        "Both forces point in the same direction."
+      ],
+      "answer": "Equal in size and opposite in direction",
+      "marks": 1,
+      "feedback": "Each magnet exerts an equal and opposite force on the other."
+    },
+    {
+      "id": "q49",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A student says still objects have no forces on them. Which evidence best challenges that idea?",
+      "options": [
+        "A motionless hanging mass stretches a spring.",
+        "A ball rolls down a slope.",
+        "A cart speeds up when pushed.",
+        "A dropped ball falls."
+      ],
+      "answer": "A motionless hanging mass stretches a spring.",
+      "marks": 1,
+      "feedback": "A stretched spring reveals an upward force balancing the hanging mass’s weight."
+    },
+    {
+      "id": "q50",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-CONTACT",
+          "name": "Contact forces"
+        }
+      ],
+      "question": "Why doesn’t a boat necessarily speed up when its motor is on?",
+      "options": [
+        "Water resistance can balance the forward thrust.",
+        "The motor removes all forces.",
+        "The boat’s mass always increases when the motor starts.",
+        "Water resistance always points forward."
+      ],
+      "answer": "Water resistance can balance the forward thrust.",
+      "marks": 1,
+      "feedback": "Balanced forces let the boat travel at constant velocity."
+    }
+  ]
+}

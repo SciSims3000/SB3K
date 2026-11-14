@@ -1,0 +1,1088 @@
+{
+  "activityId": "year7-universe-revision",
+  "title": "7.1 Observing the Universe Revision",
+  "subject": "Science",
+  "yearLevel": "Year 7",
+  "topic": "Observing the Universe",
+  "version": "1.0",
+  "mode": "practice",
+  "settings": {
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "allowBack": true,
+    "showFinalScore": true,
+    "feedback": {
+      "afterEachQuestion": false,
+      "onResultsScreen": true,
+      "showCorrectAnswers": false,
+      "showExplanations": false
+    },
+    "passingPercentage": 50
+  },
+  "studentFields": {
+    "studentId": {
+      "enabled": true,
+      "required": false
+    },
+    "name": {
+      "enabled": true,
+      "requiredWithoutStudentId": true
+    },
+    "class": {
+      "enabled": true,
+      "requiredWithoutStudentId": true
+    }
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.1",
+          "name": "Nature of science"
+        }
+      ],
+      "question": "Which statement best describes the purpose of science?",
+      "options": [
+        "To memorise facts",
+        "To explain the natural world using evidence",
+        "To prove that old ideas are always wrong",
+        "To make guesses without testing them"
+      ],
+      "answer": "To explain the natural world using evidence",
+      "marks": 1,
+      "feedback": "Science uses evidence from observations and investigations to explain the natural world.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.1",
+          "name": "Nature of science"
+        }
+      ],
+      "question": "Which of these is most important when scientists make a claim?",
+      "options": [
+        "Personal opinion",
+        "Evidence",
+        "Popularity",
+        "Luck"
+      ],
+      "answer": "Evidence",
+      "marks": 1,
+      "feedback": "Scientific claims should be supported by evidence.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "q3",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "Why do scientists repeat investigations?",
+      "options": [
+        "To waste time",
+        "To check whether results are reliable",
+        "To avoid writing conclusions",
+        "To change the question"
+      ],
+      "answer": "To check whether results are reliable",
+      "marks": 1,
+      "feedback": "Repeating investigations helps scientists check the reliability of their results.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "q4",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "What is a fair test?",
+      "options": [
+        "An investigation where only one variable is changed at a time",
+        "An investigation where everything is changed",
+        "An investigation with no measurements",
+        "An investigation based only on guesses"
+      ],
+      "answer": "An investigation where only one variable is changed at a time",
+      "marks": 1,
+      "feedback": "A fair test changes one variable and keeps other conditions controlled.",
+      "difficulty": "standard"
+    },
+    {
+      "id": "q5",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.3",
+          "name": "Space science"
+        }
+      ],
+      "question": "Which object is at the centre of our Solar System?",
+      "options": [
+        "Earth",
+        "The Moon",
+        "The Sun",
+        "Mars"
+      ],
+      "answer": "The Sun",
+      "marks": 1,
+      "feedback": "The Sun is the star at the centre of our Solar System.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "q6",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.3",
+          "name": "Space science"
+        }
+      ],
+      "question": "What causes day and night on Earth?",
+      "options": [
+        "Earth rotating on its axis",
+        "Earth moving closer to the Sun",
+        "The Moon blocking sunlight",
+        "The Sun moving around Earth"
+      ],
+      "answer": "Earth rotating on its axis",
+      "marks": 1,
+      "feedback": "Day and night are caused by Earth rotating on its axis.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "q7",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.4",
+          "name": "Aboriginal astronomy"
+        }
+      ],
+      "question": "Why are Aboriginal and Torres Strait Islander astronomical knowledges important in science learning?",
+      "options": [
+        "They show long-term observations of the sky and environment",
+        "They are unrelated to observation",
+        "They are only stories with no patterns",
+        "They replace all modern science"
+      ],
+      "answer": "They show long-term observations of the sky and environment",
+      "marks": 1,
+      "feedback": "Aboriginal and Torres Strait Islander astronomical knowledges include careful observations of sky patterns and environmental changes.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "q8",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.4",
+          "name": "Aboriginal astronomy"
+        }
+      ],
+      "question": "Which is an example of using sky observations in everyday life?",
+      "options": [
+        "Using star patterns to support navigation or seasonal knowledge",
+        "Ignoring patterns in the night sky",
+        "Changing the length of a day",
+        "Stopping the Moon from moving"
+      ],
+      "answer": "Using star patterns to support navigation or seasonal knowledge",
+      "marks": 1,
+      "feedback": "Sky observations can support navigation, seasonal knowledge and understanding environmental patterns.",
+      "difficulty": "standard"
+    },
+    {
+      "id": "q9",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.5",
+          "name": "Observing the Universe in context"
+        }
+      ],
+      "question": "Why have models of the Universe changed over time?",
+      "options": [
+        "New evidence and better technology have improved our understanding",
+        "Scientists stopped observing the sky",
+        "Old ideas are always correct",
+        "The Universe stopped changing"
+      ],
+      "answer": "New evidence and better technology have improved our understanding",
+      "marks": 1,
+      "feedback": "Scientific models can change when new evidence or better technology improves our understanding.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "q10",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.5",
+          "name": "Observing the Universe in context"
+        }
+      ],
+      "question": "Which tool has helped scientists observe distant objects in space?",
+      "options": [
+        "Telescope",
+        "Microscope",
+        "Thermometer",
+        "Stopwatch"
+      ],
+      "answer": "Telescope",
+      "marks": 1,
+      "feedback": "Telescopes help scientists observe distant objects in space.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "q11",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.1",
+          "name": "Nature of science"
+        }
+      ],
+      "question": "Which is a direct observation?",
+      "options": [
+        "The Moon appears bright.",
+        "The Moon makes its own light.",
+        "The Moon formed yesterday.",
+        "The Moon is made of ice."
+      ],
+      "answer": "The Moon appears bright.",
+      "marks": 1,
+      "feedback": "An observation describes what was seen."
+    },
+    {
+      "id": "q12",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "Which instrument measures elapsed time?",
+      "options": [
+        "Stopwatch",
+        "Balance",
+        "Thermometer",
+        "Ruler"
+      ],
+      "answer": "Stopwatch",
+      "marks": 1,
+      "feedback": "A stopwatch measures time intervals."
+    },
+    {
+      "id": "q13",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.5",
+          "name": "Observing the Universe in context"
+        }
+      ],
+      "question": "What does a telescope collect to form an image of a distant star?",
+      "options": [
+        "Light",
+        "Sound",
+        "Air",
+        "Soil"
+      ],
+      "answer": "Light",
+      "marks": 1,
+      "feedback": "Optical telescopes collect light."
+    },
+    {
+      "id": "q14",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.3",
+          "name": "Space science"
+        }
+      ],
+      "question": "Which object orbits Earth naturally?",
+      "options": [
+        "The Moon",
+        "The Sun",
+        "Mars",
+        "Jupiter"
+      ],
+      "answer": "The Moon",
+      "marks": 1,
+      "feedback": "The Moon is Earth’s natural satellite."
+    },
+    {
+      "id": "q15",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.3",
+          "name": "Space science"
+        }
+      ],
+      "question": "Which object is a star?",
+      "options": [
+        "The Sun",
+        "Earth",
+        "The Moon",
+        "Venus"
+      ],
+      "answer": "The Sun",
+      "marks": 1,
+      "feedback": "The Sun is a star."
+    },
+    {
+      "id": "q16",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.3",
+          "name": "Space science"
+        }
+      ],
+      "question": "What does Earth orbit?",
+      "options": [
+        "The Sun",
+        "The Moon",
+        "Mars",
+        "The North Star"
+      ],
+      "answer": "The Sun",
+      "marks": 1,
+      "feedback": "Earth travels around the Sun."
+    },
+    {
+      "id": "q17",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.3",
+          "name": "Space science"
+        }
+      ],
+      "question": "What is a galaxy?",
+      "options": [
+        "A vast collection of stars, gas and dust",
+        "One planet and its moons",
+        "A single bright star",
+        "A cloud in Earth’s atmosphere"
+      ],
+      "answer": "A vast collection of stars, gas and dust",
+      "marks": 1,
+      "feedback": "Galaxies contain many stars and other matter."
+    },
+    {
+      "id": "q18",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.3",
+          "name": "Space science"
+        }
+      ],
+      "question": "Which object reflects sunlight to appear bright in our sky?",
+      "options": [
+        "The Moon",
+        "The Sun",
+        "A distant star",
+        "A lamp"
+      ],
+      "answer": "The Moon",
+      "marks": 1,
+      "feedback": "Moonlight is mostly reflected sunlight."
+    },
+    {
+      "id": "q19",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.3",
+          "name": "Space science"
+        }
+      ],
+      "question": "About how long does Earth take to orbit the Sun once?",
+      "options": [
+        "One year",
+        "One day",
+        "One week",
+        "One month"
+      ],
+      "answer": "One year",
+      "marks": 1,
+      "feedback": "One Earth orbit takes about one year."
+    },
+    {
+      "id": "q20",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.3",
+          "name": "Space science"
+        }
+      ],
+      "question": "What is a constellation as seen from Earth?",
+      "options": [
+        "A named pattern or region of the sky",
+        "A group of planets circling Earth",
+        "One star with many moons",
+        "A shape made by clouds"
+      ],
+      "answer": "A named pattern or region of the sky",
+      "marks": 1,
+      "feedback": "Constellations organise the sky into recognisable regions."
+    },
+    {
+      "id": "q21",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.5",
+          "name": "Observing the Universe in context"
+        }
+      ],
+      "question": "Why is the Sun easier to study in detail than other stars?",
+      "options": [
+        "It is much closer to Earth.",
+        "It is the only star that gives off light.",
+        "It stands still in space.",
+        "It is bigger than every other star."
+      ],
+      "answer": "It is much closer to Earth.",
+      "marks": 1,
+      "feedback": "The Sun is our nearest star."
+    },
+    {
+      "id": "q22",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "Where should you record measurements from repeated observations?",
+      "options": [
+        "In a results table",
+        "In the title only",
+        "In the prediction only",
+        "In a list of equipment"
+      ],
+      "answer": "In a results table",
+      "marks": 1,
+      "feedback": "A table keeps observations organised."
+    },
+    {
+      "id": "q23",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.1",
+          "name": "Nature of science"
+        }
+      ],
+      "question": "Which statement is an inference from seeing a tree shadow move?",
+      "options": [
+        "The Sun’s apparent position changed.",
+        "The shadow was 25 cm long at noon.",
+        "The shadow lay west of the tree at 9 am.",
+        "The shadow crossed a chalk mark."
+      ],
+      "answer": "The Sun’s apparent position changed.",
+      "marks": 1,
+      "feedback": "An inference explains or interprets an observation."
+    },
+    {
+      "id": "q24",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "To compare how quickly two sites cool at night, what should match?",
+      "options": [
+        "The measuring times and type of thermometer",
+        "The temperature readings",
+        "The final conclusion",
+        "The location of both sites"
+      ],
+      "answer": "The measuring times and type of thermometer",
+      "marks": 1,
+      "feedback": "Matching the method makes the sites easier to compare."
+    },
+    {
+      "id": "q25",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "Why include units with a shadow length?",
+      "options": [
+        "So another person can interpret the measurement",
+        "So the result is larger",
+        "So the shadow stays the same",
+        "So no repeat readings are needed"
+      ],
+      "answer": "So another person can interpret the measurement",
+      "marks": 1,
+      "feedback": "A number alone does not tell the reader the measurement scale."
+    },
+    {
+      "id": "q26",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.3",
+          "name": "Space science"
+        }
+      ],
+      "question": "Why does the Moon appear to change shape over a month?",
+      "options": [
+        "We see different amounts of its sunlit half.",
+        "Earth’s shadow covers it every night.",
+        "It changes shape as it cools.",
+        "The Sun lights different physical sides permanently."
+      ],
+      "answer": "We see different amounts of its sunlit half.",
+      "marks": 1,
+      "feedback": "The viewing angle changes as the Moon orbits Earth."
+    },
+    {
+      "id": "q27",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.3",
+          "name": "Space science"
+        }
+      ],
+      "question": "Why do stars appear to move across the sky during one night?",
+      "options": [
+        "Earth rotates.",
+        "Stars all orbit Earth overnight.",
+        "Earth’s orbit takes one night.",
+        "Clouds push the stars along."
+      ],
+      "answer": "Earth rotates.",
+      "marks": 1,
+      "feedback": "Earth’s rotation changes the direction we face."
+    },
+    {
+      "id": "q28",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.3",
+          "name": "Space science"
+        }
+      ],
+      "question": "Which model best represents a solar eclipse?",
+      "options": [
+        "The Moon lies between the Sun and Earth.",
+        "Earth lies between the Sun and Moon.",
+        "The Sun lies between Earth and Moon.",
+        "The Moon moves behind Mars."
+      ],
+      "answer": "The Moon lies between the Sun and Earth.",
+      "marks": 1,
+      "feedback": "The Moon blocks sunlight from reaching part of Earth."
+    },
+    {
+      "id": "q29",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.3",
+          "name": "Space science"
+        }
+      ],
+      "question": "Which model best represents a lunar eclipse?",
+      "options": [
+        "Earth lies between the Sun and Moon.",
+        "The Moon lies between Earth and the Sun.",
+        "The Sun lies between Earth and Moon.",
+        "The Moon moves inside Earth’s atmosphere."
+      ],
+      "answer": "Earth lies between the Sun and Moon.",
+      "marks": 1,
+      "feedback": "Earth’s shadow falls on the Moon."
+    },
+    {
+      "id": "q30",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.3",
+          "name": "Space science"
+        }
+      ],
+      "question": "Why can Venus appear bright although it is a planet?",
+      "options": [
+        "Its clouds reflect sunlight.",
+        "It burns like the Sun.",
+        "It reflects only light from Earth.",
+        "It has no atmosphere."
+      ],
+      "answer": "Its clouds reflect sunlight.",
+      "marks": 1,
+      "feedback": "Venus reflects sunlight, especially from its clouds."
+    },
+    {
+      "id": "q31",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.5",
+          "name": "Observing the Universe in context"
+        }
+      ],
+      "question": "What improves when a telescope collects more light from a faint object?",
+      "options": [
+        "The object can be detected more clearly.",
+        "The object moves closer.",
+        "The object becomes hotter.",
+        "The speed of light increases."
+      ],
+      "answer": "The object can be detected more clearly.",
+      "marks": 1,
+      "feedback": "More collected light makes faint objects easier to detect."
+    },
+    {
+      "id": "q32",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.4",
+          "name": "Aboriginal astronomy"
+        }
+      ],
+      "question": "What is a respectful first step before sharing a community’s sky knowledge in class?",
+      "options": [
+        "Consult the relevant knowledge holders and use approved material.",
+        "Assume the knowledge is identical across Australia.",
+        "Use an anonymous online retelling without checking it.",
+        "Combine unrelated stories into one account."
+      ],
+      "answer": "Consult the relevant knowledge holders and use approved material.",
+      "marks": 1,
+      "feedback": "Knowledge belongs in its community context and may have sharing protocols."
+    },
+    {
+      "id": "q33",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.4",
+          "name": "Aboriginal astronomy"
+        }
+      ],
+      "question": "Why might different communities use different seasonal sky indicators?",
+      "options": [
+        "They observe from different places and relate the sky to local changes.",
+        "Only one community can observe stars correctly.",
+        "Stars shine only in one area.",
+        "Every seasonal indicator must use the same star."
+      ],
+      "answer": "They observe from different places and relate the sky to local changes.",
+      "marks": 1,
+      "feedback": "Local geography and seasonal events shape useful observations."
+    },
+    {
+      "id": "q34",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A student records shadow length at 9 am, noon and 3 pm. What is the measured variable?",
+      "options": [
+        "Shadow length",
+        "Time of day",
+        "The location of the stick",
+        "The height of the stick"
+      ],
+      "answer": "Shadow length",
+      "marks": 1,
+      "feedback": "Shadow length is the outcome being measured."
+    },
+    {
+      "id": "q35",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "What makes a claim about changing shadow length stronger?",
+      "options": [
+        "Repeated measurements at the same times on comparable days",
+        "A single estimate from memory",
+        "Measuring only the shortest shadow",
+        "Removing readings that look unusual without checking"
+      ],
+      "answer": "Repeated measurements at the same times on comparable days",
+      "marks": 1,
+      "feedback": "Repeats let students see whether the pattern is consistent."
+    },
+    {
+      "id": "q36",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.3",
+          "name": "Space science"
+        }
+      ],
+      "question": "What happens to a stick’s shadow as the Sun gets higher in the sky?",
+      "options": [
+        "It usually gets shorter.",
+        "It becomes a different material.",
+        "It points straight up.",
+        "It gets longer regardless of position."
+      ],
+      "answer": "It usually gets shorter.",
+      "marks": 1,
+      "feedback": "Higher-angle sunlight produces a shorter shadow on level ground."
+    },
+    {
+      "id": "q37",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.5",
+          "name": "Observing the Universe in context"
+        }
+      ],
+      "question": "Why might a model of the Solar System use different scales for sizes and distances?",
+      "options": [
+        "Using one scale can make either planets too small or distances too large to show.",
+        "Planets change size when drawn.",
+        "Distances are the same for every planet.",
+        "One scale makes gravity stop working."
+      ],
+      "answer": "Using one scale can make either planets too small or distances too large to show.",
+      "marks": 1,
+      "feedback": "Sizes and distances differ so much that a single scale is often impractical."
+    },
+    {
+      "id": "q38",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.1",
+          "name": "Nature of science"
+        }
+      ],
+      "question": "Which statement is a testable prediction?",
+      "options": [
+        "If I observe at the same time tomorrow, the Moon will be farther east against the stars.",
+        "The Moon is the nicest object in the sky.",
+        "The stars should be brighter because I like them.",
+        "The Moon is interesting."
+      ],
+      "answer": "If I observe at the same time tomorrow, the Moon will be farther east against the stars.",
+      "marks": 1,
+      "feedback": "The first statement gives an outcome that can be checked."
+    },
+    {
+      "id": "q39",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.5",
+          "name": "Observing the Universe in context"
+        }
+      ],
+      "question": "What made observations of moons orbiting Jupiter important to older models?",
+      "options": [
+        "They showed that some objects orbit something other than Earth.",
+        "They proved Earth has no Moon.",
+        "They showed all stars orbit Jupiter.",
+        "They proved the Sun orbits Earth."
+      ],
+      "answer": "They showed that some objects orbit something other than Earth.",
+      "marks": 1,
+      "feedback": "Jupiter’s moons contradicted the idea that everything circles Earth."
+    },
+    {
+      "id": "q40",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "Shadow lengths at noon over three days are 21 cm, 22 cm and 61 cm. What should you do first?",
+      "options": [
+        "Check the method and conditions for the 61 cm reading.",
+        "Delete it because it is different.",
+        "Change it to 21 cm.",
+        "Conclude immediately that all shadows are getting longer."
+      ],
+      "answer": "Check the method and conditions for the 61 cm reading.",
+      "marks": 1,
+      "feedback": "Investigate an unusual result before deciding how to treat it."
+    },
+    {
+      "id": "q41",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.3",
+          "name": "Space science"
+        }
+      ],
+      "question": "Earth rotated twice as fast but orbited at the same rate. What would change?",
+      "options": [
+        "The day would be shorter and the year would stay about the same.",
+        "The year would halve and the day would stay the same.",
+        "Both would halve.",
+        "Both would stay the same."
+      ],
+      "answer": "The day would be shorter and the year would stay about the same.",
+      "marks": 1,
+      "feedback": "Rotation controls day length and orbit controls year length."
+    },
+    {
+      "id": "q42",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.5",
+          "name": "Observing the Universe in context"
+        }
+      ],
+      "question": "Two stars look equally bright. What can you conclude from appearance alone?",
+      "options": [
+        "They deliver similar apparent brightness, but may differ in distance or light output.",
+        "They must be equally distant.",
+        "They must give off the same amount of light.",
+        "They must be in the same constellation."
+      ],
+      "answer": "They deliver similar apparent brightness, but may differ in distance or light output.",
+      "marks": 1,
+      "feedback": "Distance and light output both affect apparent brightness."
+    },
+    {
+      "id": "q43",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.3",
+          "name": "Space science"
+        }
+      ],
+      "question": "Why is there usually no solar eclipse at new Moon?",
+      "options": [
+        "The Moon’s tilted orbit usually carries it above or below the line to the Sun.",
+        "The Moon stops moving.",
+        "Earth casts its shadow at every new Moon.",
+        "The Sun is too far away for any eclipse."
+      ],
+      "answer": "The Moon’s tilted orbit usually carries it above or below the line to the Sun.",
+      "marks": 1,
+      "feedback": "An eclipse requires closer alignment than the ordinary new Moon phase."
+    },
+    {
+      "id": "q44",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "Why record observing location along with the time when comparing sky observations?",
+      "options": [
+        "Observers at different locations can see different parts or positions of the sky.",
+        "The location changes how fast Earth rotates.",
+        "The location changes the star’s temperature.",
+        "Time is unnecessary if the location is known."
+      ],
+      "answer": "Observers at different locations can see different parts or positions of the sky.",
+      "marks": 1,
+      "feedback": "Location and time are both needed to interpret and reproduce observations."
+    },
+    {
+      "id": "q45",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.1",
+          "name": "Nature of science"
+        }
+      ],
+      "question": "One clear night a student sees fewer stars from town than from a dark field. Which follow-up tests light pollution as an explanation?",
+      "options": [
+        "Repeat at both sites under similar weather and Moon conditions.",
+        "Compare town during daytime with the field at night.",
+        "Count stars only next to the brightest town light.",
+        "Look from the field on a cloudy night."
+      ],
+      "answer": "Repeat at both sites under similar weather and Moon conditions.",
+      "marks": 1,
+      "feedback": "Matching other conditions helps isolate the effect of artificial lighting."
+    },
+    {
+      "id": "q46",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.3",
+          "name": "Space science"
+        }
+      ],
+      "question": "Why can a spacecraft facing away from the Sun lose power from its solar panels?",
+      "options": [
+        "The panels receive less direct sunlight.",
+        "There is no gravity behind the spacecraft.",
+        "The spacecraft moves outside the Solar System.",
+        "The Sun gives off sound instead of light."
+      ],
+      "answer": "The panels receive less direct sunlight.",
+      "marks": 1,
+      "feedback": "Solar panels need incoming light to generate electricity."
+    },
+    {
+      "id": "q47",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.5",
+          "name": "Observing the Universe in context"
+        }
+      ],
+      "question": "A diagram draws the Moon larger than Earth for readability. What must the diagram say?",
+      "options": [
+        "Object sizes are not to scale.",
+        "The Moon is larger than Earth.",
+        "Both objects are at the same distance from the Sun.",
+        "Earth’s orbit has changed."
+      ],
+      "answer": "Object sizes are not to scale.",
+      "marks": 1,
+      "feedback": "A scale note prevents a misleading comparison."
+    },
+    {
+      "id": "q48",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.4",
+          "name": "Aboriginal astronomy"
+        }
+      ],
+      "question": "A community calendar links a seasonal sky event with a change on Country. What is a reasonable interpretation?",
+      "options": [
+        "The sky event can be a seasonal indicator without causing the change.",
+        "The sky event must directly cause the change.",
+        "The indicator has the same meaning everywhere.",
+        "The calendar does not rely on observation."
+      ],
+      "answer": "The sky event can be a seasonal indicator without causing the change.",
+      "marks": 1,
+      "feedback": "Events can recur together because of seasonal cycles."
+    },
+    {
+      "id": "q49",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.3",
+          "name": "Space science"
+        }
+      ],
+      "question": "How can the Moon be visible in daytime?",
+      "options": [
+        "It can be above the horizon while reflecting sunlight.",
+        "It makes its own light only in daytime.",
+        "The Sun blocks all other objects but pushes the Moon into view.",
+        "It is only visible after sunset."
+      ],
+      "answer": "It can be above the horizon while reflecting sunlight.",
+      "marks": 1,
+      "feedback": "The Moon can share the daytime sky with the Sun."
+    },
+    {
+      "id": "q50",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.5",
+          "name": "Observing the Universe in context"
+        }
+      ],
+      "question": "Two observing groups disagree about a planet’s apparent position. What should they compare first?",
+      "options": [
+        "Observation time, location and the reference stars used",
+        "Which group has more students",
+        "The colour of their notebooks",
+        "Which claim sounds simpler"
+      ],
+      "answer": "Observation time, location and the reference stars used",
+      "marks": 1,
+      "feedback": "Different times, locations or reference points can explain different observations."
+    }
+  ]
+}
