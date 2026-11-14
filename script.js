@@ -2,7 +2,7 @@ const RESULTS_ENDPOINT =
     "https://script.google.com/macros/s/AKfycbyxn8eNICoQrmQei-WsbTm8HqE4WQFz-dX1eTmgkbp4eu5mhFZAWwL6NAMlvHbSUhqzOg/exec";
 
 const PLATFORM_VERSION =
-    "0.4.7";
+    "0.4.8";
 
 const REVISION_LEVELS = ["easy", "standard", "hard"];
 let revisionDifficulty = "standard";
@@ -476,6 +476,35 @@ function resetQuizState() {
     resetSubmissionStatus();
 }
 
+function revisionExposure() {
+    if (!homeworkKey) return {};
+    try {
+        return JSON.parse(localStorage.getItem(homeworkKey + ":exposure")) ?? {};
+    } catch {
+        return {};
+    }
+}
+
+function recordRevisionExposure() {
+    if (!homeworkKey || !supportsDifficulty()) return;
+
+    try {
+        const exposure = revisionExposure();
+        if (exposure.lastSession === sessionId) return;
+
+        const counts = exposure.counts ?? {};
+        for (const question of activityQuestions) {
+            counts[question.id] = (counts[question.id] ?? 0) + 1;
+        }
+        localStorage.setItem(homeworkKey + ":exposure", JSON.stringify({
+            counts,
+            lastSession: sessionId
+        }));
+    } catch {
+        // Revision remains available if the browser cannot save history.
+    }
+}
+
 function prepareActivityQuestions() {
     activityQuestions =
         cloneData(
@@ -484,6 +513,7 @@ function prepareActivityQuestions() {
 
     const useDifficulty = supportsDifficulty();
     if (useDifficulty) {
+        const exposure = revisionExposure().counts ?? {};
         const levels = revisionDifficulty === "progressive"
             ? REVISION_LEVELS : [revisionDifficulty];
         const count = Number(revisionLength);
@@ -492,6 +522,8 @@ function prepareActivityQuestions() {
         activityQuestions = levels.flatMap((level, index) => {
             const pool = activityQuestions.filter(question => question.difficulty === level);
             shuffleArray(pool);
+            pool.sort((first, second) =>
+                (exposure[first.id] ?? 0) - (exposure[second.id] ?? 0));
             return revisionLength === "all" ? pool : pool.slice(0, counts[index]);
         });
     }
@@ -988,6 +1020,7 @@ function nextQuestion() {
 /* ===== RESULTS ===== */
 
 function showResults() {
+    if (!finalResultPacket) recordRevisionExposure();
     sessionCompletedAt ||= new Date().toISOString();
 
     document
