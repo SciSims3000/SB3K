@@ -1,0 +1,258 @@
+{
+  "activityId": "year7-forces",
+  "title": "7.2 Forces Quick Check",
+  "subject": "Science",
+  "yearLevel": "Year 7",
+  "topic": "Forces",
+  "version": "1.0",
+  "mode": "practice",
+  "settings": {
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "allowBack": true,
+    "showFinalScore": true,
+    "feedback": {
+      "afterEachQuestion": false,
+      "onResultsScreen": true,
+      "showCorrectAnswers": false,
+      "showExplanations": false
+    },
+    "passingPercentage": 50
+  },
+  "studentFields": {
+    "studentId": {
+      "enabled": true,
+      "required": false
+    },
+    "name": {
+      "enabled": true,
+      "requiredWithoutStudentId": true
+    },
+    "class": {
+      "enabled": true,
+      "requiredWithoutStudentId": true
+    }
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "What is the net horizontal force on the box?",
+      "options": [
+        "0 N",
+        "10 N left",
+        "10 N right",
+        "20 N right"
+      ],
+      "answer": "0 N",
+      "marks": 1,
+      "feedback": "Equal and opposite forces cancel.",
+      "image": {
+        "src": "activities/images/forces-balanced.png",
+        "alt": "A box has a 10 N arrow pointing left and a 10 N arrow pointing right."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "What is the net horizontal force on the box?",
+      "options": [
+        "4 N right",
+        "4 N left",
+        "16 N right",
+        "0 N"
+      ],
+      "answer": "4 N right",
+      "marks": 1,
+      "feedback": "Subtract opposing forces and keep the direction of the larger force.",
+      "image": {
+        "src": "activities/images/forces-net-force.png",
+        "alt": "A box has a 6 N arrow pointing left and a 10 N arrow pointing right."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-GRAVITY",
+          "name": "Gravity and weight"
+        }
+      ],
+      "question": "Which way does gravity act on this ball after it leaves the thrower’s hand?",
+      "options": [
+        "Towards Earth",
+        "Upwards",
+        "Along the ball’s direction of travel",
+        "Gravity stops acting"
+      ],
+      "answer": "Towards Earth",
+      "marks": 1,
+      "feedback": "Gravity acts towards Earth throughout the flight.",
+      "image": {
+        "src": "activities/images/forces-gravity.png",
+        "alt": "A ball is in the air after being released."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-CONTACT",
+          "name": "Contact forces"
+        }
+      ],
+      "question": "The box is sliding to the right along a stationary bench. Which way does friction from the bench act on the box?",
+      "options": [
+        "To the left",
+        "To the right",
+        "Straight up",
+        "Straight down"
+      ],
+      "answer": "To the left",
+      "marks": 1,
+      "feedback": "Friction opposes the sliding between the box and bench.",
+      "image": {
+        "src": "activities/images/forces-friction.png",
+        "alt": "A right-pointing arrow shows the box moving to the right."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-CONTACT",
+          "name": "Contact forces"
+        }
+      ],
+      "question": "What upward force does the table exert on the resting book?",
+      "options": [
+        "A support force",
+        "The weight of the book",
+        "A magnetic force",
+        "Air resistance"
+      ],
+      "answer": "A support force",
+      "marks": 1,
+      "feedback": "The table pushes upwards on the book with a support force.",
+      "image": {
+        "src": "activities/images/forces-normal.png",
+        "alt": "A book rests on the flat top of a table."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-CONTACT",
+          "name": "Contact forces"
+        }
+      ],
+      "question": "Which example involves a contact force?",
+      "options": [
+        "A foot kicking a ball",
+        "Earth pulling on the Moon",
+        "A magnet attracting a paperclip without touching it",
+        "A charged balloon attracting hair across a gap"
+      ],
+      "answer": "A foot kicking a ball",
+      "marks": 1,
+      "feedback": "The foot must touch the ball to kick it."
+    },
+    {
+      "id": "q7",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-GRAVITY",
+          "name": "Gravity and weight"
+        }
+      ],
+      "question": "Which quantity is measured in newtons?",
+      "options": [
+        "Weight",
+        "Mass",
+        "Speed",
+        "Distance"
+      ],
+      "answer": "Weight",
+      "marks": 1,
+      "feedback": "Weight is a force. Mass is measured in kilograms."
+    },
+    {
+      "id": "q8",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A cyclist travels in a straight line at a constant speed. What is the net force on the cyclist and bike?",
+      "options": [
+        "Zero",
+        "Forward",
+        "Backward",
+        "Increasing"
+      ],
+      "answer": "Zero",
+      "marks": 1,
+      "feedback": "Constant speed in a straight line means the forces balance."
+    },
+    {
+      "id": "q9",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-CONTACT",
+          "name": "Contact forces"
+        }
+      ],
+      "question": "Why does a parachute slow a falling skydiver when it opens?",
+      "options": [
+        "It increases air resistance",
+        "It switches off gravity",
+        "It reduces the mass of the skydiver",
+        "It pulls the skydiver down faster"
+      ],
+      "answer": "It increases air resistance",
+      "marks": 1,
+      "feedback": "The open parachute increases the upward force from air resistance."
+    },
+    {
+      "id": "q10",
+      "type": "mcq",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "Two students push a trolley in the same direction with forces of 12 N and 8 N. What is the combined force of their pushes?",
+      "options": [
+        "20 N",
+        "4 N",
+        "12 N",
+        "0 N"
+      ],
+      "answer": "20 N",
+      "marks": 1,
+      "feedback": "Forces in the same direction add together."
+    }
+  ]
+}

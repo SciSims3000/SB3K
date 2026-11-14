@@ -2,7 +2,7 @@ const RESULTS_ENDPOINT =
     "https://script.google.com/macros/s/AKfycbyxn8eNICoQrmQei-WsbTm8HqE4WQFz-dX1eTmgkbp4eu5mhFZAWwL6NAMlvHbSUhqzOg/exec";
 
 const PLATFORM_VERSION =
-    "0.4.4";
+    "0.4.5";
 
 let activity = null;
 let activityQuestions = [];
@@ -585,6 +585,25 @@ function showQuestion(index) {
         "questionText"
     ).textContent =
         question.question;
+
+    const stimulus = document.getElementById("questionStimulus");
+    stimulus.replaceChildren();
+    if (question.image) {
+        const image = document.createElement("img");
+        image.alt = question.image.alt;
+        image.addEventListener("error", () => {
+            if (image.parentNode !== stimulus) return;
+            stimulus.replaceChildren(document.createTextNode(question.image.alt));
+        }, { once: true });
+        stimulus.appendChild(image);
+        image.src = question.image.src;
+
+        if (question.image.caption) {
+            const caption = document.createElement("figcaption");
+            caption.textContent = question.image.caption;
+            stimulus.appendChild(caption);
+        }
+    }
 
     const answerArea =
         document.getElementById(

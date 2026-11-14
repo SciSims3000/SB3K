@@ -7,3 +7,5 @@
 5. From the repository root, run `python3 scripts/validate_activities.py` (Python 3.9 or newer). Fix any errors before publishing. Open the activity through the picker and check the questions and feedback. Its direct link ends in `?activity=year7-mixtures`.
 
 Keep the activity ID stable when revising a quiz so existing links and reporting continue to identify it. Update the activity version when you revise the content.
+
+For an optional question image, add an `image` object with `src` pointing to a raster image under `activities/` and `alt` describing the information students need. Add `caption` if useful. Leave out `image` for text-only questions.

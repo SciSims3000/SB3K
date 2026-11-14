@@ -57,6 +57,20 @@ def validate_question(question, seen_ids):
     if type(marks) not in (int, float) or not 0 < marks < float("inf"):
         raise ValueError("marks must be a positive finite number")
 
+    if "image" in question:
+        image = question["image"]
+        if not isinstance(image, dict):
+            raise ValueError("image must be an object")
+        src = required_text(image, "src")
+        required_text(image, "alt")
+        if "caption" in image:
+            required_text(image, "caption")
+        path = (ROOT / src).resolve()
+        if (not src.startswith("activities/") or not path.is_relative_to(ROOT / "activities")
+                or path.suffix.lower() not in {".png", ".jpg", ".jpeg", ".webp", ".gif"}
+                or not path.is_file()):
+            raise ValueError(f"image must point to an existing raster image under activities/ ({src})")
+
     if "curriculum" in question:
         outcome_ids = set()
         for outcome in objects(question, "curriculum", allow_empty=True):

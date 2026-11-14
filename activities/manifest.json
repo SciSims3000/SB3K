@@ -13,6 +13,13 @@
       "subject": "Science",
       "yearLevel": "Year 7",
       "path": "activities/year7-particle-model.json"
+    },
+    {
+      "id": "year7-forces",
+      "title": "7.2 Forces Quick Check",
+      "subject": "Science",
+      "yearLevel": "Year 7",
+      "path": "activities/year7-forces.json"
     }
   ]
 }
