@@ -4,7 +4,7 @@
   "subject": "Science",
   "yearLevel": "Year 7",
   "topic": "Forces",
-  "version": "1.0",
+  "version": "1.1",
   "mode": "practice",
   "settings": {
     "shuffleQuestions": true,
@@ -1103,6 +1103,1476 @@
       "answer": "Water resistance can balance the forward thrust.",
       "marks": 1,
       "feedback": "Balanced forces let the boat travel at constant velocity."
+    },
+    {
+      "id": "q51",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A force diagram shows a 14 N arrow pointing left. What does the arrow show?",
+      "options": [
+        "A force of 14 N to the left",
+        "A force of 14 N to the right",
+        "A mass of 14 kg",
+        "A speed of 14 m/s"
+      ],
+      "answer": "A force of 14 N to the left",
+      "marks": 1,
+      "feedback": "The arrow shows the magnitude and direction of a force."
+    },
+    {
+      "id": "q52",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A force diagram shows a 16 N arrow pointing right. What does the arrow show?",
+      "options": [
+        "A force of 16 N to the right",
+        "A force of 16 N to the left",
+        "A mass of 16 kg",
+        "A speed of 16 m/s"
+      ],
+      "answer": "A force of 16 N to the right",
+      "marks": 1,
+      "feedback": "The arrow shows the magnitude and direction of a force."
+    },
+    {
+      "id": "q53",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A force diagram shows a 18 N arrow pointing left. What does the arrow show?",
+      "options": [
+        "A force of 18 N to the left",
+        "A force of 18 N to the right",
+        "A mass of 18 kg",
+        "A speed of 18 m/s"
+      ],
+      "answer": "A force of 18 N to the left",
+      "marks": 1,
+      "feedback": "The arrow shows the magnitude and direction of a force."
+    },
+    {
+      "id": "q54",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A force diagram shows a 20 N arrow pointing right. What does the arrow show?",
+      "options": [
+        "A force of 20 N to the right",
+        "A force of 20 N to the left",
+        "A mass of 20 kg",
+        "A speed of 20 m/s"
+      ],
+      "answer": "A force of 20 N to the right",
+      "marks": 1,
+      "feedback": "The arrow shows the magnitude and direction of a force."
+    },
+    {
+      "id": "q55",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A force diagram shows a 22 N arrow pointing left. What does the arrow show?",
+      "options": [
+        "A force of 22 N to the left",
+        "A force of 22 N to the right",
+        "A mass of 22 kg",
+        "A speed of 22 m/s"
+      ],
+      "answer": "A force of 22 N to the left",
+      "marks": 1,
+      "feedback": "The arrow shows the magnitude and direction of a force."
+    },
+    {
+      "id": "q56",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A force diagram shows a 24 N arrow pointing right. What does the arrow show?",
+      "options": [
+        "A force of 24 N to the right",
+        "A force of 24 N to the left",
+        "A mass of 24 kg",
+        "A speed of 24 m/s"
+      ],
+      "answer": "A force of 24 N to the right",
+      "marks": 1,
+      "feedback": "The arrow shows the magnitude and direction of a force."
+    },
+    {
+      "id": "q57",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A force diagram shows a 26 N arrow pointing left. What does the arrow show?",
+      "options": [
+        "A force of 26 N to the left",
+        "A force of 26 N to the right",
+        "A mass of 26 kg",
+        "A speed of 26 m/s"
+      ],
+      "answer": "A force of 26 N to the left",
+      "marks": 1,
+      "feedback": "The arrow shows the magnitude and direction of a force."
+    },
+    {
+      "id": "q58",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A force diagram shows a 28 N arrow pointing right. What does the arrow show?",
+      "options": [
+        "A force of 28 N to the right",
+        "A force of 28 N to the left",
+        "A mass of 28 kg",
+        "A speed of 28 m/s"
+      ],
+      "answer": "A force of 28 N to the right",
+      "marks": 1,
+      "feedback": "The arrow shows the magnitude and direction of a force."
+    },
+    {
+      "id": "q59",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A force diagram shows a 30 N arrow pointing left. What does the arrow show?",
+      "options": [
+        "A force of 30 N to the left",
+        "A force of 30 N to the right",
+        "A mass of 30 kg",
+        "A speed of 30 m/s"
+      ],
+      "answer": "A force of 30 N to the left",
+      "marks": 1,
+      "feedback": "The arrow shows the magnitude and direction of a force."
+    },
+    {
+      "id": "q60",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A force diagram shows a 32 N arrow pointing right. What does the arrow show?",
+      "options": [
+        "A force of 32 N to the right",
+        "A force of 32 N to the left",
+        "A mass of 32 kg",
+        "A speed of 32 m/s"
+      ],
+      "answer": "A force of 32 N to the right",
+      "marks": 1,
+      "feedback": "The arrow shows the magnitude and direction of a force."
+    },
+    {
+      "id": "q61",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A force diagram shows a 34 N arrow pointing left. What does the arrow show?",
+      "options": [
+        "A force of 34 N to the left",
+        "A force of 34 N to the right",
+        "A mass of 34 kg",
+        "A speed of 34 m/s"
+      ],
+      "answer": "A force of 34 N to the left",
+      "marks": 1,
+      "feedback": "The arrow shows the magnitude and direction of a force."
+    },
+    {
+      "id": "q62",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A force diagram shows a 36 N arrow pointing right. What does the arrow show?",
+      "options": [
+        "A force of 36 N to the right",
+        "A force of 36 N to the left",
+        "A mass of 36 kg",
+        "A speed of 36 m/s"
+      ],
+      "answer": "A force of 36 N to the right",
+      "marks": 1,
+      "feedback": "The arrow shows the magnitude and direction of a force."
+    },
+    {
+      "id": "q63",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A force diagram shows a 38 N arrow pointing left. What does the arrow show?",
+      "options": [
+        "A force of 38 N to the left",
+        "A force of 38 N to the right",
+        "A mass of 38 kg",
+        "A speed of 38 m/s"
+      ],
+      "answer": "A force of 38 N to the left",
+      "marks": 1,
+      "feedback": "The arrow shows the magnitude and direction of a force."
+    },
+    {
+      "id": "q64",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A force diagram shows a 40 N arrow pointing right. What does the arrow show?",
+      "options": [
+        "A force of 40 N to the right",
+        "A force of 40 N to the left",
+        "A mass of 40 kg",
+        "A speed of 40 m/s"
+      ],
+      "answer": "A force of 40 N to the right",
+      "marks": 1,
+      "feedback": "The arrow shows the magnitude and direction of a force."
+    },
+    {
+      "id": "q65",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A force diagram shows a 42 N arrow pointing left. What does the arrow show?",
+      "options": [
+        "A force of 42 N to the left",
+        "A force of 42 N to the right",
+        "A mass of 42 kg",
+        "A speed of 42 m/s"
+      ],
+      "answer": "A force of 42 N to the left",
+      "marks": 1,
+      "feedback": "The arrow shows the magnitude and direction of a force."
+    },
+    {
+      "id": "q66",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A force diagram shows a 44 N arrow pointing right. What does the arrow show?",
+      "options": [
+        "A force of 44 N to the right",
+        "A force of 44 N to the left",
+        "A mass of 44 kg",
+        "A speed of 44 m/s"
+      ],
+      "answer": "A force of 44 N to the right",
+      "marks": 1,
+      "feedback": "The arrow shows the magnitude and direction of a force."
+    },
+    {
+      "id": "q67",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A force diagram shows a 46 N arrow pointing left. What does the arrow show?",
+      "options": [
+        "A force of 46 N to the left",
+        "A force of 46 N to the right",
+        "A mass of 46 kg",
+        "A speed of 46 m/s"
+      ],
+      "answer": "A force of 46 N to the left",
+      "marks": 1,
+      "feedback": "The arrow shows the magnitude and direction of a force."
+    },
+    {
+      "id": "q68",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A force diagram shows a 48 N arrow pointing right. What does the arrow show?",
+      "options": [
+        "A force of 48 N to the right",
+        "A force of 48 N to the left",
+        "A mass of 48 kg",
+        "A speed of 48 m/s"
+      ],
+      "answer": "A force of 48 N to the right",
+      "marks": 1,
+      "feedback": "The arrow shows the magnitude and direction of a force."
+    },
+    {
+      "id": "q69",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A force diagram shows a 50 N arrow pointing left. What does the arrow show?",
+      "options": [
+        "A force of 50 N to the left",
+        "A force of 50 N to the right",
+        "A mass of 50 kg",
+        "A speed of 50 m/s"
+      ],
+      "answer": "A force of 50 N to the left",
+      "marks": 1,
+      "feedback": "The arrow shows the magnitude and direction of a force."
+    },
+    {
+      "id": "q70",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A force diagram shows a 52 N arrow pointing right. What does the arrow show?",
+      "options": [
+        "A force of 52 N to the right",
+        "A force of 52 N to the left",
+        "A mass of 52 kg",
+        "A speed of 52 m/s"
+      ],
+      "answer": "A force of 52 N to the right",
+      "marks": 1,
+      "feedback": "The arrow shows the magnitude and direction of a force."
+    },
+    {
+      "id": "q71",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A force diagram shows a 54 N arrow pointing left. What does the arrow show?",
+      "options": [
+        "A force of 54 N to the left",
+        "A force of 54 N to the right",
+        "A mass of 54 kg",
+        "A speed of 54 m/s"
+      ],
+      "answer": "A force of 54 N to the left",
+      "marks": 1,
+      "feedback": "The arrow shows the magnitude and direction of a force."
+    },
+    {
+      "id": "q72",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A force diagram shows a 56 N arrow pointing right. What does the arrow show?",
+      "options": [
+        "A force of 56 N to the right",
+        "A force of 56 N to the left",
+        "A mass of 56 kg",
+        "A speed of 56 m/s"
+      ],
+      "answer": "A force of 56 N to the right",
+      "marks": 1,
+      "feedback": "The arrow shows the magnitude and direction of a force."
+    },
+    {
+      "id": "q73",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A force diagram shows a 58 N arrow pointing left. What does the arrow show?",
+      "options": [
+        "A force of 58 N to the left",
+        "A force of 58 N to the right",
+        "A mass of 58 kg",
+        "A speed of 58 m/s"
+      ],
+      "answer": "A force of 58 N to the left",
+      "marks": 1,
+      "feedback": "The arrow shows the magnitude and direction of a force."
+    },
+    {
+      "id": "q74",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A force diagram shows a 60 N arrow pointing right. What does the arrow show?",
+      "options": [
+        "A force of 60 N to the right",
+        "A force of 60 N to the left",
+        "A mass of 60 kg",
+        "A speed of 60 m/s"
+      ],
+      "answer": "A force of 60 N to the right",
+      "marks": 1,
+      "feedback": "The arrow shows the magnitude and direction of a force."
+    },
+    {
+      "id": "q75",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A force diagram shows a 62 N arrow pointing left. What does the arrow show?",
+      "options": [
+        "A force of 62 N to the left",
+        "A force of 62 N to the right",
+        "A mass of 62 kg",
+        "A speed of 62 m/s"
+      ],
+      "answer": "A force of 62 N to the left",
+      "marks": 1,
+      "feedback": "The arrow shows the magnitude and direction of a force."
+    },
+    {
+      "id": "q76",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A trolley is pushed with 14 N to the right and 3 N to the left. What is the net force?",
+      "options": [
+        "11 N right",
+        "11 N left",
+        "17 N right",
+        "0 N"
+      ],
+      "answer": "11 N right",
+      "marks": 1,
+      "feedback": "Subtract the forces because they act in opposite directions. The larger force points right."
+    },
+    {
+      "id": "q77",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A trolley is pushed with 16 N to the left and 4 N to the right. What is the net force?",
+      "options": [
+        "12 N left",
+        "12 N right",
+        "20 N left",
+        "0 N"
+      ],
+      "answer": "12 N left",
+      "marks": 1,
+      "feedback": "Subtract the forces because they act in opposite directions. The larger force points left."
+    },
+    {
+      "id": "q78",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A trolley is pushed with 18 N to the right and 5 N to the left. What is the net force?",
+      "options": [
+        "13 N right",
+        "13 N left",
+        "23 N right",
+        "0 N"
+      ],
+      "answer": "13 N right",
+      "marks": 1,
+      "feedback": "Subtract the forces because they act in opposite directions. The larger force points right."
+    },
+    {
+      "id": "q79",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A trolley is pushed with 20 N to the left and 6 N to the right. What is the net force?",
+      "options": [
+        "14 N left",
+        "14 N right",
+        "26 N left",
+        "0 N"
+      ],
+      "answer": "14 N left",
+      "marks": 1,
+      "feedback": "Subtract the forces because they act in opposite directions. The larger force points left."
+    },
+    {
+      "id": "q80",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A trolley is pushed with 22 N to the right and 7 N to the left. What is the net force?",
+      "options": [
+        "15 N right",
+        "15 N left",
+        "29 N right",
+        "0 N"
+      ],
+      "answer": "15 N right",
+      "marks": 1,
+      "feedback": "Subtract the forces because they act in opposite directions. The larger force points right."
+    },
+    {
+      "id": "q81",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A trolley is pushed with 24 N to the left and 8 N to the right. What is the net force?",
+      "options": [
+        "16 N left",
+        "16 N right",
+        "32 N left",
+        "0 N"
+      ],
+      "answer": "16 N left",
+      "marks": 1,
+      "feedback": "Subtract the forces because they act in opposite directions. The larger force points left."
+    },
+    {
+      "id": "q82",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A trolley is pushed with 26 N to the right and 9 N to the left. What is the net force?",
+      "options": [
+        "17 N right",
+        "17 N left",
+        "35 N right",
+        "0 N"
+      ],
+      "answer": "17 N right",
+      "marks": 1,
+      "feedback": "Subtract the forces because they act in opposite directions. The larger force points right."
+    },
+    {
+      "id": "q83",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A trolley is pushed with 28 N to the left and 3 N to the right. What is the net force?",
+      "options": [
+        "25 N left",
+        "25 N right",
+        "31 N left",
+        "0 N"
+      ],
+      "answer": "25 N left",
+      "marks": 1,
+      "feedback": "Subtract the forces because they act in opposite directions. The larger force points left."
+    },
+    {
+      "id": "q84",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A trolley is pushed with 30 N to the right and 4 N to the left. What is the net force?",
+      "options": [
+        "26 N right",
+        "26 N left",
+        "34 N right",
+        "0 N"
+      ],
+      "answer": "26 N right",
+      "marks": 1,
+      "feedback": "Subtract the forces because they act in opposite directions. The larger force points right."
+    },
+    {
+      "id": "q85",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A trolley is pushed with 32 N to the left and 5 N to the right. What is the net force?",
+      "options": [
+        "27 N left",
+        "27 N right",
+        "37 N left",
+        "0 N"
+      ],
+      "answer": "27 N left",
+      "marks": 1,
+      "feedback": "Subtract the forces because they act in opposite directions. The larger force points left."
+    },
+    {
+      "id": "q86",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A trolley is pushed with 34 N to the right and 6 N to the left. What is the net force?",
+      "options": [
+        "28 N right",
+        "28 N left",
+        "40 N right",
+        "0 N"
+      ],
+      "answer": "28 N right",
+      "marks": 1,
+      "feedback": "Subtract the forces because they act in opposite directions. The larger force points right."
+    },
+    {
+      "id": "q87",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A trolley is pushed with 36 N to the left and 7 N to the right. What is the net force?",
+      "options": [
+        "29 N left",
+        "29 N right",
+        "43 N left",
+        "0 N"
+      ],
+      "answer": "29 N left",
+      "marks": 1,
+      "feedback": "Subtract the forces because they act in opposite directions. The larger force points left."
+    },
+    {
+      "id": "q88",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A trolley is pushed with 38 N to the right and 8 N to the left. What is the net force?",
+      "options": [
+        "30 N right",
+        "30 N left",
+        "46 N right",
+        "0 N"
+      ],
+      "answer": "30 N right",
+      "marks": 1,
+      "feedback": "Subtract the forces because they act in opposite directions. The larger force points right."
+    },
+    {
+      "id": "q89",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A trolley is pushed with 40 N to the left and 9 N to the right. What is the net force?",
+      "options": [
+        "31 N left",
+        "31 N right",
+        "49 N left",
+        "0 N"
+      ],
+      "answer": "31 N left",
+      "marks": 1,
+      "feedback": "Subtract the forces because they act in opposite directions. The larger force points left."
+    },
+    {
+      "id": "q90",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A trolley is pushed with 42 N to the right and 3 N to the left. What is the net force?",
+      "options": [
+        "39 N right",
+        "39 N left",
+        "45 N right",
+        "0 N"
+      ],
+      "answer": "39 N right",
+      "marks": 1,
+      "feedback": "Subtract the forces because they act in opposite directions. The larger force points right."
+    },
+    {
+      "id": "q91",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A trolley is pushed with 44 N to the left and 4 N to the right. What is the net force?",
+      "options": [
+        "40 N left",
+        "40 N right",
+        "48 N left",
+        "0 N"
+      ],
+      "answer": "40 N left",
+      "marks": 1,
+      "feedback": "Subtract the forces because they act in opposite directions. The larger force points left."
+    },
+    {
+      "id": "q92",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "A trolley is pushed with 46 N to the right and 5 N to the left. What is the net force?",
+      "options": [
+        "41 N right",
+        "41 N left",
+        "51 N right",
+        "0 N"
+      ],
+      "answer": "41 N right",
+      "marks": 1,
+      "feedback": "Subtract the forces because they act in opposite directions. The larger force points right."
+    },
+    {
+      "id": "q93",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "Two students push a cart right with 14 N and 2 N. Friction acts left with 3 N. What additional force would make the net force zero?",
+      "options": [
+        "13 N left",
+        "13 N right",
+        "19 N left",
+        "11 N left"
+      ],
+      "answer": "13 N left",
+      "marks": 1,
+      "feedback": "Add the two rightward pushes, subtract friction, then balance the remaining rightward force with an equal leftward force."
+    },
+    {
+      "id": "q94",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "Two students push a cart right with 16 N and 3 N. Friction acts left with 4 N. What additional force would make the net force zero?",
+      "options": [
+        "15 N left",
+        "15 N right",
+        "23 N left",
+        "12 N left"
+      ],
+      "answer": "15 N left",
+      "marks": 1,
+      "feedback": "Add the two rightward pushes, subtract friction, then balance the remaining rightward force with an equal leftward force."
+    },
+    {
+      "id": "q95",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "Two students push a cart right with 18 N and 4 N. Friction acts left with 5 N. What additional force would make the net force zero?",
+      "options": [
+        "17 N left",
+        "17 N right",
+        "27 N left",
+        "13 N left"
+      ],
+      "answer": "17 N left",
+      "marks": 1,
+      "feedback": "Add the two rightward pushes, subtract friction, then balance the remaining rightward force with an equal leftward force."
+    },
+    {
+      "id": "q96",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "Two students push a cart right with 20 N and 5 N. Friction acts left with 6 N. What additional force would make the net force zero?",
+      "options": [
+        "19 N left",
+        "19 N right",
+        "31 N left",
+        "14 N left"
+      ],
+      "answer": "19 N left",
+      "marks": 1,
+      "feedback": "Add the two rightward pushes, subtract friction, then balance the remaining rightward force with an equal leftward force."
+    },
+    {
+      "id": "q97",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "Two students push a cart right with 22 N and 6 N. Friction acts left with 7 N. What additional force would make the net force zero?",
+      "options": [
+        "21 N left",
+        "21 N right",
+        "35 N left",
+        "15 N left"
+      ],
+      "answer": "21 N left",
+      "marks": 1,
+      "feedback": "Add the two rightward pushes, subtract friction, then balance the remaining rightward force with an equal leftward force."
+    },
+    {
+      "id": "q98",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "Two students push a cart right with 24 N and 2 N. Friction acts left with 8 N. What additional force would make the net force zero?",
+      "options": [
+        "18 N left",
+        "18 N right",
+        "34 N left",
+        "16 N left"
+      ],
+      "answer": "18 N left",
+      "marks": 1,
+      "feedback": "Add the two rightward pushes, subtract friction, then balance the remaining rightward force with an equal leftward force."
+    },
+    {
+      "id": "q99",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "Two students push a cart right with 26 N and 3 N. Friction acts left with 9 N. What additional force would make the net force zero?",
+      "options": [
+        "20 N left",
+        "20 N right",
+        "38 N left",
+        "17 N left"
+      ],
+      "answer": "20 N left",
+      "marks": 1,
+      "feedback": "Add the two rightward pushes, subtract friction, then balance the remaining rightward force with an equal leftward force."
+    },
+    {
+      "id": "q100",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "Two students push a cart right with 28 N and 4 N. Friction acts left with 3 N. What additional force would make the net force zero?",
+      "options": [
+        "29 N left",
+        "29 N right",
+        "35 N left",
+        "25 N left"
+      ],
+      "answer": "29 N left",
+      "marks": 1,
+      "feedback": "Add the two rightward pushes, subtract friction, then balance the remaining rightward force with an equal leftward force."
+    },
+    {
+      "id": "q101",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "Two students push a cart right with 30 N and 5 N. Friction acts left with 4 N. What additional force would make the net force zero?",
+      "options": [
+        "31 N left",
+        "31 N right",
+        "39 N left",
+        "26 N left"
+      ],
+      "answer": "31 N left",
+      "marks": 1,
+      "feedback": "Add the two rightward pushes, subtract friction, then balance the remaining rightward force with an equal leftward force."
+    },
+    {
+      "id": "q102",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "Two students push a cart right with 32 N and 6 N. Friction acts left with 5 N. What additional force would make the net force zero?",
+      "options": [
+        "33 N left",
+        "33 N right",
+        "43 N left",
+        "27 N left"
+      ],
+      "answer": "33 N left",
+      "marks": 1,
+      "feedback": "Add the two rightward pushes, subtract friction, then balance the remaining rightward force with an equal leftward force."
+    },
+    {
+      "id": "q103",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "Two students push a cart right with 34 N and 2 N. Friction acts left with 6 N. What additional force would make the net force zero?",
+      "options": [
+        "30 N left",
+        "30 N right",
+        "42 N left",
+        "28 N left"
+      ],
+      "answer": "30 N left",
+      "marks": 1,
+      "feedback": "Add the two rightward pushes, subtract friction, then balance the remaining rightward force with an equal leftward force."
+    },
+    {
+      "id": "q104",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "Two students push a cart right with 36 N and 3 N. Friction acts left with 7 N. What additional force would make the net force zero?",
+      "options": [
+        "32 N left",
+        "32 N right",
+        "46 N left",
+        "29 N left"
+      ],
+      "answer": "32 N left",
+      "marks": 1,
+      "feedback": "Add the two rightward pushes, subtract friction, then balance the remaining rightward force with an equal leftward force."
+    },
+    {
+      "id": "q105",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "Two students push a cart right with 38 N and 4 N. Friction acts left with 8 N. What additional force would make the net force zero?",
+      "options": [
+        "34 N left",
+        "34 N right",
+        "50 N left",
+        "30 N left"
+      ],
+      "answer": "34 N left",
+      "marks": 1,
+      "feedback": "Add the two rightward pushes, subtract friction, then balance the remaining rightward force with an equal leftward force."
+    },
+    {
+      "id": "q106",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "Two students push a cart right with 40 N and 5 N. Friction acts left with 9 N. What additional force would make the net force zero?",
+      "options": [
+        "36 N left",
+        "36 N right",
+        "54 N left",
+        "31 N left"
+      ],
+      "answer": "36 N left",
+      "marks": 1,
+      "feedback": "Add the two rightward pushes, subtract friction, then balance the remaining rightward force with an equal leftward force."
+    },
+    {
+      "id": "q107",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "Two students push a cart right with 42 N and 6 N. Friction acts left with 3 N. What additional force would make the net force zero?",
+      "options": [
+        "45 N left",
+        "45 N right",
+        "51 N left",
+        "39 N left"
+      ],
+      "answer": "45 N left",
+      "marks": 1,
+      "feedback": "Add the two rightward pushes, subtract friction, then balance the remaining rightward force with an equal leftward force."
+    },
+    {
+      "id": "q108",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "Two students push a cart right with 44 N and 2 N. Friction acts left with 4 N. What additional force would make the net force zero?",
+      "options": [
+        "42 N left",
+        "42 N right",
+        "50 N left",
+        "40 N left"
+      ],
+      "answer": "42 N left",
+      "marks": 1,
+      "feedback": "Add the two rightward pushes, subtract friction, then balance the remaining rightward force with an equal leftward force."
+    },
+    {
+      "id": "q109",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "Two students push a cart right with 46 N and 3 N. Friction acts left with 5 N. What additional force would make the net force zero?",
+      "options": [
+        "44 N left",
+        "44 N right",
+        "54 N left",
+        "41 N left"
+      ],
+      "answer": "44 N left",
+      "marks": 1,
+      "feedback": "Add the two rightward pushes, subtract friction, then balance the remaining rightward force with an equal leftward force."
+    },
+    {
+      "id": "q110",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "Two students push a cart right with 48 N and 4 N. Friction acts left with 6 N. What additional force would make the net force zero?",
+      "options": [
+        "46 N left",
+        "46 N right",
+        "58 N left",
+        "42 N left"
+      ],
+      "answer": "46 N left",
+      "marks": 1,
+      "feedback": "Add the two rightward pushes, subtract friction, then balance the remaining rightward force with an equal leftward force."
+    },
+    {
+      "id": "q111",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "Two students push a cart right with 50 N and 5 N. Friction acts left with 7 N. What additional force would make the net force zero?",
+      "options": [
+        "48 N left",
+        "48 N right",
+        "62 N left",
+        "43 N left"
+      ],
+      "answer": "48 N left",
+      "marks": 1,
+      "feedback": "Add the two rightward pushes, subtract friction, then balance the remaining rightward force with an equal leftward force."
+    },
+    {
+      "id": "q112",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "Two students push a cart right with 52 N and 6 N. Friction acts left with 8 N. What additional force would make the net force zero?",
+      "options": [
+        "50 N left",
+        "50 N right",
+        "66 N left",
+        "44 N left"
+      ],
+      "answer": "50 N left",
+      "marks": 1,
+      "feedback": "Add the two rightward pushes, subtract friction, then balance the remaining rightward force with an equal leftward force."
+    },
+    {
+      "id": "q113",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "Two students push a cart right with 54 N and 2 N. Friction acts left with 9 N. What additional force would make the net force zero?",
+      "options": [
+        "47 N left",
+        "47 N right",
+        "65 N left",
+        "45 N left"
+      ],
+      "answer": "47 N left",
+      "marks": 1,
+      "feedback": "Add the two rightward pushes, subtract friction, then balance the remaining rightward force with an equal leftward force."
+    },
+    {
+      "id": "q114",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "Two students push a cart right with 56 N and 3 N. Friction acts left with 3 N. What additional force would make the net force zero?",
+      "options": [
+        "56 N left",
+        "56 N right",
+        "62 N left",
+        "53 N left"
+      ],
+      "answer": "56 N left",
+      "marks": 1,
+      "feedback": "Add the two rightward pushes, subtract friction, then balance the remaining rightward force with an equal leftward force."
+    },
+    {
+      "id": "q115",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "Two students push a cart right with 58 N and 4 N. Friction acts left with 4 N. What additional force would make the net force zero?",
+      "options": [
+        "58 N left",
+        "58 N right",
+        "66 N left",
+        "54 N left"
+      ],
+      "answer": "58 N left",
+      "marks": 1,
+      "feedback": "Add the two rightward pushes, subtract friction, then balance the remaining rightward force with an equal leftward force."
+    },
+    {
+      "id": "q116",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "Two students push a cart right with 60 N and 5 N. Friction acts left with 5 N. What additional force would make the net force zero?",
+      "options": [
+        "60 N left",
+        "60 N right",
+        "70 N left",
+        "55 N left"
+      ],
+      "answer": "60 N left",
+      "marks": 1,
+      "feedback": "Add the two rightward pushes, subtract friction, then balance the remaining rightward force with an equal leftward force."
+    },
+    {
+      "id": "q117",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "Two students push a cart right with 62 N and 6 N. Friction acts left with 6 N. What additional force would make the net force zero?",
+      "options": [
+        "62 N left",
+        "62 N right",
+        "74 N left",
+        "56 N left"
+      ],
+      "answer": "62 N left",
+      "marks": 1,
+      "feedback": "Add the two rightward pushes, subtract friction, then balance the remaining rightward force with an equal leftward force."
+    },
+    {
+      "id": "q118",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "Two students push a cart right with 64 N and 2 N. Friction acts left with 7 N. What additional force would make the net force zero?",
+      "options": [
+        "59 N left",
+        "59 N right",
+        "73 N left",
+        "57 N left"
+      ],
+      "answer": "59 N left",
+      "marks": 1,
+      "feedback": "Add the two rightward pushes, subtract friction, then balance the remaining rightward force with an equal leftward force."
+    },
+    {
+      "id": "q119",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "Two students push a cart right with 66 N and 3 N. Friction acts left with 8 N. What additional force would make the net force zero?",
+      "options": [
+        "61 N left",
+        "61 N right",
+        "77 N left",
+        "58 N left"
+      ],
+      "answer": "61 N left",
+      "marks": 1,
+      "feedback": "Add the two rightward pushes, subtract friction, then balance the remaining rightward force with an equal leftward force."
+    },
+    {
+      "id": "q120",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-FORCES-BALANCE",
+          "name": "Balanced and unbalanced forces"
+        }
+      ],
+      "question": "Two students push a cart right with 68 N and 4 N. Friction acts left with 9 N. What additional force would make the net force zero?",
+      "options": [
+        "63 N left",
+        "63 N right",
+        "81 N left",
+        "59 N left"
+      ],
+      "answer": "63 N left",
+      "marks": 1,
+      "feedback": "Add the two rightward pushes, subtract friction, then balance the remaining rightward force with an equal leftward force."
     }
   ]
 }

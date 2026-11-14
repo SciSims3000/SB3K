@@ -4,7 +4,7 @@
   "subject": "Science",
   "yearLevel": "Year 7",
   "topic": "Observing the Universe",
-  "version": "1.0",
+  "version": "1.1",
   "mode": "practice",
   "settings": {
     "shuffleQuestions": true,
@@ -1083,6 +1083,1476 @@
       "answer": "Observation time, location and the reference stars used",
       "marks": 1,
       "feedback": "Different times, locations or reference points can explain different observations."
+    },
+    {
+      "id": "q51",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A student records a shadow as 14 cm long. Which part of the record gives the unit?",
+      "options": [
+        "cm",
+        "14",
+        "shadow",
+        "long"
+      ],
+      "answer": "cm",
+      "marks": 1,
+      "feedback": "The unit is centimetres, written cm."
+    },
+    {
+      "id": "q52",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A student records a shadow as 16 cm long. Which part of the record gives the unit?",
+      "options": [
+        "cm",
+        "16",
+        "shadow",
+        "long"
+      ],
+      "answer": "cm",
+      "marks": 1,
+      "feedback": "The unit is centimetres, written cm."
+    },
+    {
+      "id": "q53",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A student records a shadow as 18 cm long. Which part of the record gives the unit?",
+      "options": [
+        "cm",
+        "18",
+        "shadow",
+        "long"
+      ],
+      "answer": "cm",
+      "marks": 1,
+      "feedback": "The unit is centimetres, written cm."
+    },
+    {
+      "id": "q54",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A student records a shadow as 20 cm long. Which part of the record gives the unit?",
+      "options": [
+        "cm",
+        "20",
+        "shadow",
+        "long"
+      ],
+      "answer": "cm",
+      "marks": 1,
+      "feedback": "The unit is centimetres, written cm."
+    },
+    {
+      "id": "q55",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A student records a shadow as 22 cm long. Which part of the record gives the unit?",
+      "options": [
+        "cm",
+        "22",
+        "shadow",
+        "long"
+      ],
+      "answer": "cm",
+      "marks": 1,
+      "feedback": "The unit is centimetres, written cm."
+    },
+    {
+      "id": "q56",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A student records a shadow as 24 cm long. Which part of the record gives the unit?",
+      "options": [
+        "cm",
+        "24",
+        "shadow",
+        "long"
+      ],
+      "answer": "cm",
+      "marks": 1,
+      "feedback": "The unit is centimetres, written cm."
+    },
+    {
+      "id": "q57",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A student records a shadow as 26 cm long. Which part of the record gives the unit?",
+      "options": [
+        "cm",
+        "26",
+        "shadow",
+        "long"
+      ],
+      "answer": "cm",
+      "marks": 1,
+      "feedback": "The unit is centimetres, written cm."
+    },
+    {
+      "id": "q58",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A student records a shadow as 28 cm long. Which part of the record gives the unit?",
+      "options": [
+        "cm",
+        "28",
+        "shadow",
+        "long"
+      ],
+      "answer": "cm",
+      "marks": 1,
+      "feedback": "The unit is centimetres, written cm."
+    },
+    {
+      "id": "q59",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A student records a shadow as 30 cm long. Which part of the record gives the unit?",
+      "options": [
+        "cm",
+        "30",
+        "shadow",
+        "long"
+      ],
+      "answer": "cm",
+      "marks": 1,
+      "feedback": "The unit is centimetres, written cm."
+    },
+    {
+      "id": "q60",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A student records a shadow as 32 cm long. Which part of the record gives the unit?",
+      "options": [
+        "cm",
+        "32",
+        "shadow",
+        "long"
+      ],
+      "answer": "cm",
+      "marks": 1,
+      "feedback": "The unit is centimetres, written cm."
+    },
+    {
+      "id": "q61",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A student records a shadow as 34 cm long. Which part of the record gives the unit?",
+      "options": [
+        "cm",
+        "34",
+        "shadow",
+        "long"
+      ],
+      "answer": "cm",
+      "marks": 1,
+      "feedback": "The unit is centimetres, written cm."
+    },
+    {
+      "id": "q62",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A student records a shadow as 36 cm long. Which part of the record gives the unit?",
+      "options": [
+        "cm",
+        "36",
+        "shadow",
+        "long"
+      ],
+      "answer": "cm",
+      "marks": 1,
+      "feedback": "The unit is centimetres, written cm."
+    },
+    {
+      "id": "q63",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A student records a shadow as 38 cm long. Which part of the record gives the unit?",
+      "options": [
+        "cm",
+        "38",
+        "shadow",
+        "long"
+      ],
+      "answer": "cm",
+      "marks": 1,
+      "feedback": "The unit is centimetres, written cm."
+    },
+    {
+      "id": "q64",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A student records a shadow as 40 cm long. Which part of the record gives the unit?",
+      "options": [
+        "cm",
+        "40",
+        "shadow",
+        "long"
+      ],
+      "answer": "cm",
+      "marks": 1,
+      "feedback": "The unit is centimetres, written cm."
+    },
+    {
+      "id": "q65",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A student records a shadow as 42 cm long. Which part of the record gives the unit?",
+      "options": [
+        "cm",
+        "42",
+        "shadow",
+        "long"
+      ],
+      "answer": "cm",
+      "marks": 1,
+      "feedback": "The unit is centimetres, written cm."
+    },
+    {
+      "id": "q66",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A student records a shadow as 44 cm long. Which part of the record gives the unit?",
+      "options": [
+        "cm",
+        "44",
+        "shadow",
+        "long"
+      ],
+      "answer": "cm",
+      "marks": 1,
+      "feedback": "The unit is centimetres, written cm."
+    },
+    {
+      "id": "q67",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A student records a shadow as 46 cm long. Which part of the record gives the unit?",
+      "options": [
+        "cm",
+        "46",
+        "shadow",
+        "long"
+      ],
+      "answer": "cm",
+      "marks": 1,
+      "feedback": "The unit is centimetres, written cm."
+    },
+    {
+      "id": "q68",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A student records a shadow as 48 cm long. Which part of the record gives the unit?",
+      "options": [
+        "cm",
+        "48",
+        "shadow",
+        "long"
+      ],
+      "answer": "cm",
+      "marks": 1,
+      "feedback": "The unit is centimetres, written cm."
+    },
+    {
+      "id": "q69",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A student records a shadow as 50 cm long. Which part of the record gives the unit?",
+      "options": [
+        "cm",
+        "50",
+        "shadow",
+        "long"
+      ],
+      "answer": "cm",
+      "marks": 1,
+      "feedback": "The unit is centimetres, written cm."
+    },
+    {
+      "id": "q70",
+      "type": "mcq",
+      "difficulty": "easy",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A student records a shadow as 52 cm long. Which part of the record gives the unit?",
+      "options": [
+        "cm",
+        "52",
+        "shadow",
+        "long"
+      ],
+      "answer": "cm",
+      "marks": 1,
+      "feedback": "The unit is centimetres, written cm."
+    },
+    {
+      "id": "q71",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A stick casts a 14 cm shadow in the morning and a 3 cm shadow at noon. How much shorter is the noon shadow?",
+      "options": [
+        "11 cm",
+        "17 cm",
+        "14 cm",
+        "3 cm"
+      ],
+      "answer": "11 cm",
+      "marks": 1,
+      "feedback": "Subtract the noon measurement from the morning measurement. The difference is 11 cm."
+    },
+    {
+      "id": "q72",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A stick casts a 16 cm shadow in the morning and a 4 cm shadow at noon. How much shorter is the noon shadow?",
+      "options": [
+        "12 cm",
+        "20 cm",
+        "16 cm",
+        "4 cm"
+      ],
+      "answer": "12 cm",
+      "marks": 1,
+      "feedback": "Subtract the noon measurement from the morning measurement. The difference is 12 cm."
+    },
+    {
+      "id": "q73",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A stick casts a 18 cm shadow in the morning and a 5 cm shadow at noon. How much shorter is the noon shadow?",
+      "options": [
+        "13 cm",
+        "23 cm",
+        "18 cm",
+        "5 cm"
+      ],
+      "answer": "13 cm",
+      "marks": 1,
+      "feedback": "Subtract the noon measurement from the morning measurement. The difference is 13 cm."
+    },
+    {
+      "id": "q74",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A stick casts a 20 cm shadow in the morning and a 6 cm shadow at noon. How much shorter is the noon shadow?",
+      "options": [
+        "14 cm",
+        "26 cm",
+        "20 cm",
+        "6 cm"
+      ],
+      "answer": "14 cm",
+      "marks": 1,
+      "feedback": "Subtract the noon measurement from the morning measurement. The difference is 14 cm."
+    },
+    {
+      "id": "q75",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A stick casts a 22 cm shadow in the morning and a 7 cm shadow at noon. How much shorter is the noon shadow?",
+      "options": [
+        "15 cm",
+        "29 cm",
+        "22 cm",
+        "7 cm"
+      ],
+      "answer": "15 cm",
+      "marks": 1,
+      "feedback": "Subtract the noon measurement from the morning measurement. The difference is 15 cm."
+    },
+    {
+      "id": "q76",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A stick casts a 24 cm shadow in the morning and a 8 cm shadow at noon. How much shorter is the noon shadow?",
+      "options": [
+        "16 cm",
+        "32 cm",
+        "24 cm",
+        "8 cm"
+      ],
+      "answer": "16 cm",
+      "marks": 1,
+      "feedback": "Subtract the noon measurement from the morning measurement. The difference is 16 cm."
+    },
+    {
+      "id": "q77",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A stick casts a 26 cm shadow in the morning and a 9 cm shadow at noon. How much shorter is the noon shadow?",
+      "options": [
+        "17 cm",
+        "35 cm",
+        "26 cm",
+        "9 cm"
+      ],
+      "answer": "17 cm",
+      "marks": 1,
+      "feedback": "Subtract the noon measurement from the morning measurement. The difference is 17 cm."
+    },
+    {
+      "id": "q78",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A stick casts a 28 cm shadow in the morning and a 3 cm shadow at noon. How much shorter is the noon shadow?",
+      "options": [
+        "25 cm",
+        "31 cm",
+        "28 cm",
+        "3 cm"
+      ],
+      "answer": "25 cm",
+      "marks": 1,
+      "feedback": "Subtract the noon measurement from the morning measurement. The difference is 25 cm."
+    },
+    {
+      "id": "q79",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A stick casts a 30 cm shadow in the morning and a 4 cm shadow at noon. How much shorter is the noon shadow?",
+      "options": [
+        "26 cm",
+        "34 cm",
+        "30 cm",
+        "4 cm"
+      ],
+      "answer": "26 cm",
+      "marks": 1,
+      "feedback": "Subtract the noon measurement from the morning measurement. The difference is 26 cm."
+    },
+    {
+      "id": "q80",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A stick casts a 32 cm shadow in the morning and a 5 cm shadow at noon. How much shorter is the noon shadow?",
+      "options": [
+        "27 cm",
+        "37 cm",
+        "32 cm",
+        "5 cm"
+      ],
+      "answer": "27 cm",
+      "marks": 1,
+      "feedback": "Subtract the noon measurement from the morning measurement. The difference is 27 cm."
+    },
+    {
+      "id": "q81",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A stick casts a 34 cm shadow in the morning and a 6 cm shadow at noon. How much shorter is the noon shadow?",
+      "options": [
+        "28 cm",
+        "40 cm",
+        "34 cm",
+        "6 cm"
+      ],
+      "answer": "28 cm",
+      "marks": 1,
+      "feedback": "Subtract the noon measurement from the morning measurement. The difference is 28 cm."
+    },
+    {
+      "id": "q82",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A stick casts a 36 cm shadow in the morning and a 7 cm shadow at noon. How much shorter is the noon shadow?",
+      "options": [
+        "29 cm",
+        "43 cm",
+        "36 cm",
+        "7 cm"
+      ],
+      "answer": "29 cm",
+      "marks": 1,
+      "feedback": "Subtract the noon measurement from the morning measurement. The difference is 29 cm."
+    },
+    {
+      "id": "q83",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A stick casts a 38 cm shadow in the morning and a 8 cm shadow at noon. How much shorter is the noon shadow?",
+      "options": [
+        "30 cm",
+        "46 cm",
+        "38 cm",
+        "8 cm"
+      ],
+      "answer": "30 cm",
+      "marks": 1,
+      "feedback": "Subtract the noon measurement from the morning measurement. The difference is 30 cm."
+    },
+    {
+      "id": "q84",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A stick casts a 40 cm shadow in the morning and a 9 cm shadow at noon. How much shorter is the noon shadow?",
+      "options": [
+        "31 cm",
+        "49 cm",
+        "40 cm",
+        "9 cm"
+      ],
+      "answer": "31 cm",
+      "marks": 1,
+      "feedback": "Subtract the noon measurement from the morning measurement. The difference is 31 cm."
+    },
+    {
+      "id": "q85",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A stick casts a 42 cm shadow in the morning and a 3 cm shadow at noon. How much shorter is the noon shadow?",
+      "options": [
+        "39 cm",
+        "45 cm",
+        "42 cm",
+        "3 cm"
+      ],
+      "answer": "39 cm",
+      "marks": 1,
+      "feedback": "Subtract the noon measurement from the morning measurement. The difference is 39 cm."
+    },
+    {
+      "id": "q86",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A stick casts a 44 cm shadow in the morning and a 4 cm shadow at noon. How much shorter is the noon shadow?",
+      "options": [
+        "40 cm",
+        "48 cm",
+        "44 cm",
+        "4 cm"
+      ],
+      "answer": "40 cm",
+      "marks": 1,
+      "feedback": "Subtract the noon measurement from the morning measurement. The difference is 40 cm."
+    },
+    {
+      "id": "q87",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A stick casts a 46 cm shadow in the morning and a 5 cm shadow at noon. How much shorter is the noon shadow?",
+      "options": [
+        "41 cm",
+        "51 cm",
+        "46 cm",
+        "5 cm"
+      ],
+      "answer": "41 cm",
+      "marks": 1,
+      "feedback": "Subtract the noon measurement from the morning measurement. The difference is 41 cm."
+    },
+    {
+      "id": "q88",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A stick casts a 48 cm shadow in the morning and a 6 cm shadow at noon. How much shorter is the noon shadow?",
+      "options": [
+        "42 cm",
+        "54 cm",
+        "48 cm",
+        "6 cm"
+      ],
+      "answer": "42 cm",
+      "marks": 1,
+      "feedback": "Subtract the noon measurement from the morning measurement. The difference is 42 cm."
+    },
+    {
+      "id": "q89",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A stick casts a 50 cm shadow in the morning and a 7 cm shadow at noon. How much shorter is the noon shadow?",
+      "options": [
+        "43 cm",
+        "57 cm",
+        "50 cm",
+        "7 cm"
+      ],
+      "answer": "43 cm",
+      "marks": 1,
+      "feedback": "Subtract the noon measurement from the morning measurement. The difference is 43 cm."
+    },
+    {
+      "id": "q90",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A stick casts a 52 cm shadow in the morning and a 8 cm shadow at noon. How much shorter is the noon shadow?",
+      "options": [
+        "44 cm",
+        "60 cm",
+        "52 cm",
+        "8 cm"
+      ],
+      "answer": "44 cm",
+      "marks": 1,
+      "feedback": "Subtract the noon measurement from the morning measurement. The difference is 44 cm."
+    },
+    {
+      "id": "q91",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A stick casts a 54 cm shadow in the morning and a 9 cm shadow at noon. How much shorter is the noon shadow?",
+      "options": [
+        "45 cm",
+        "63 cm",
+        "54 cm",
+        "9 cm"
+      ],
+      "answer": "45 cm",
+      "marks": 1,
+      "feedback": "Subtract the noon measurement from the morning measurement. The difference is 45 cm."
+    },
+    {
+      "id": "q92",
+      "type": "mcq",
+      "difficulty": "standard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.2",
+          "name": "Practice of science"
+        }
+      ],
+      "question": "A stick casts a 56 cm shadow in the morning and a 3 cm shadow at noon. How much shorter is the noon shadow?",
+      "options": [
+        "53 cm",
+        "59 cm",
+        "56 cm",
+        "3 cm"
+      ],
+      "answer": "53 cm",
+      "marks": 1,
+      "feedback": "Subtract the noon measurement from the morning measurement. The difference is 53 cm."
+    },
+    {
+      "id": "q93",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.5",
+          "name": "Observing the Universe in context"
+        }
+      ],
+      "question": "In a scale model of a planetary system, 1 cm represents 2 million km. Two planets are shown 14 cm and 3 cm from the star on the same side. How far apart are they in the modelled system?",
+      "options": [
+        "22 million km",
+        "34 million km",
+        "28 million km",
+        "11 million km"
+      ],
+      "answer": "22 million km",
+      "marks": 1,
+      "feedback": "First find the difference of 11 cm, then multiply by the scale of 2 million km per centimetre."
+    },
+    {
+      "id": "q94",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.5",
+          "name": "Observing the Universe in context"
+        }
+      ],
+      "question": "In a scale model of a planetary system, 1 cm represents 3 million km. Two planets are shown 16 cm and 4 cm from the star on the same side. How far apart are they in the modelled system?",
+      "options": [
+        "36 million km",
+        "60 million km",
+        "48 million km",
+        "12 million km"
+      ],
+      "answer": "36 million km",
+      "marks": 1,
+      "feedback": "First find the difference of 12 cm, then multiply by the scale of 3 million km per centimetre."
+    },
+    {
+      "id": "q95",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.5",
+          "name": "Observing the Universe in context"
+        }
+      ],
+      "question": "In a scale model of a planetary system, 1 cm represents 4 million km. Two planets are shown 18 cm and 5 cm from the star on the same side. How far apart are they in the modelled system?",
+      "options": [
+        "52 million km",
+        "92 million km",
+        "72 million km",
+        "13 million km"
+      ],
+      "answer": "52 million km",
+      "marks": 1,
+      "feedback": "First find the difference of 13 cm, then multiply by the scale of 4 million km per centimetre."
+    },
+    {
+      "id": "q96",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.5",
+          "name": "Observing the Universe in context"
+        }
+      ],
+      "question": "In a scale model of a planetary system, 1 cm represents 5 million km. Two planets are shown 20 cm and 6 cm from the star on the same side. How far apart are they in the modelled system?",
+      "options": [
+        "70 million km",
+        "130 million km",
+        "100 million km",
+        "14 million km"
+      ],
+      "answer": "70 million km",
+      "marks": 1,
+      "feedback": "First find the difference of 14 cm, then multiply by the scale of 5 million km per centimetre."
+    },
+    {
+      "id": "q97",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.5",
+          "name": "Observing the Universe in context"
+        }
+      ],
+      "question": "In a scale model of a planetary system, 1 cm represents 6 million km. Two planets are shown 22 cm and 7 cm from the star on the same side. How far apart are they in the modelled system?",
+      "options": [
+        "90 million km",
+        "174 million km",
+        "132 million km",
+        "15 million km"
+      ],
+      "answer": "90 million km",
+      "marks": 1,
+      "feedback": "First find the difference of 15 cm, then multiply by the scale of 6 million km per centimetre."
+    },
+    {
+      "id": "q98",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.5",
+          "name": "Observing the Universe in context"
+        }
+      ],
+      "question": "In a scale model of a planetary system, 1 cm represents 2 million km. Two planets are shown 24 cm and 8 cm from the star on the same side. How far apart are they in the modelled system?",
+      "options": [
+        "32 million km",
+        "64 million km",
+        "48 million km",
+        "16 million km"
+      ],
+      "answer": "32 million km",
+      "marks": 1,
+      "feedback": "First find the difference of 16 cm, then multiply by the scale of 2 million km per centimetre."
+    },
+    {
+      "id": "q99",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.5",
+          "name": "Observing the Universe in context"
+        }
+      ],
+      "question": "In a scale model of a planetary system, 1 cm represents 3 million km. Two planets are shown 26 cm and 9 cm from the star on the same side. How far apart are they in the modelled system?",
+      "options": [
+        "51 million km",
+        "105 million km",
+        "78 million km",
+        "17 million km"
+      ],
+      "answer": "51 million km",
+      "marks": 1,
+      "feedback": "First find the difference of 17 cm, then multiply by the scale of 3 million km per centimetre."
+    },
+    {
+      "id": "q100",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.5",
+          "name": "Observing the Universe in context"
+        }
+      ],
+      "question": "In a scale model of a planetary system, 1 cm represents 4 million km. Two planets are shown 28 cm and 3 cm from the star on the same side. How far apart are they in the modelled system?",
+      "options": [
+        "100 million km",
+        "124 million km",
+        "112 million km",
+        "25 million km"
+      ],
+      "answer": "100 million km",
+      "marks": 1,
+      "feedback": "First find the difference of 25 cm, then multiply by the scale of 4 million km per centimetre."
+    },
+    {
+      "id": "q101",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.5",
+          "name": "Observing the Universe in context"
+        }
+      ],
+      "question": "In a scale model of a planetary system, 1 cm represents 5 million km. Two planets are shown 30 cm and 4 cm from the star on the same side. How far apart are they in the modelled system?",
+      "options": [
+        "130 million km",
+        "170 million km",
+        "150 million km",
+        "26 million km"
+      ],
+      "answer": "130 million km",
+      "marks": 1,
+      "feedback": "First find the difference of 26 cm, then multiply by the scale of 5 million km per centimetre."
+    },
+    {
+      "id": "q102",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.5",
+          "name": "Observing the Universe in context"
+        }
+      ],
+      "question": "In a scale model of a planetary system, 1 cm represents 6 million km. Two planets are shown 32 cm and 5 cm from the star on the same side. How far apart are they in the modelled system?",
+      "options": [
+        "162 million km",
+        "222 million km",
+        "192 million km",
+        "27 million km"
+      ],
+      "answer": "162 million km",
+      "marks": 1,
+      "feedback": "First find the difference of 27 cm, then multiply by the scale of 6 million km per centimetre."
+    },
+    {
+      "id": "q103",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.5",
+          "name": "Observing the Universe in context"
+        }
+      ],
+      "question": "In a scale model of a planetary system, 1 cm represents 2 million km. Two planets are shown 34 cm and 6 cm from the star on the same side. How far apart are they in the modelled system?",
+      "options": [
+        "56 million km",
+        "80 million km",
+        "68 million km",
+        "28 million km"
+      ],
+      "answer": "56 million km",
+      "marks": 1,
+      "feedback": "First find the difference of 28 cm, then multiply by the scale of 2 million km per centimetre."
+    },
+    {
+      "id": "q104",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.5",
+          "name": "Observing the Universe in context"
+        }
+      ],
+      "question": "In a scale model of a planetary system, 1 cm represents 3 million km. Two planets are shown 36 cm and 7 cm from the star on the same side. How far apart are they in the modelled system?",
+      "options": [
+        "87 million km",
+        "129 million km",
+        "108 million km",
+        "29 million km"
+      ],
+      "answer": "87 million km",
+      "marks": 1,
+      "feedback": "First find the difference of 29 cm, then multiply by the scale of 3 million km per centimetre."
+    },
+    {
+      "id": "q105",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.5",
+          "name": "Observing the Universe in context"
+        }
+      ],
+      "question": "In a scale model of a planetary system, 1 cm represents 4 million km. Two planets are shown 38 cm and 8 cm from the star on the same side. How far apart are they in the modelled system?",
+      "options": [
+        "120 million km",
+        "184 million km",
+        "152 million km",
+        "30 million km"
+      ],
+      "answer": "120 million km",
+      "marks": 1,
+      "feedback": "First find the difference of 30 cm, then multiply by the scale of 4 million km per centimetre."
+    },
+    {
+      "id": "q106",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.5",
+          "name": "Observing the Universe in context"
+        }
+      ],
+      "question": "In a scale model of a planetary system, 1 cm represents 5 million km. Two planets are shown 40 cm and 9 cm from the star on the same side. How far apart are they in the modelled system?",
+      "options": [
+        "155 million km",
+        "245 million km",
+        "200 million km",
+        "31 million km"
+      ],
+      "answer": "155 million km",
+      "marks": 1,
+      "feedback": "First find the difference of 31 cm, then multiply by the scale of 5 million km per centimetre."
+    },
+    {
+      "id": "q107",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.5",
+          "name": "Observing the Universe in context"
+        }
+      ],
+      "question": "In a scale model of a planetary system, 1 cm represents 6 million km. Two planets are shown 42 cm and 3 cm from the star on the same side. How far apart are they in the modelled system?",
+      "options": [
+        "234 million km",
+        "270 million km",
+        "252 million km",
+        "39 million km"
+      ],
+      "answer": "234 million km",
+      "marks": 1,
+      "feedback": "First find the difference of 39 cm, then multiply by the scale of 6 million km per centimetre."
+    },
+    {
+      "id": "q108",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.5",
+          "name": "Observing the Universe in context"
+        }
+      ],
+      "question": "In a scale model of a planetary system, 1 cm represents 2 million km. Two planets are shown 44 cm and 4 cm from the star on the same side. How far apart are they in the modelled system?",
+      "options": [
+        "80 million km",
+        "96 million km",
+        "88 million km",
+        "40 million km"
+      ],
+      "answer": "80 million km",
+      "marks": 1,
+      "feedback": "First find the difference of 40 cm, then multiply by the scale of 2 million km per centimetre."
+    },
+    {
+      "id": "q109",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.5",
+          "name": "Observing the Universe in context"
+        }
+      ],
+      "question": "In a scale model of a planetary system, 1 cm represents 3 million km. Two planets are shown 46 cm and 5 cm from the star on the same side. How far apart are they in the modelled system?",
+      "options": [
+        "123 million km",
+        "153 million km",
+        "138 million km",
+        "41 million km"
+      ],
+      "answer": "123 million km",
+      "marks": 1,
+      "feedback": "First find the difference of 41 cm, then multiply by the scale of 3 million km per centimetre."
+    },
+    {
+      "id": "q110",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.5",
+          "name": "Observing the Universe in context"
+        }
+      ],
+      "question": "In a scale model of a planetary system, 1 cm represents 4 million km. Two planets are shown 48 cm and 6 cm from the star on the same side. How far apart are they in the modelled system?",
+      "options": [
+        "168 million km",
+        "216 million km",
+        "192 million km",
+        "42 million km"
+      ],
+      "answer": "168 million km",
+      "marks": 1,
+      "feedback": "First find the difference of 42 cm, then multiply by the scale of 4 million km per centimetre."
+    },
+    {
+      "id": "q111",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.5",
+          "name": "Observing the Universe in context"
+        }
+      ],
+      "question": "In a scale model of a planetary system, 1 cm represents 5 million km. Two planets are shown 50 cm and 7 cm from the star on the same side. How far apart are they in the modelled system?",
+      "options": [
+        "215 million km",
+        "285 million km",
+        "250 million km",
+        "43 million km"
+      ],
+      "answer": "215 million km",
+      "marks": 1,
+      "feedback": "First find the difference of 43 cm, then multiply by the scale of 5 million km per centimetre."
+    },
+    {
+      "id": "q112",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.5",
+          "name": "Observing the Universe in context"
+        }
+      ],
+      "question": "In a scale model of a planetary system, 1 cm represents 6 million km. Two planets are shown 52 cm and 8 cm from the star on the same side. How far apart are they in the modelled system?",
+      "options": [
+        "264 million km",
+        "360 million km",
+        "312 million km",
+        "44 million km"
+      ],
+      "answer": "264 million km",
+      "marks": 1,
+      "feedback": "First find the difference of 44 cm, then multiply by the scale of 6 million km per centimetre."
+    },
+    {
+      "id": "q113",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.5",
+          "name": "Observing the Universe in context"
+        }
+      ],
+      "question": "In a scale model of a planetary system, 1 cm represents 2 million km. Two planets are shown 54 cm and 9 cm from the star on the same side. How far apart are they in the modelled system?",
+      "options": [
+        "90 million km",
+        "126 million km",
+        "108 million km",
+        "45 million km"
+      ],
+      "answer": "90 million km",
+      "marks": 1,
+      "feedback": "First find the difference of 45 cm, then multiply by the scale of 2 million km per centimetre."
+    },
+    {
+      "id": "q114",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.5",
+          "name": "Observing the Universe in context"
+        }
+      ],
+      "question": "In a scale model of a planetary system, 1 cm represents 3 million km. Two planets are shown 56 cm and 3 cm from the star on the same side. How far apart are they in the modelled system?",
+      "options": [
+        "159 million km",
+        "177 million km",
+        "168 million km",
+        "53 million km"
+      ],
+      "answer": "159 million km",
+      "marks": 1,
+      "feedback": "First find the difference of 53 cm, then multiply by the scale of 3 million km per centimetre."
+    },
+    {
+      "id": "q115",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.5",
+          "name": "Observing the Universe in context"
+        }
+      ],
+      "question": "In a scale model of a planetary system, 1 cm represents 4 million km. Two planets are shown 58 cm and 4 cm from the star on the same side. How far apart are they in the modelled system?",
+      "options": [
+        "216 million km",
+        "248 million km",
+        "232 million km",
+        "54 million km"
+      ],
+      "answer": "216 million km",
+      "marks": 1,
+      "feedback": "First find the difference of 54 cm, then multiply by the scale of 4 million km per centimetre."
+    },
+    {
+      "id": "q116",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.5",
+          "name": "Observing the Universe in context"
+        }
+      ],
+      "question": "In a scale model of a planetary system, 1 cm represents 5 million km. Two planets are shown 60 cm and 5 cm from the star on the same side. How far apart are they in the modelled system?",
+      "options": [
+        "275 million km",
+        "325 million km",
+        "300 million km",
+        "55 million km"
+      ],
+      "answer": "275 million km",
+      "marks": 1,
+      "feedback": "First find the difference of 55 cm, then multiply by the scale of 5 million km per centimetre."
+    },
+    {
+      "id": "q117",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.5",
+          "name": "Observing the Universe in context"
+        }
+      ],
+      "question": "In a scale model of a planetary system, 1 cm represents 6 million km. Two planets are shown 62 cm and 6 cm from the star on the same side. How far apart are they in the modelled system?",
+      "options": [
+        "336 million km",
+        "408 million km",
+        "372 million km",
+        "56 million km"
+      ],
+      "answer": "336 million km",
+      "marks": 1,
+      "feedback": "First find the difference of 56 cm, then multiply by the scale of 6 million km per centimetre."
+    },
+    {
+      "id": "q118",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.5",
+          "name": "Observing the Universe in context"
+        }
+      ],
+      "question": "In a scale model of a planetary system, 1 cm represents 2 million km. Two planets are shown 64 cm and 7 cm from the star on the same side. How far apart are they in the modelled system?",
+      "options": [
+        "114 million km",
+        "142 million km",
+        "128 million km",
+        "57 million km"
+      ],
+      "answer": "114 million km",
+      "marks": 1,
+      "feedback": "First find the difference of 57 cm, then multiply by the scale of 2 million km per centimetre."
+    },
+    {
+      "id": "q119",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.5",
+          "name": "Observing the Universe in context"
+        }
+      ],
+      "question": "In a scale model of a planetary system, 1 cm represents 3 million km. Two planets are shown 66 cm and 8 cm from the star on the same side. How far apart are they in the modelled system?",
+      "options": [
+        "174 million km",
+        "222 million km",
+        "198 million km",
+        "58 million km"
+      ],
+      "answer": "174 million km",
+      "marks": 1,
+      "feedback": "First find the difference of 58 cm, then multiply by the scale of 3 million km per centimetre."
+    },
+    {
+      "id": "q120",
+      "type": "mcq",
+      "difficulty": "hard",
+      "curriculum": [
+        {
+          "id": "SCI-7.1.5",
+          "name": "Observing the Universe in context"
+        }
+      ],
+      "question": "In a scale model of a planetary system, 1 cm represents 4 million km. Two planets are shown 68 cm and 9 cm from the star on the same side. How far apart are they in the modelled system?",
+      "options": [
+        "236 million km",
+        "308 million km",
+        "272 million km",
+        "59 million km"
+      ],
+      "answer": "236 million km",
+      "marks": 1,
+      "feedback": "First find the difference of 59 cm, then multiply by the scale of 4 million km per centimetre."
     }
   ]
 }

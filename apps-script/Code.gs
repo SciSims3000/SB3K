@@ -31,7 +31,10 @@ const SUBMISSION_HEADERS = [
   "Browser",
   "Platform",
   "Screen Resolution",
-  "Submitted Successfully"
+  "Submitted Successfully",
+  "Revision Difficulty",
+  "Revision Length",
+  "Questions Shown"
 ];
 
 const CURRICULUM_HEADERS = [
@@ -72,14 +75,15 @@ const RESPONSE_HEADERS = [
   "Marks Awarded",
   "Marks Available",
   "Curriculum IDs",
-  "Curriculum Names"
+  "Curriculum Names",
+  "Question Difficulty"
 ];
 
 function doGet() {
   return createJsonResponse({
     success: true,
     service: "SB3K Results Receiver",
-    version: "0.3.5",
+    version: "0.3.7",
     submissionProtocol: 1,
     message: "The SB3K results receiver is running.",
     timestamp: new Date().toISOString()
@@ -366,6 +370,10 @@ function appendSubmissionRow(
         packet.device?.screenResolution
       ),
 
+    "Revision Difficulty": safeValue(packet.revision?.difficulty),
+    "Revision Length": safeValue(packet.revision?.length),
+    "Questions Shown": safeValue(packet.revision?.questionsShown),
+
     "Submitted Successfully":
       "Yes"
   };
@@ -387,6 +395,7 @@ function appendCurriculumRows(
       : [];
 
   const savedKeys = new Set(findSessionRows(sheet, packet.session.id, "Curriculum ID"));
+  const rows = [];
   curriculumResults.forEach(result => {
     const key = String(result.id);
     if (savedKeys.has(key)) return;
@@ -444,11 +453,9 @@ function appendCurriculumRows(
         safeValue(result.percentage)
     };
 
-    appendMappedRow(
-      sheet,
-      rowData
-    );
+    rows.push(rowData);
   });
+  appendMappedRows(sheet, rows);
 }
 
 function appendResponseRows(
@@ -462,6 +469,7 @@ function appendResponseRows(
       : [];
 
   const savedKeys = new Set(findSessionRows(sheet, packet.session.id, "Question Number"));
+  const rows = [];
   responses.forEach(response => {
     const key = String(response.questionNumber);
     if (savedKeys.has(key)) return;
@@ -543,42 +551,36 @@ function appendResponseRows(
       "Curriculum IDs":
         curriculumIds,
 
+      "Question Difficulty": safeValue(response.difficulty),
+
       "Curriculum Names":
         curriculumNames
     };
 
-    appendMappedRow(
-      sheet,
-      rowData
-    );
+    rows.push(rowData);
   });
+  appendMappedRows(sheet, rows);
 }
 
-function appendMappedRow(
-  sheet,
-  rowData
-) {
-  const headers =
-    sheet
-      .getRange(
-        1,
-        1,
-        1,
-        sheet.getLastColumn()
-      )
-      .getValues()[0];
+function appendMappedRow(sheet, rowData) {
+  appendMappedRows(sheet, [rowData]);
+}
 
-  const row =
-    headers.map(header =>
-      Object.prototype.hasOwnProperty.call(
-        rowData,
-        header
-      )
-        ? asCellValue(rowData[header])
-        : ""
-    );
+function appendMappedRows(sheet, records) {
+  if (records.length === 0) return;
 
-  sheet.appendRow(row);
+  const width = sheet.getLastColumn();
+  const headers = sheet.getRange(1, 1, 1, width).getValues()[0];
+  const rows = records.map(record => headers.map(header =>
+    Object.prototype.hasOwnProperty.call(record, header)
+      ? asCellValue(record[header])
+      : ""
+  ));
+
+  const firstRow = sheet.getLastRow() + 1;
+  const missingRows = firstRow + rows.length - 1 - sheet.getMaxRows();
+  if (missingRows > 0) sheet.insertRowsAfter(sheet.getMaxRows(), missingRows);
+  sheet.getRange(firstRow, 1, rows.length, width).setValues(rows);
 }
 
 function asCellValue(value) {

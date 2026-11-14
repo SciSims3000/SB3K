@@ -2,10 +2,11 @@ const RESULTS_ENDPOINT =
     "https://script.google.com/macros/s/AKfycbyxn8eNICoQrmQei-WsbTm8HqE4WQFz-dX1eTmgkbp4eu5mhFZAWwL6NAMlvHbSUhqzOg/exec";
 
 const PLATFORM_VERSION =
-    "0.4.6";
+    "0.4.7";
 
 const REVISION_LEVELS = ["easy", "standard", "hard"];
 let revisionDifficulty = "standard";
+let revisionLength = "10";
 
 function supportsDifficulty() {
     return REVISION_LEVELS.every(level =>
@@ -159,6 +160,7 @@ function renderActivityPicker(entries, entry) {
 function renderActivityHeading() {
     document.getElementById("revisionOptions").classList.toggle("hidden", !supportsDifficulty());
     document.getElementById("revisionDifficulty").value = revisionDifficulty;
+    document.getElementById("revisionLength").value = revisionLength;
     const homework = activity.mode === "homework";
     const idInput = document.getElementById("studentId");
     idInput.inputMode = homework ? "numeric" : "text";
@@ -290,7 +292,8 @@ async function startActivity() {
             ? "studentId"
             : "nameAndClass";
 
-    revisionDifficulty = document.getElementById("revisionDifficulty").value;
+    revisionDifficulty = document.getElementById("revisionDifficulty").value || "standard";
+    revisionLength = document.getElementById("revisionLength").value || "10";
     resetQuizState();
     createNewSession();
     prepareActivityQuestions();
@@ -372,7 +375,8 @@ function saveSession() {
             finalResultPacket,
             submissionConfirmed,
             homeworkKey,
-            revisionDifficulty
+            revisionDifficulty,
+            revisionLength
         });
         sessionStorage.setItem(sessionStorageKey, snapshot);
         if (!assignedClass && selectedActivityId === DEFAULT_ACTIVITY_ID) {
@@ -421,6 +425,7 @@ function restoreSession(persistentKey) {
     } = saved);
     homeworkKey = saved.homeworkKey ?? persistentKey;
     revisionDifficulty = saved.revisionDifficulty ?? "standard";
+    revisionLength = saved.revisionLength ?? "10";
     Object.assign(student, saved.student);
     renderActivityHeading();
     saveSession();
@@ -481,11 +486,13 @@ function prepareActivityQuestions() {
     if (useDifficulty) {
         const levels = revisionDifficulty === "progressive"
             ? REVISION_LEVELS : [revisionDifficulty];
-        const counts = revisionDifficulty === "progressive" ? [3, 4, 3] : [10];
+        const count = Number(revisionLength);
+        const counts = revisionDifficulty === "progressive"
+            ? [0.3 * count, 0.4 * count, 0.3 * count] : [count];
         activityQuestions = levels.flatMap((level, index) => {
             const pool = activityQuestions.filter(question => question.difficulty === level);
             shuffleArray(pool);
-            return pool.slice(0, counts[index]);
+            return revisionLength === "all" ? pool : pool.slice(0, counts[index]);
         });
     }
 
@@ -780,6 +787,8 @@ function submitAnswer() {
 
         questionNumber:
             currentQuestionIndex + 1,
+
+        difficulty: question.difficulty,
 
         questionId:
             question.id,
@@ -1341,6 +1350,12 @@ function buildResultPacket({
             identificationMethod:
                 student.identificationMethod
         },
+
+        revision: supportsDifficulty() ? {
+            difficulty: revisionDifficulty,
+            length: revisionLength,
+            questionsShown: activityQuestions.length
+        } : undefined,
 
         result: {
             score:
